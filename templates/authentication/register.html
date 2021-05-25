@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block top_menu %}
+{% endblock %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/login.css' %}">
+<div class="page-section">
+    <div class="p-5">
+        <h2>Inscription</h2>
+        <div class="mb-100">
+            <form action="{% url 'authentication:register' %}" method="post">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <br>
+                <button type="submit" class="btn btn-pastel-teal connect">S'inscrire</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

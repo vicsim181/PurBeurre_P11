@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/bookmarks.css' %}">
+
+<div class="page-section" id="section">
+    {% if data %}
+        {% for key, value in data.items %}
+        <div class="bookmarks">
+            <div class="mx-5 suggestion">
+                <a href="{% url 'product_detail' value.0.id %}">
+                    <img src="{{value.0.small_image_url}}" />
+                    <p class="p-2">{{ value.0.name.title }}</p>
+                    <img src="{% static 'img/' %}nutri_{{ value.0.nutriscore }}.png">
+                    <p></p>
+                </a>
+            </div>
+            <div class="text">
+                <p> remplacé par </p>
+            </div>
+            <div class="mx-5 suggestion">
+                <a href="{% url 'product_detail' key.id %}">
+                    <img src="{{key.small_image_url}}" />
+                    <p class="p-2">{{ key.name.title }}</p>
+                    <img src="{% static 'img/' %}nutri_{{ key.nutriscore }}.png">
+                    <p></p>
+                </a>
+            </div>
+            <div class="text">
+                <p> date: </p>
+            </div>
+            <div class="mx-5 suggestion justify-content-flexstart">
+                <p>{{value.1}}</p>
+                <form method="POST">
+                    {% csrf_token %}
+                    <input type="hidden" name="aim" value="delete">
+                    <input type="hidden" name="product_id" value="{{value.0.id}}">
+                    <input type="hidden" name="suggestion_id" value="{{key.id}}">
+                    <button type='submit' id="button">Supprimer</button>
+                </form>
+            </div>
+        </div>
+        {% endfor %}   
+{% else %}
+    <div class="d-flex flex-wrap justify-content-center p-5">
+        <p>Vous n'avez pas de favori sauvegardé.</p>
+    </div>
+{% endif %}
+</div>
+{% endblock %}

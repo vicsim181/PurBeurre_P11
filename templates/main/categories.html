@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/categories.css' %}">
+<div class="section">
+    <div class="">
+        {% if categories %}
+        <h2>Voici les catégories disponibles:</h2>
+        <br>
+        {% for main, subs in categories.items %}
+        <ul>
+            <li>
+                {{main.title}}
+                {% for sub in subs %}
+                <ul>
+                    <li>{{sub.title}}</li>
+                </ul>
+                {% endfor %}
+            </li>
+        </ul>
+        {% endfor %}
+    </div>
+    {% else %}
+    <p>Nous ne disposons pas de catégorie pour le moment.</p>
+    {% endif %}
+</div>
+
+{% endblock %}

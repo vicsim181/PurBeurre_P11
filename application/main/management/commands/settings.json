@@ -1,0 +1,37 @@
+{
+    "categories": {
+        "soda": ["soda cola",
+                 "limonade",
+                 "soda fruits"],
+        "jus de fruits": ["jus d'orange",
+                          "jus de pomme",
+                          "jus multifruits",
+                          "jus de raisin"],
+        "fromage": ["fromage de vache",
+                    "fromage de chevre",
+                    "fromage bleu",
+                    "fromage tome",
+                    "camembert",
+                    "roquefort",
+                    "livarot",
+                    "pont l'eveque"],
+        "yaourt": ["yaourt nature",
+                   "yaourt aux fruits",
+                   "yaourt végétal",
+                   "yaourt chocolat"],
+        "glace": ["glace chocolat",
+                  "glace vanille",
+                  "glace sorbet fruit"],
+        "biscuit": ["biscuit chocolat",
+                    "biscuit beurre",
+                    "biscuit fruits"],
+        "charcuterie": ["jambon blanc",
+                        "saucisson sec",
+                        "chorizo",
+                        "jambon serrano",
+                        "jambon parme"]
+    },     
+    "page_size": 100,
+    "fields": [
+        "code,product_name,nutriscore_grade,ingredients_text,url,stores_tags,unique_scans_n,image_url,image_small_url,salt_100g,sugars_100g,saturated-fat_100g,fat_100g"]
+}

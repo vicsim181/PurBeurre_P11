@@ -1,0 +1,10 @@
+.head {
+    flex-grow: 1;
+    margin-top: 6em;
+    margin-bottom: 2em;
+}
+
+.section {
+    flex-grow: 2;
+    margin: 5em 3em 3em 4em;
+}

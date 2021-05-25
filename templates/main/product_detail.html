@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/detail.css' %}">
+<div class="page-section body">
+    <div class="header">
+        <img src="{{ product.image_url }}">
+    </div>
+    <br>
+    <div class="title">
+        <h1>{{ product.name.title }}</h1>
+        <br>
+        <img src="{% static 'img/' %}nutri_{{ product.nutriscore }}.png">
+    </div>
+    <br>
+    <div class="infos">
+        <div class="details">
+            <p>{{ product.description }}</p>
+        </div>
+        <div class="details">
+            <p>Repères nutritionnels pour 100g:</p>
+            <ul>
+                <li>Sel: {{product.salt}}</li>
+                <li>Sucres: {{product.sugars}}</li>
+                <li>Acides gras saturés: {{product.saturated}}</li>
+                <li>Matières grasses: {{product.fat}}</li>
+            </ul>
+        </div>
+    </div>
+    <div class="details">
+        <p>Le produit est disponible dans les magasins suivants:</p>
+        <ul>
+            {% for store in product_stores %}
+            <li>
+                {{store}}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="link">
+        <br>
+        <a href="{{ product.url }}"><h4>Voir la fiche d'OpenFoodFacts</h4></a>
+    </div>
+</div>
+
+{% endblock %}

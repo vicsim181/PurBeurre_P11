@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style_results.css' %}">
+<div class="result bd-highlight">
+        {% if product %}
+            <div class="d-flex bd-highlight justify-content-center">
+                <img src="{{ product.image_url }}" />
+            </div>
+            <div class="d-flex bd-highlight justify-content-center">
+                <a href="{% url 'product_detail' pk=product.id %}"><h2>{{ product.name.title }}</h2></a>
+            </div>
+            <div class="d-flex bd-highlight justify-content-center">
+                 <img src="{% static 'img/' %}nutri_{{ product.nutriscore }}.png">
+            </div>
+        {% else %}
+            <div class="d-flex bd-highlight justify-content-center">
+                <p>Pas de produit à afficher</p>
+            </div>
+        {% endif %}
+</div>
+{% if suggestions and suggestions != 0 %}
+<div class="suggestions">
+            {% for suggestion in suggestions %}
+                <div class="mx-5 mb-5 p-3 suggestion">
+                    <a href="{% url 'product_detail' pk=suggestion.id %}">
+                        <img src="{{suggestion.small_image_url}}"/>
+                        <p class="p-2">{{ suggestion.name.title }}</p>
+                        <img src="{% static 'img/' %}nutri_{{ suggestion.nutriscore }}.png">
+                    </a>
+                    {% if suggestion.id not in user_favs %}
+                    <form method="POST" action="/bookmark/consult/">
+                        {% csrf_token %}
+                        <input type="hidden" name="aim" value="add">
+                        <input type="hidden" name="product_id" value="{{product.id}}">
+                        <input type="hidden" name="suggestion_id" value="{{suggestion.id}}">
+                        <button type='submit' id="button">Sauvegarder</button>
+                        <input type="hidden" name="next" value="{{ request.path }}">
+                        <input type="hidden" name="recherche" value="{{ request.GET.recherche }}">
+                    </form>
+                    {% else %}
+                        <p>Produit déjà dans vos favoris</p>
+                    {% endif %}
+                </div>
+            {% endfor %}
+</div>            
+{% elif suggestions == 0 %}
+<div class="section">
+            <div class="d-flex justify-content-center">
+                <p>Je ne trouve pas d'aliment plus sain dans la même catégorie...</p>
+            </div>
+{% endif %}
+</div>
+
+{% endblock %}
