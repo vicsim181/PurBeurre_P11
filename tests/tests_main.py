@@ -25,14 +25,15 @@ class ProductModelTests(TestCase):
 
     def test_retrieve_product(self):
         """
+        Unitary test
         retrieve_product() returns the product matching with the search of the user.
         """
         print("\nTEST - Product --> def retrieve_product()\n")
-        target_1 = '5449000169327'  # Coca Cola zéro sans caféine
+        target_1 = '5000112611762'  # coca-cola zéro sucres
         target_2 = '3449860415703'  # Petits Bâtons de Berger Nature
         target_3 = '7622210450029'  # Prince - Biscuits fourrés goût lait choco
         target_4 = '5449000267443'  # coca-cola vanille
-        request_1 = 'zéro sans coca-cola caféine'
+        request_1 = 'coca-cola zéro sucres'
         request_2 = 'berger bâtons petits nature'
         request_3 = 'prince biscuit'
         request_4 = 'coca cola vanille'
@@ -40,7 +41,7 @@ class ProductModelTests(TestCase):
         result_2, cat_2 = Product.retrieve_product(request_2)
         result_3, cat_3 = Product.retrieve_product(request_3)
         result_4, cat_4 = Product.retrieve_product(request_4)
-        print("self.assertEqual(result_1.code, '5449000169327')")
+        print("self.assertEqual(result_1.code, '5000112611762')")
         self.assertEqual(result_1.code, target_1)
         print('assert 1 DONE')
         print("self.assertEqual(result_2.code, '3449860415703')")
@@ -59,6 +60,7 @@ class ProductModelTests(TestCase):
 
     def test_retrieve_product_with_pk(self):
         """
+        Unitary test
         retrieve_prod_with_pk() returns the product matching with the pk, if it exists.
         """
         print("\nTEST - Product --> def retrieve_prod_with_pk()\n")
@@ -70,22 +72,42 @@ class ProductModelTests(TestCase):
         self.assertEqual(test_product.__str__(), 'product: camembert au lait pasteurisé')
         print("ASSERT DONE")
 
-    def test_looking_for_suggestion(self):
-        """
-        looking_for_suggestion() returns the suggestions from the category of the selected product.
-        """
-        print("\nTEST - Product --> def looking_for_suggestion()\n")
-        target_1_code = '5449000169327'  # Coca Cola zéro sans caféine
-        target_1 = Product.objects.get(code=target_1_code)
-        target_1_category = Category.objects.filter(product__id=target_1.id)
-        target_nutriscore, j = 'b', 1
-        nb = Product.looking_for_suggestion(target_1_code, target_nutriscore, target_1_category, j)
-        self.assertEqual(nb[0].name, 'coca zéro')
-        print("assert DONE")
-
     def test_generate_suggestions(self):
         """
-        When the user look for a product, he can chose an alternative one if there is.
+        Unitary test
+        Once the application has found the product the user is looking for, it's going to look for alternatives.
+        To do so, the function generate_suggestions() is called.
+        Here we are going to test it with two products: 
+        - "Prince - Biscuits Fourrés Goût Lait Choco"
+        - "coca-cola zéro sucres"
+        We check if the function returns us with better alternative.
+        We do so by checking the nutriscore and the category of the first alternative. 
+        """
+        print("\nTEST - Product --> def generate_suggestions()\n")
+        prince_test = Product.objects.get(code='7622210450029') # We collect the product "Prince..." in the database
+        prince_categories = prince_test.category.all() # We collect its categories
+        coca_test = Product.objects.get(code='5000112611762') # We collect the product "Coca..."
+        coca_categories = coca_test.category.all() # We collect its categories
+        prince_suggestions = Product.generate_suggestions(prince_categories, prince_test)
+        coca_suggestions = Product.generate_suggestions(coca_categories, coca_test)
+        print("self.assertEqual(first suggestion for 'Prince - Biscuits Fourrés Goût Lait Choco',\
+'biscuits aux pépites de chocolat')")
+        # We verify the first alternative proposed for "Prince..." and check its nutriscore and category.
+        self.assertEqual(prince_suggestions[0].code, '3760151011429') # We verify the code of the first alternative
+        print("ASSERT 1 DONE")
+        print("self.assertEqual(categories of first alternative = categories of 'Prince...')")
+        self.assertEqual(str(prince_suggestions[0].category.all()), str(prince_categories))
+        # We verify the categories of both products are the same
+        print("ASSERT 2 DONE")
+        print("self.assertEqual(no suggestion for 'coca-cola zéro sucres')")
+        # This product has the best nutriscore of its category, no alternative proposed
+        self.assertEqual(coca_suggestions, 0)
+        print("ASSERT 3 DONE")
+
+    def test_retrieve_and_generate(self):
+        """
+        Integration test
+        When the user look for a product, he can chose an alternative if there is.
         generate_suggestions() returns a list of maximum 6 alternative products of the same main or/and sub category.
         All the products returned have the same or a better nutriscore.
         """
@@ -143,6 +165,7 @@ class DatabaseCommandsTests(TestCase):
 
     def test_db_delete_category(self):
         """
+        Unitary test
         Function testing the custom command used to delete a precise category, main or sub.
         It also tests if the products of the deleted categories are deleted.
         """
