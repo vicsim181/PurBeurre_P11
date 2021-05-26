@@ -89,7 +89,7 @@ class Product(models.Model):
         """
         Function formating and generating the chosen suggestions.
         """
-        nutri = ['a', 'b', 'c', 'd', 'e']
+        nutri = ['e', 'd', 'c', 'b', 'a']
         pre_suggestions = []
         i = 0
         j = 1
