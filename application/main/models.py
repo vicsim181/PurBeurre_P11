@@ -85,15 +85,6 @@ class Product(models.Model):
         else:
             return None, None
 
-    def looking_for_suggestion(winner_code, target_nutriscore, categories, j):
-        """
-        Function looking for the suggestions in the chosen category.
-        """
-        results = Product.objects.filter(category=categories[j].id, nutriscore=target_nutriscore)
-        nb = [element for element in results]
-        nb.remove(winner_code) if winner_code in nb else None
-        return nb
-
     def generate_suggestions(categories, winner):
         """
         Function formating and generating the chosen suggestions.
@@ -103,7 +94,9 @@ class Product(models.Model):
         i = 0
         j = 1
         while len(pre_suggestions) < 6:
-            results = Product.looking_for_suggestion(winner.code, nutri[0 + i], categories, j)
+            results_raw = Product.objects.filter(category=categories[j].id, nutriscore=nutri[0 + i])
+            results_list = [element for element in results_raw]
+            results_list.remove(winner.code) if winner.code in results_list else None
             if winner.nutriscore == nutri[0 + i]:
                 if i == 0 and j == 0:
                     return 0
@@ -118,7 +111,7 @@ class Product(models.Model):
                 elif pre_suggestions == [] and j == 1:
                     j, i = 0, 0
             else:
-                for element in results:
+                for element in results_list:
                     pre_suggestions.append(element)
                 i += 1
         suggestions = [Product.objects.get(code=element.code) for element in pre_suggestions[:6]]
