@@ -161,3 +161,16 @@ sentry_sdk.init(
     # something more human-readable.
     # release="myapp@1.0.0",
 )
+
+
+# Sending emails
+# Trying following tuto: https://data-flair.training/blogs/django-send-email/
+# Plus Django documentation: https://docs.djangoproject.com/fr/3.2/topics/email/#topic-email-backends
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = os.getenv('GMAIL_DJANGO_EMAIL')
+EMAIL_HOST_PASSWORD = os.getenv('GMAIL_DJANGO_PWD')
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False

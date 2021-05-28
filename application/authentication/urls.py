@@ -1,3 +1,4 @@
+from collections import namedtuple
 from django.urls import path
 from django.contrib.auth import views as auth_views
 from . import views
@@ -9,5 +10,7 @@ urlpatterns = [
     path('logout/', auth_views.LogoutView.as_view(template_name='authentication/logout.html'), name='logout'),
     path('register/', views.RegisterView.as_view(), name='register'),
     path('account/', views.ConsultAccountView.as_view(), name='account'),
+    path('register/confirmation', views.ConfirmationView.as_view(), name='confirmation'),  # url de la page d'attente de confirmation du client
+    path('register/validation/<str:uid>/<str:utoken>', views.ValidationView.as_view(), name='validation'), # url de la page de validation
     path('register/success', views.SuccessView.as_view(), name='success'),  # url de la page de success
 ]

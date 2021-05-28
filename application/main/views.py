@@ -26,7 +26,6 @@ class ResultsView(TemplateView):
         context = super(ResultsView, self).get_context_data(**kwargs)
         current_user = self.request.user
         user_input = self.request.GET.get('recherche')
-        print(user_input)
         product, category = Product.retrieve_product(user_input)
         if product:
             suggestions = Product.generate_suggestions(category, product)
