@@ -13,4 +13,6 @@ urlpatterns = [
     path('register/confirmation', views.ConfirmationView.as_view(), name='confirmation'),  # url de la page d'attente de confirmation du client
     path('register/validation/<str:uid>/<str:utoken>', views.ValidationView.as_view(), name='validation'), # url de la page de validation
     path('register/success', views.SuccessView.as_view(), name='success'),  # url de la page de success
+    path('account/change-password', auth_views.PasswordChangeView.as_view(template_name='authentication/change-password.html', success_url='password-changed'), name='change-password'),
+    path('account/password-changed', views.PasswordChanged.as_view(), name='password-changed'),
 ]
