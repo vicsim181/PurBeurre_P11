@@ -2,7 +2,7 @@ from application.bookmark.views import User
 from django.http.response import HttpResponse
 from pur_beurre.settings.base import EMAIL_HOST_USER
 from django.shortcuts import redirect, render
-from django.views.generic.base import TemplateView, View
+from django.views.generic.base import TemplateView
 from django.views.generic.edit import FormView
 from django.core.mail import send_mail
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
@@ -84,9 +84,3 @@ class ConsultAccountView(TemplateView):
 
     def get(self, request):
         return render(request, self.template_name, locals())
-
-
-class PasswordChanged(TemplateView):
-    """
-    """
-    template_name = 'authentication/password-changed.html'
