@@ -7,8 +7,9 @@ from django.views.generic.edit import FormView
 from django.core.mail import send_mail
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 from django.utils.encoding import force_bytes, force_text
+from django.contrib.auth.tokens import PasswordResetTokenGenerator
+from django.core.exceptions import ObjectDoesNotExist
 from .forms import RegisterForm
-from .token import activation_token
 
 
 class RegisterView(FormView):
@@ -18,12 +19,13 @@ class RegisterView(FormView):
     template_name = 'authentication/register.html'  # comme un get() integré
     form_class = RegisterForm  # notre formulaire
     success_url = 'confirmation' # url de notre page de success
+    activation_token = PasswordResetTokenGenerator()
 
     def form_valid(self, form: form_class):
         new_user_email = form['email'].value()
         form.save()
         new_user = User.objects.get(email=new_user_email)
-        generated_token = activation_token.make_token(new_user)
+        generated_token = self.activation_token.make_token(new_user)
         new_user.registration_token = generated_token
         encoded_token = urlsafe_base64_encode(force_bytes(generated_token))
         new_user.save()
@@ -32,8 +34,8 @@ class RegisterView(FormView):
         link = 'http://' + str(current_domain + current_url) + 'validation/'\
                + urlsafe_base64_encode(force_bytes(new_user_email)) + '/' + encoded_token
         send_mail(
-            "essai",
-            "Lien d'activation " + link + ".",
+            "Lien d'activation de votre compte PurBeurre.",
+            "Cliquez sur le lien d'activation pour valider votre compte: \n" + link + ".\n\nL'équipe PurBeurre.",
             EMAIL_HOST_USER,
             [new_user_email],
             fail_silently=False)
@@ -52,20 +54,18 @@ class ValidationView(FormView):
     success_url = 'success'
 
     def get(self, request, uid, utoken):
-        email_to_find = force_text(urlsafe_base64_decode(uid))
-        token_to_find = force_text(urlsafe_base64_decode(utoken))
-        print('EMAIL FOUND: ' + email_to_find)
-        print('TOKEN FOUND: ' + token_to_find)
         try:
+            email_to_find = force_text(urlsafe_base64_decode(uid))
+            token_to_find = force_text(urlsafe_base64_decode(utoken))
             user = User.objects.get(email=email_to_find, registration_token=token_to_find)
             if user:
                 user.is_active = True
                 user.save()
                 return redirect('authentication:success')
             else:
-                return HttpResponse('Trouve pas user')
+                return render(request, template_name='page_not_found.html')
         except(User.DoesNotExist, TypeError, ValueError):
-            return HttpResponse('Inscription échouée')
+            return render(request, template_name='page_not_found.html')
     
 
 class SuccessView(TemplateView):

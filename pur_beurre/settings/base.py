@@ -117,6 +117,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+AUTHENTICATION_BACKENDS = ['application.authentication.backends.CustomModelBackend',]
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
