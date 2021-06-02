@@ -22,25 +22,31 @@ class RegisterView(FormView):
     activation_token = PasswordResetTokenGenerator()
 
     def form_valid(self, form: form_class):
-        new_user_email = form['email'].value()
         form.save()
-        new_user = User.objects.get(email=new_user_email)
+        new_user_email = form['email'].value()
+        link = RegisterView.generating_link(self, new_user_email)
+        RegisterView.sending_email(self, link, new_user_email)
+        return super().form_valid(form)
+    
+    def generating_link(self, email):
+        new_user = User.objects.get(email=email)
         generated_token = self.activation_token.make_token(new_user)
         new_user.registration_token = generated_token
-        encoded_token = urlsafe_base64_encode(force_bytes(generated_token))
         new_user.save()
+        encoded_token = urlsafe_base64_encode(force_bytes(generated_token))
         current_domain = self.request.get_host()
         current_url = self.request.get_full_path()
         link = 'http://' + str(current_domain + current_url) + 'validation/'\
-               + urlsafe_base64_encode(force_bytes(new_user_email)) + '/' + encoded_token
+               + urlsafe_base64_encode(force_bytes(email)) + '/' + encoded_token
+        return link
+
+    def sending_email(self, link, email):
         send_mail(
             "Lien d'activation de votre compte PurBeurre.",
             "Cliquez sur le lien d'activation pour valider votre compte: \n" + link + ".\n\nL'équipe PurBeurre.",
             EMAIL_HOST_USER,
-            [new_user_email],
+            [email],
             fail_silently=False)
-        return super().form_valid(form)
-
 
 class ConfirmationView(TemplateView):
     template_name = 'authentication/confirmation.html'
