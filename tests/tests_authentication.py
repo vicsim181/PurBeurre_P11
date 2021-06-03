@@ -1,19 +1,23 @@
 from os import link
-import time
-from django.http import request
+from django.contrib.auth.forms import UsernameField
+# import time
+from django.http import request, response
 from django.test import TestCase, RequestFactory
 from application.authentication.models import User
-from application.authentication.views import RegisterView, ConsultAccountView
+from application.authentication.views import RegisterView, ConsultAccountView, ValidationView
 from application.authentication.forms import RegisterForm
 from django.contrib.staticfiles.testing import StaticLiveServerTestCase
 from django.core import mail
 from django.contrib.auth.tokens import PasswordResetTokenGenerator
+from django.utils.http import urlsafe_base64_encode
+from django.utils.encoding import force_bytes
 from unittest.mock import patch
 from selenium import webdriver
 
 
 firefox_options = webdriver.FirefoxOptions()
-firefox_options.headless = True
+firefox_options.headless = False
+
 
 # Create your tests here.
 class RegisterTest(TestCase):
@@ -97,7 +101,7 @@ class TestRegisterView(TestCase):
         print("\nself.assertIn('http://testserver/registervalidation/', link_test)")
         self.assertIn('http://testserver/registervalidation/', link_test)
         print("ASSERT 1 DONE")
-    
+
     def test_registerview_sending_email(self):
         """
         Unitary test of the function sending-email() in the RegisterView.
@@ -146,18 +150,72 @@ class TestConsultAccountView(TestCase):
     """
     def setUp(self):
         self.factory = RequestFactory()
-        self.user = User.objects.create_user(username='test',
-                                             email='essai123@gmail.fr',
-                                             password='lol175+essai')
+        self.test_user = User.objects.create_user(username='test',
+                                                  email='essai123@gmail.fr',
+                                                  password='lol175+essai')
 
     def test_consultaccountview_get(self):
         print("\nTEST - CONSULTACCOUNTVIEW --> def get()\n")
         request = self.factory.get('account/', )
-        request.user = self.user
+        request.test_user = self.test_user
         response = ConsultAccountView.as_view()(request)
         print("self.assertEqual(response.status_code, 200)")
         self.assertEqual(response.status_code, 200)
         print('Assert Done')
+
+
+class TestValidationView(TestCase):
+    """
+    Test class for ValidationView
+    """
+    def setUp(self):
+        self.factory = RequestFactory()
+        self.test_token = 'ceciestunessaidetoken123456'
+        self.test_email = 'essai@email.fr'
+        self.test_user = User.objects.create_user(username='test',
+                                                  email=self.test_email,
+                                                  first_name='essai',
+                                                  last_name='TEST',
+                                                  password='mysup€rP@ssw0rd',
+                                                  registration_token=self.test_token,
+                                                  is_active=False)
+
+    def test_validationview_get_right_data(self):
+        """
+        Unitary test for the function get().
+        Test the ability to find a new user with the correct link in the activation email.
+        We check the function redirect to the url '/user/register/success'.
+        """
+        print("\nTEST - VALIDATIONVIEW --> def get_right_data()\n")
+        test_uid = urlsafe_base64_encode(force_bytes(self.test_email))
+        test_utoken = urlsafe_base64_encode(force_bytes(self.test_token))
+        test_request = self.factory.get('register/validation/')
+        response = ValidationView.as_view()(test_request, test_uid, test_utoken)
+        print("self.assertEqual(response.status_code, 302)")
+        self.assertEqual(response.status_code, 302)
+        print("ASSERT 1 DONE")
+        print("self.assertEqual('/user/register/success', response.url)")
+        self.assertEqual("/user/register/success", response.url)
+        print("ASSERT 2 DONE")
+
+    def test_validationview_get_wrong_data(self):
+        """
+        Unitary test for the function get().
+        Test the ability to return an error message when the data passed in the url is not corresponding to a real user.
+        """
+        print("\nTEST - VALIDATIONVIEW --> def get_wrong_data()\n")
+        test_wrong_email = "mauvais@email.fr"
+        test_wrong_token = "ceciestunmauvaistoken654321"
+        test_uid = urlsafe_base64_encode(force_bytes(test_wrong_email))
+        test_utoken = urlsafe_base64_encode(force_bytes(test_wrong_token))
+        test_request_1 = self.factory.get('register/validation/')
+        response_1 = ValidationView.as_view()(test_request_1, test_uid, test_utoken)
+        print("self.assertEqual(response.status_code, 200)")
+        self.assertEqual(response_1.status_code, 200)
+        print("ASSERT 1 DONE")
+        print("self.assertInHTML(La page que vous recherchez n'existe pas, response_1.content.decode())")
+        self.assertInHTML("La page que vous recherchez n'existe pas.", response_1.content.decode())
+        print("ASSERT 2 DONE")
 
 
 class UserStoriesAuthenticationTest(StaticLiveServerTestCase):
@@ -185,7 +243,6 @@ class UserStoriesAuthenticationTest(StaticLiveServerTestCase):
         """
         print("\nTEST - SELENIUM --> TEST LOGIN WHEN REGISTERED\n")
         self.browser.get(self.live_server_url)
-        # self.browser.maximize_window()
         self.browser.find_element_by_id('log in').click()
         username_input = self.browser.find_element_by_css_selector('#id_username')
         username_input.send_keys("victor@gmail.fr")
@@ -227,4 +284,62 @@ class UserStoriesAuthenticationTest(StaticLiveServerTestCase):
         self.browser.find_element_by_xpath('//*[@id="log out"]').click()
         print("assert 'Vous êtes déconnecté.' in self.browser.page_source")
         assert 'Vous êtes déconnecté.' in self.browser.page_source
+        print("ASSERT DONE")
+
+    def test_register_and_login_inactive(self):
+        """
+        Test the registration and login process without activating the account.
+        """
+        print("\nTEST - SELENIUM --> TEST REGISTER AND LOGIN INACTIVE\n")
+        self.browser.get(self.live_server_url)
+        self.browser.find_element_by_xpath('//*[@id="page"]/div[2]/header/div/div/div[2]/a[2]/p/u').click()
+        self.browser.find_element_by_xpath('//*[@id="id_first_name"]').send_keys('essai')
+        self.browser.find_element_by_xpath('//*[@id="id_last_name"]').send_keys('TEST')
+        self.browser.find_element_by_xpath('//*[@id="id_email"]').send_keys('essai@fauxemail.fr')
+        self.browser.find_element_by_xpath('//*[@id="id_password1"]').send_keys('sUp€rpAssw0rd')
+        self.browser.find_element_by_xpath('//*[@id="id_password2"]').send_keys('sUp€rpAssw0rd')
+        self.browser.find_element_by_xpath('//*[@id="page"]/div[2]/div/div/div/form/button').click()
+        print("assert 'Validation d'inscription en cours' in self.browser.page_source")
+        assert "Validation d'inscription en cours" in self.browser.page_source
+        print('ASSERT 1 DONE')
+        self.browser.find_element_by_xpath('//*[@id="log in"]').click()
+        self.browser.find_element_by_css_selector('#id_username').send_keys('essai@fauxemail.fr')
+        self.browser.find_element_by_css_selector('#id_password').send_keys('sUp€rpAssw0rd')
+        self.browser.find_element_by_id('confirmer').click()
+        print("assert 'Veuillez valider votre compte en cliquant sur le lien reçu par courriel pour vous connecter.' in self.browser.page_source")
+        assert 'Veuillez valider votre compte en cliquant sur le lien reçu par courriel pour vous connecter.' in self.browser.page_source
+        print('ASSERT 2 DONE')
+
+    def test_register_and_login_active(self):
+        """
+        Test the registration and login process when activating the account.
+        """
+        print("\nTEST - SELENIUM --> TEST REGISTER AND LOGIN ACTIVE\n")
+        self.browser.get(self.live_server_url)
+        self.browser.find_element_by_xpath('//*[@id="page"]/div[2]/header/div/div/div[2]/a[2]/p/u').click()
+        self.browser.find_element_by_xpath('//*[@id="id_first_name"]').send_keys('essai')
+        self.browser.find_element_by_xpath('//*[@id="id_last_name"]').send_keys('TEST')
+        self.browser.find_element_by_xpath('//*[@id="id_email"]').send_keys('essai@fauxemail.fr')
+        self.browser.find_element_by_xpath('//*[@id="id_password1"]').send_keys('sUp€rpAssw0rd')
+        self.browser.find_element_by_xpath('//*[@id="id_password2"]').send_keys('sUp€rpAssw0rd')
+        self.browser.find_element_by_xpath('//*[@id="page"]/div[2]/div/div/div/form/button').click()
+        print("assert 'Validation d'inscription en cours' in self.browser.page_source")
+        assert "Validation d'inscription en cours" in self.browser.page_source
+        print('ASSERT 1 DONE')
+        test_user = User.objects.get(email='essai@fauxemail.fr')
+        test_token = test_user.registration_token
+        encoded_email = urlsafe_base64_encode(force_bytes('essai@fauxemail.fr'))
+        encoded_token = urlsafe_base64_encode(force_bytes(test_token))
+        test_url = self.live_server_url
+        test_link = str(test_url) + '/user/register/validation/' + str(encoded_email) + '/' + str(encoded_token)
+        self.browser.get(test_link)
+        print("assert 'Vous êtes maintenant enregistré, bienvenue !' in self.browser.page_source")
+        assert 'Vous êtes maintenant enregistré, bienvenue !' in self.browser.page_source
+        print("ASSERT 2 DONE")
+        self.browser.find_element_by_xpath('//*[@id="log in"]').click()
+        self.browser.find_element_by_css_selector('#id_username').send_keys('essai@fauxemail.fr')
+        self.browser.find_element_by_css_selector('#id_password').send_keys('sUp€rpAssw0rd')
+        self.browser.find_element_by_id('confirmer').click()
+        print("assert 'Pas de message d'erreur concernant la saise des informations.' not in self.browser.page_source")
+        assert 'Saisissez un email et un mot de passe valides. Remarquez que chacun de ces champs est sensible à la casse (différenciation des majuscules/minuscules).' not in self.browser.page_source
         print("ASSERT DONE")
