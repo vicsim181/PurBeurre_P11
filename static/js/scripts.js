@@ -62,22 +62,15 @@
 
 })(jQuery); // End of use strict
 
-// function treatInput(inputToTreat) {
-//     let specCar = ['{', '}', '<', '>', '&', '/']
-//     for (let cars = 0; cars < inputToTreat.length; cars++) {
-//         if (specCar.indexOf(inputToTreat[cars]) !== -1) {
-//             inputToTreat = inputToTreat.replace(inputToTreat[cars], '');
-//         };
-//     };
-//     return inputToTreat;
-// }
+$(()=> {
+    console.log( "ready!" );
+});
 
-
-// $('#button_2').on('click', ()=> {
-//   message = $('#request_form').val();
-//     if (message)  {
-//       console.log(message)
-//       $('#request_form').val("");
-//       return $.get(`http://127.0.0.1:8000/results/`);
-//     }
-// })
+// We set the AJAX function that will turn off the 'saving' option for an alternative product if it's already saved
+$("#button_saving_product").click(function(event) {
+    event.preventDefault();
+    console.log('REACTION');
+    url = "{% url 'main:results' %}";
+    let = product_id = $('#suggestion_id').val();
+    console.log(product_id);
+});

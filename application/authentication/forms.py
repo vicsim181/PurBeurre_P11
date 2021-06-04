@@ -17,7 +17,7 @@ class RegisterForm(UserCreationForm):
 class CustomAuthenticationForm(AuthenticationForm):
     error_messages = {
         'invalid_login': _(
-            "Veuillez renseigner une adresse email et un mot de passe valide."
+            "Veuillez renseigner une adresse email et un mot de passe valides. Remarquez que chacun de ces champs est sensible à la casse (différenciation des majuscules/minuscules)."
         ),
         'inactive': ("Veuillez valider votre compte en cliquant sur le lien reçu par courriel pour vous connecter."),
     }

@@ -5,4 +5,5 @@ app_name = 'bookmark'
 
 urlpatterns = [
     path('consult/', views.BookmarksView.as_view(), name='consult'),
+    path('add/', views.AddBookmarkView.as_view(), name='add_bookmark'),
 ]

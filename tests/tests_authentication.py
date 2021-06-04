@@ -245,12 +245,12 @@ class UserStoriesAuthenticationTest(StaticLiveServerTestCase):
         self.browser.get(self.live_server_url)
         self.browser.find_element_by_id('log in').click()
         username_input = self.browser.find_element_by_css_selector('#id_username')
-        username_input.send_keys("victor@gmail.fr")
+        username_input.send_keys("essai@email.fr")
         password_input = self.browser.find_element_by_css_selector('#id_password')
         password_input.send_keys("blabla75")
         self.browser.find_element_by_id('confirmer').click()
         print("assert 'Pas de message d'erreur concernant la saise des informations.' not in self.browser.page_source")
-        assert 'Saisissez un email et un mot de passe valides. Remarquez que chacun de ces champs est sensible à la casse (différenciation des majuscules/minuscules).' not in self.browser.page_source
+        assert 'Veuillez renseigner une adresse email et un mot de passe valides. Remarquez que chacun de ces champs est sensible à la casse (différenciation des majuscules/minuscules).' not in self.browser.page_source
         print("ASSERT DONE")
 
     def test_login_without_registered(self):
@@ -266,7 +266,7 @@ class UserStoriesAuthenticationTest(StaticLiveServerTestCase):
         password_input.send_keys("blabli95")
         self.browser.find_element_by_id('confirmer').click()
         print("assert 'Message d'erreur concernant la saise des informations.' in self.browser.page_source")
-        assert 'Veuillez renseigner une adresse email et un mot de passe valide.' in self.browser.page_source
+        assert 'Veuillez renseigner une adresse email et un mot de passe valides. Remarquez que chacun de ces champs est sensible à la casse (différenciation des majuscules/minuscules).' in self.browser.page_source
         print("ASSERT DONE")
 
     def test_login_then_logout(self):
@@ -277,7 +277,7 @@ class UserStoriesAuthenticationTest(StaticLiveServerTestCase):
         self.browser.get(self.live_server_url)
         self.browser.find_element_by_id('log in').click()
         username_input = self.browser.find_element_by_css_selector('#id_username')
-        username_input.send_keys("victor@gmail.fr")
+        username_input.send_keys("essai@email.fr")
         password_input = self.browser.find_element_by_css_selector('#id_password')
         password_input.send_keys("blabla75")
         self.browser.find_element_by_id('confirmer').click()
@@ -341,5 +341,68 @@ class UserStoriesAuthenticationTest(StaticLiveServerTestCase):
         self.browser.find_element_by_css_selector('#id_password').send_keys('sUp€rpAssw0rd')
         self.browser.find_element_by_id('confirmer').click()
         print("assert 'Pas de message d'erreur concernant la saise des informations.' not in self.browser.page_source")
-        assert 'Saisissez un email et un mot de passe valides. Remarquez que chacun de ces champs est sensible à la casse (différenciation des majuscules/minuscules).' not in self.browser.page_source
+        assert 'Veuillez renseigner une adresse email et un mot de passe valides. Remarquez que chacun de ces champs est sensible à la casse (différenciation des majuscules/minuscules).' not in self.browser.page_source
         print("ASSERT DONE")
+
+    def test_change_password_when_logged_in(self):
+        """
+        Test the password modification process when logged in.
+        """
+        print("\nTEST - SELENIUM --> TEST CHANGE PASSWORD WHEN LOGGED IN\n")
+        self.browser.get(self.live_server_url)
+        self.browser.find_element_by_id('log in').click()
+        username_input = self.browser.find_element_by_css_selector('#id_username')
+        username_input.send_keys("essai@email.fr")
+        password_input = self.browser.find_element_by_css_selector('#id_password')
+        password_input.send_keys("blabla75")
+        self.browser.find_element_by_id('confirmer').click()
+        self.browser.find_element_by_xpath('//*[@id="personal account"]').click()
+        self.browser.find_element_by_xpath('//*[@id="page"]/div[2]/div[3]/div/a').click()
+        self.browser.find_element_by_xpath('//*[@id="id_old_password"]').send_keys('blabla75')
+        self.browser.find_element_by_xpath('//*[@id="id_new_password1"]').send_keys('sup€RpAssw0rd')
+        self.browser.find_element_by_xpath('//*[@id="id_new_password2"]').send_keys('sup€RpAssw0rd')
+        self.browser.find_element_by_xpath('//*[@id="confirmer"]').click()
+        print("assert 'Mot de passe modifié' in self.browser.page_source")
+        assert 'Mot de passe modifié' in self.browser.page_source
+        print('ASSERT 1 DONE')
+        self.browser.find_element_by_xpath('//*[@id="log out"]').click()
+        self.browser.find_element_by_id('log in').click()
+        self.browser.find_element_by_css_selector('#id_username').send_keys("essai@email.fr")
+        self.browser.find_element_by_css_selector('#id_password').send_keys("sup€RpAssw0rd")
+        self.browser.find_element_by_xpath('//*[@id="confirmer"]').click()
+        print("assert 'Pas de message d'erreur concernant la saise des informations.' not in self.browser.page_source")
+        assert 'Veuillez renseigner une adresse email et un mot de passe valides. Remarquez que chacun de ces champs est sensible à la casse (différenciation des majuscules/minuscules).' not in self.browser.page_source
+        print("ASSERT 2 DONE")
+
+    def test_reset_password_when_not_logged_in(self):
+        """
+        Test the password reset process when not logged in.
+        """
+        print("\nTEST - SELENIUM --> TEST RESET PASSWORD WHEN NOT LOGGED IN\n")
+        self.browser.get(self.live_server_url)
+        self.browser.find_element_by_id('log in').click()
+        self.browser.find_element_by_xpath('//*[@id="reset_password"]').click()
+        self.browser.find_element_by_xpath('//*[@id="id_email"]').send_keys("essai@email.fr")
+        self.browser.find_element_by_xpath('//*[@id="confirmer"]').click()
+        print("assert 'Mot de passe oublié' in self.browser.page_source")
+        assert 'Mot de passe oublié' in self.browser.page_source
+        print('ASSERT 1 DONE')
+        print("assert 'Un lien d'activation vient d'être envoyé à l'adresse demandée' in self.browser.page_source")
+        assert "Un lien d'activation vient d'être envoyé à l'adresse demandée" in self.browser.page_source
+        print('ASSERT 2 DONE')
+        test_email_body = mail.outbox[0].body
+        test_email_link = test_email_body.split(' ')[-2].split('\n')[-3]
+        self.browser.get(test_email_link)
+        self.browser.find_element_by_xpath('//*[@id="id_new_password1"]').send_keys("sup€RPassw0rd")
+        self.browser.find_element_by_xpath('//*[@id="id_new_password2"]').send_keys("sup€RPassw0rd")
+        self.browser.find_element_by_xpath('//*[@id="confirmer"]').click()
+        print("assert 'Votre mot de passe a bien été modifié.' in self.browser.page_source")
+        assert "Votre mot de passe a bien été modifié." in self.browser.page_source
+        print('ASSERT 3 DONE')
+        self.browser.find_element_by_id('log in').click()
+        self.browser.find_element_by_css_selector('#id_username').send_keys("essai@email.fr")
+        self.browser.find_element_by_css_selector('#id_password').send_keys("sup€RPassw0rd")
+        self.browser.find_element_by_xpath('//*[@id="confirmer"]').click()
+        print("assert 'Pas de message d'erreur concernant la saise des informations.' not in self.browser.page_source")
+        assert 'Veuillez renseigner une adresse email et un mot de passe valides. Remarquez que chacun de ces champs est sensible à la casse (différenciation des majuscules/minuscules).' not in self.browser.page_source
+        print("ASSERT 4 DONE")
