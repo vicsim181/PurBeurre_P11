@@ -67,10 +67,15 @@ $(()=> {
 });
 
 // We set the AJAX function that will turn off the 'saving' option for an alternative product if it's already saved
-$("#button_saving_product").click(function(event) {
-    event.preventDefault();
-    console.log('REACTION');
-    url = "{% url 'main:results' %}";
-    let = product_id = $('#suggestion_id').val();
-    console.log(product_id);
+async function sendRequest() {
+  return $post(`http://127.0.0.1:8000/bookmark/add`)
+}
+
+$('.button_saving_product').click(function(event) {
+    let suggestionID = $(this).attr('id');
+    let productID = $('.result').attr('id');
+    let userID = $('#user_id').val();
+    console.log(suggestionID);
+    console.log(productID);
+    console.log(userID);
 });

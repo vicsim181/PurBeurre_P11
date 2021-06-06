@@ -4,7 +4,8 @@
 
 {% load static %}
 <link rel="stylesheet" href="{% static 'css/style_results.css' %}">
-<div class="result bd-highlight">
+<input type="hidden" id="user_id" value="{{user.id}}">
+<div class="result bd-highlight" id="{{product.id}}">
         {% if product %}
             <div class="d-flex bd-highlight justify-content-center">
                 <img src="{{ product.image_url }}" />
@@ -31,15 +32,18 @@
                         <img src="{% static 'img/' %}nutri_{{ suggestion.nutriscore }}.png">
                     </a>
                     {% if suggestion.id not in user_favs %}
-                    <form method="POST" action="{% url 'bookmark:add_bookmark' %}">
+                    <button type='submit' class="button_saving_product" id="{{suggestion.id}}">
+                        <i class="button far fa-save fa-5x"></i>
+                    </button>
+                    <!-- <form method="POST" action="/bookmark/add/">
                         {% csrf_token %}
-                        <input type="hidden" id="aim" value="add">
-                        <input type="hidden" id="product_id" value="{{product.id}}">
-                        <input type="hidden" id="suggestion_id" value="{{suggestion.id}}">
-                        <button type='submit' id="button_saving_product">Sauvegarder</button>
-                        <input type="hidden" id="next" value="{{ request.path }}">
-                        <input type="hidden" id="recherche" value="{{ request.GET.recherche }}">
-                    </form>
+                        <input type="hidden" name="aim" value="add">
+                        <input type="hidden" name="product_id" value="{{product.id}}">
+                        <input type="hidden" name="suggestion_id" value="{{suggestion.id}}">
+                        <button type='submit' id="button_saving{{forloop.counter}}">Sauvegarder</button>
+                        <input type="hidden" name="next" value="{{ request.path }}">
+                        <input type="hidden" name="recherche" value="{{ request.GET.recherche }}">
+                    </form> -->
                     {% else %}
                         <p>Produit déjà dans vos favoris</p>
                     {% endif %}
