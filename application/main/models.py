@@ -43,11 +43,11 @@ class Product(models.Model):
     def __str__(self) -> str:
         return 'product: ' + self.name
 
-    def retrieve_prod_with_pk(pk):
+    def retrieve_prod_with_code(code):
         """
         retrieves a product with its primary key
         """
-        product = Product.objects.get(pk=pk)
+        product = Product.objects.get(code=code)
         return product
 
     def retrieve_product(request):
@@ -82,6 +82,47 @@ class Product(models.Model):
                 winner = Product.objects.get(code=scores[maxi])
                 category = product.category.all()
                 return winner, category
+        else:
+            return None, None
+    
+    def retrieve_product_bis(request):
+        """
+        Function used to retrieve the product matching the best with the user request.
+        """
+        scores = {}
+        user_request = request.replace('-', ' ')
+        nb_words_request = len(user_request.split(' '))
+        products = Product.objects.annotate(search=SearchVector('name')).filter(search=user_request)
+        if products:
+            for product in products:
+                score, score_2 = 0, 0
+                string_product = product.name.replace('-', ' ').lower().split(' ')
+                for word in string_product:
+                    score += 1 if word in user_request.lower() else score
+                score_final_1 = round((score/nb_words_request) * 100)
+                for word in user_request.split(' '):
+                    score_2 += 1 if word.lower() in string_product else score_2
+                score_final_2 = round((score_2/len(string_product)) * 100)
+                score_final_1 = 100 if score_final_1 > 100 else score_final_1
+                score_final_2 = 100 if score_final_2 > 100 else score_final_2
+                score_final = (score_final_1 + score_final_2) / 2
+                # if score_final == 100:
+                #     category = product.category.all()
+                #     return product, category
+                scores[score_final] = product.code
+            if scores:
+                sorted_scores = sorted(scores, reverse=True)
+                sorted_scores_dic = {}
+                for score in sorted_scores:
+                    sorted_scores_dic[score] = scores[score]
+                print(sorted_scores_dic)
+                return sorted_scores_dic
+                # maxi = 0
+                # for key in scores:
+                #     maxi = key if key > maxi else maxi
+                # winner = Product.objects.get(code=scores[maxi])
+                # category = product.category.all()
+                # return winner, category
         else:
             return None, None
 

@@ -25,25 +25,17 @@
 {% if suggestions and suggestions != 0 %}
 <div class="suggestions">
             {% for suggestion in suggestions %}
-                <div class="mx-5 mb-5 p-3 suggestion">
+                <div class="mx-5 mb-5 p-3 suggestion" id="suggestion_{{suggestion.id}}">
                     <a href="{% url 'product_detail' pk=suggestion.id %}">
                         <img src="{{suggestion.small_image_url}}"/>
                         <p class="p-2">{{ suggestion.name.title }}</p>
                         <img src="{% static 'img/' %}nutri_{{ suggestion.nutriscore }}.png">
                     </a>
                     {% if suggestion.id not in user_favs %}
-                    <button type='submit' class="button_saving_product" id="{{suggestion.id}}">
-                        <i class="button far fa-save fa-5x"></i>
-                    </button>
-                    <!-- <form method="POST" action="/bookmark/add/">
-                        {% csrf_token %}
-                        <input type="hidden" name="aim" value="add">
-                        <input type="hidden" name="product_id" value="{{product.id}}">
-                        <input type="hidden" name="suggestion_id" value="{{suggestion.id}}">
-                        <button type='submit' id="button_saving{{forloop.counter}}">Sauvegarder</button>
-                        <input type="hidden" name="next" value="{{ request.path }}">
-                        <input type="hidden" name="recherche" value="{{ request.GET.recherche }}">
-                    </form> -->
+                        <button type='submit' class='mx-5 mb-5 p-3 save_button' id="{{suggestion.id}}">
+                            Sauvegarder
+                            {% csrf_token %}
+                        </button>
                     {% else %}
                         <p>Produit déjà dans vos favoris</p>
                     {% endif %}

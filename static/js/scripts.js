@@ -66,16 +66,53 @@ $(()=> {
     console.log( "ready!" );
 });
 
-// We set the AJAX function that will turn off the 'saving' option for an alternative product if it's already saved
-async function sendRequest() {
-  return $post(`http://127.0.0.1:8000/bookmark/add`)
-}
 
-$('.button_saving_product').click(function(event) {
+// We set the AJAX function that will save a bookmark and update its status
+$('.save_button').click(function(event) {
     let suggestionID = $(this).attr('id');
     let productID = $('.result').attr('id');
     let userID = $('#user_id').val();
-    console.log(suggestionID);
-    console.log(productID);
-    console.log(userID);
+    const csrftoken = $('[name=csrfmiddlewaretoken]').val();
+    $.ajax({
+      url: "http://127.0.0.1:8000/bookmark/add/",
+      type: 'POST',
+      headers: {"X-CSRFToken": csrftoken},
+      data: {
+        'replacing_id': suggestionID,
+        'replaced_id': productID,
+        'user_id': userID,
+      },
+      dataType: 'json',
+      cache: true,
+      success: function(data) {
+        if (data.status) {
+          alert('Favori sauvegardé');
+          $(`#suggestion_${suggestionID}`).load(` #suggestion_${suggestionID} > *`);
+        }
+      }
+    });
+});
+
+
+// We set the AJAX function that will display results when taping in the search form
+$('.form-control').change(function(event) {
+  event.preventDefault();
+  let input = $(this).val();
+  console.log(input);
+  if (input.length > 1) {
+    $.ajax({
+      url: "http://127.0.0.1:8000/list/",
+      type: "GET",
+      data: {
+        'recherche': input
+      },
+      dataType: 'json',
+      success: function(data) {
+        for (let result in data.products) {
+          console.log(data.products[result]);
+          $("#results-list").append("<li><a href=\"{% url 'results' result.id %}\">" + data.products[result] + "</a></li>");
+        }
+      }
+    });
+  };
 });
