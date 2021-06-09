@@ -94,25 +94,25 @@ $('.save_button').click(function(event) {
 });
 
 
-// We set the AJAX function that will display results when taping in the search form
-$('.form-control').change(function(event) {
-  event.preventDefault();
-  let input = $(this).val();
-  console.log(input);
-  if (input.length > 1) {
-    $.ajax({
-      url: "http://127.0.0.1:8000/list/",
-      type: "GET",
-      data: {
-        'recherche': input
-      },
-      dataType: 'json',
-      success: function(data) {
-        for (let result in data.products) {
-          console.log(data.products[result]);
-          $("#results-list").append("<li><a href=\"{% url 'results' result.id %}\">" + data.products[result] + "</a></li>");
-        }
-      }
-    });
-  };
-});
+// // We set the AJAX function that will display results when taping in the search form
+// $('.form-control').change(function(event) {
+//   event.preventDefault();
+//   let input = $(this).val();
+//   console.log(input);
+//   if (input.length > 1) {
+//     $.ajax({
+//       url: "http://127.0.0.1:8000/list/",
+//       type: "GET",
+//       data: {
+//         'recherche': input
+//       },
+//       dataType: 'json',
+//       success: function(data) {
+//         for (let result in data.products) {
+//           console.log(data.products[result]);
+//           $("#results-list").append("<li><a href=\"{% url 'results' result.id %}\">" + data.products[result] + "</a></li>");
+//         }
+//       }
+//     });
+//   };
+// });

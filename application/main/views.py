@@ -18,19 +18,19 @@ class HomeView(FormView):
     form_class = forms.Form
 
 
-class ProductListView(View):
-    """
-    """
-    def get(self, *args):
-        user_input = self.request.GET.get('recherche')
-        products = Product.retrieve_product_bis(user_input)
-        data = {
-            'products': {}
-        }
-        for product in products:
-            result = Product.retrieve_prod_with_code(products[product])
-            data['products'][product] = result.name
-        return JsonResponse(data)
+# class ProductListView(View):
+#     """
+#     """
+#     def get(self, *args):
+#         user_input = self.request.GET.get('recherche')
+#         products = Product.retrieve_product_bis(user_input)
+#         data = {
+#             'products': {}
+#         }
+#         for product in products:
+#             result = Product.retrieve_prod_with_code(products[product])
+#             data['products'][product] = result.name
+#         return JsonResponse(data)
 
 
 class ResultsView(TemplateView):
