@@ -86,7 +86,7 @@ $('.save_button').click(function(event) {
       cache: true,
       success: function(data) {
         if (data.status) {
-          alert('Favori sauvegardé');
+          // alert('Favori sauvegardé');
           $(`#suggestion_${suggestionID}`).load(` #suggestion_${suggestionID} > *`);
         }
       }

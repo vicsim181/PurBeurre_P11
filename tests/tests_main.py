@@ -1,5 +1,6 @@
 import json
 from django.db import IntegrityError, transaction
+from django.db.models.expressions import F
 from django.db.utils import DataError
 from django.test import TestCase, RequestFactory
 from urllib.error import HTTPError, URLError
@@ -10,11 +11,10 @@ from io import StringIO
 from application.authentication.models import User
 from django.contrib.staticfiles.testing import StaticLiveServerTestCase
 from selenium import webdriver
-# from selenium.webdriver.firefox.webdriver import WebDriver
-
 
 firefox_options = webdriver.FirefoxOptions()
 firefox_options.headless = True
+
 
 # Create your tests here.
 class ProductModelTests(TestCase):
@@ -355,10 +355,9 @@ class UserStoriesMainTest(StaticLiveServerTestCase):
         User look for the product 'camembert au lait cru' and see if a product exists matching the request.
         """
         self.browser.get(self.live_server_url)
-        # self.browser.maximize_window()
         self.browser.find_element_by_id('log in').click()
         username_input = self.browser.find_element_by_css_selector('#id_username')
-        username_input.send_keys("victor@gmail.fr")
+        username_input.send_keys("essai@email.fr")
         password_input = self.browser.find_element_by_css_selector('#id_password')
         password_input.send_keys("blabla75")
         self.browser.find_element_by_id('confirmer').click()
@@ -373,10 +372,9 @@ class UserStoriesMainTest(StaticLiveServerTestCase):
         User look for the product 'pâtes au ketchup' and see if a product exists matching the request.
         """
         self.browser.get(self.live_server_url)
-        # self.browser.maximize_window()
         self.browser.find_element_by_id('log in').click()
         username_input = self.browser.find_element_by_css_selector('#id_username')
-        username_input.send_keys("victor@gmail.fr")
+        username_input.send_keys("essai@email.fr")
         password_input = self.browser.find_element_by_css_selector('#id_password')
         password_input.send_keys("blabla75")
         self.browser.find_element_by_id('confirmer').click()

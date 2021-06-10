@@ -1,6 +1,5 @@
 from os import link
 from django.contrib.auth.forms import UsernameField
-# import time
 from django.http import request, response
 from django.test import TestCase, RequestFactory
 from application.authentication.models import User
@@ -16,7 +15,7 @@ from selenium import webdriver
 
 
 firefox_options = webdriver.FirefoxOptions()
-firefox_options.headless = False
+firefox_options.headless = True
 
 
 # Create your tests here.
@@ -229,6 +228,7 @@ class UserStoriesAuthenticationTest(StaticLiveServerTestCase):
     def setUpClass(cls):
         super().setUpClass()
         cls.browser = webdriver.Firefox(options=firefox_options)
+        print('OPTIONS:    ' + str(firefox_options.arguments))
         cls.browser.implicitly_wait(10)
         cls.browser.maximize_window()
 
@@ -298,6 +298,8 @@ class UserStoriesAuthenticationTest(StaticLiveServerTestCase):
         self.browser.find_element_by_xpath('//*[@id="id_email"]').send_keys('essai@fauxemail.fr')
         self.browser.find_element_by_xpath('//*[@id="id_password1"]').send_keys('sUp€rpAssw0rd')
         self.browser.find_element_by_xpath('//*[@id="id_password2"]').send_keys('sUp€rpAssw0rd')
+        footer = self.browser.find_element_by_xpath('//*[@id="footer"]')
+        self.browser.execute_script("arguments[0].setAttribute('style','display:none;');",footer)
         self.browser.find_element_by_xpath('//*[@id="page"]/div[2]/div/div/div/form/button').click()
         print("assert 'Validation d'inscription en cours' in self.browser.page_source")
         assert "Validation d'inscription en cours" in self.browser.page_source
@@ -322,6 +324,8 @@ class UserStoriesAuthenticationTest(StaticLiveServerTestCase):
         self.browser.find_element_by_xpath('//*[@id="id_email"]').send_keys('essai@fauxemail.fr')
         self.browser.find_element_by_xpath('//*[@id="id_password1"]').send_keys('sUp€rpAssw0rd')
         self.browser.find_element_by_xpath('//*[@id="id_password2"]').send_keys('sUp€rpAssw0rd')
+        footer = self.browser.find_element_by_xpath('//*[@id="footer"]')
+        self.browser.execute_script("arguments[0].setAttribute('style','display:none;');",footer)
         self.browser.find_element_by_xpath('//*[@id="page"]/div[2]/div/div/div/form/button').click()
         print("assert 'Validation d'inscription en cours' in self.browser.page_source")
         assert "Validation d'inscription en cours" in self.browser.page_source

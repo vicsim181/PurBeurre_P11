@@ -37,12 +37,12 @@ class BookmarksView(UpdateView):
         """
         Post function, delete a bookmark when consulting them.
         """
-        current_user = self.request.user
+        current_user = self.request.POST.get('user_id')
         replaced_id = self.request.POST.get('product_id')
         replacing_id = self.request.POST.get('suggestion_id')
         bookmark_to_delete = Substitution.objects.get(replaced_product_id=replaced_id,
                                                       replacing_product_id=replacing_id,
-                                                      user_id=current_user.id)
+                                                      user_id=current_user)
         bookmark_to_delete.delete()
         return redirect('bookmark:consult')
 
@@ -55,15 +55,11 @@ class AddBookmarkView(View):
         current_user = self.request.POST.get('user_id')
         replaced_id = self.request.POST.get('replaced_id')
         replacing_id = self.request.POST.get('replacing_id')
-        try:
-            Substitution.save_bookmark(replaced_id, replacing_id, current_user)
-            data = {
-                'status': True,
-            }
-            return JsonResponse(data)
-        except IntegrityError:
-            data = {}
-            return JsonResponse(data)
+        Substitution.save_bookmark(replaced_id, replacing_id, current_user)
+        data = {
+            'status': True,
+        }
+        return JsonResponse(data)
 
 
 # class CheckBookmarkView(View):
