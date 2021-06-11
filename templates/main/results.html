@@ -32,7 +32,7 @@
                         <img src="{% static 'img/' %}nutri_{{ suggestion.nutriscore }}.png">
                     </a>
                     {% if suggestion.id not in user_favs %}
-                        <button type='submit' class='mx-5 mb-5 p-3 save_button' id="{{suggestion.id}}">
+                        <button type='submit' class='mx-5 mb-5 p-3 save_button' id="{{suggestion.id}}" data-url="{% url 'bookmark:add-bookmark' %}">
                             Sauvegarder
                             {% csrf_token %}
                         </button>

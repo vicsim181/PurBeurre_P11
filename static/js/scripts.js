@@ -70,11 +70,12 @@ $(()=> {
 // We set the AJAX function that will save a bookmark and update its status
 $('.save_button').click(function(event) {
     let suggestionID = $(this).attr('id');
+    let url = $(this).attr('data-url');
     let productID = $('.result').attr('id');
     let userID = $('#user_id').val();
     const csrftoken = $('[name=csrfmiddlewaretoken]').val();
     $.ajax({
-      url: "http://127.0.0.1:8000/bookmark/add/",
+      url: url,
       type: 'POST',
       headers: {"X-CSRFToken": csrftoken},
       data: {
@@ -86,7 +87,6 @@ $('.save_button').click(function(event) {
       cache: true,
       success: function(data) {
         if (data.status) {
-          // alert('Favori sauvegardé');
           $(`#suggestion_${suggestionID}`).load(` #suggestion_${suggestionID} > *`);
         }
       }
