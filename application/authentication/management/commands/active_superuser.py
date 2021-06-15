@@ -13,8 +13,11 @@ class Command(LabelCommand):
         """
         try:
             superuser = User.objects.get(email=superuser_email)
-            superuser.is_active = True
-            superuser.save()
-            return f"Le superuser ayant comme adresse email: '{superuser.email}' est désormais actif."
+            if superuser.is_superuser:
+                superuser.is_active = True
+                superuser.save()
+                return f"Le superuser ayant comme adresse email: '{superuser.email}' est désormais actif."
+            else:
+                return "L'adresse email indiquée ne correspond pas à un superuser."
         except(User.DoesNotExist):
-            return "L'adresse email indiquée ne correspond pas à un superuser."
+            return "L'adresse email indiquée ne correspond à aucun compte d'utilisateur."

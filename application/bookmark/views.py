@@ -49,7 +49,7 @@ class BookmarksView(UpdateView):
 
 class AddBookmarkView(View):
     """
-    Add a bookmark
+    View called when the user wishes to add a bookmark.
     """
     def post(self, *args):
         current_user = self.request.POST.get('user_id')
@@ -60,29 +60,3 @@ class AddBookmarkView(View):
             'status': True,
         }
         return JsonResponse(data)
-
-
-# class CheckBookmarkView(View):
-#     """
-#     """
-#     def get(self, *args):
-#         replaced_id = self.request.GET.get('replaced_id')
-#         replacing_id = self.request.GET.get('replacing_id')
-#         user_id = self.request.GET.get('user_id')
-#         print('REQUEST    :' + str(self.request))
-#         print('REPLACED:   ' + str(replaced_id))
-#         print('REPLACING:   ' + str(replacing_id))
-#         print('USER:   ' + str(user_id))
-#         try:
-#             data = {
-#                 'exists': Substitution.specific_bookmark(replaced_id, replacing_id, user_id),
-#             }
-#             if data['exists']:
-#                 print('BOOKMARK FOUND')
-#             else:
-#                 print('BOOKMARK NOT FOUND')
-#             return JsonResponse(data)
-#         except (Substitution.DoesNotExist):
-#             print('BOOKMARK NOT FOUND')
-#             data = {}
-#             return JsonResponse(data)
