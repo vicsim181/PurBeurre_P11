@@ -1,10 +1,12 @@
+from django.http.response import JsonResponse
+from django.views.generic.base import View
 from .models import Substitution
 from application.main.models import Product
 from django.shortcuts import redirect, render
 from django.views.generic import TemplateView
 from django.views.generic.edit import UpdateView
 from django.contrib.auth import get_user_model
-from django.http import HttpResponseRedirect
+from django.db import IntegrityError
 
 User = get_user_model()
 
@@ -25,31 +27,36 @@ class BookmarksView(UpdateView):
         bookmarks = Substitution.get_bookmarks_by_user(current_user.id)
         data = {}
         for bookmark in bookmarks:
-            data[Product.retrieve_prod_with_pk(bookmark.target_product_id)] = [
-                 Product.retrieve_prod_with_pk(bookmark.source_product_id),
+            data[Product.retrieve_prod_with_pk(bookmark.replacing_product_id)] = [
+                 Product.retrieve_prod_with_pk(bookmark.replaced_product_id),
                  bookmark.date_creation]
         context = {'data': data}
         return render(request, self.template_name, context)
 
     def post(self, *args, **kwargs):
         """
-        Post function, add or delete a bookmark depending on the user request.
+        Post function, delete a bookmark when consulting them.
         """
-        aim = self.request.POST.get('aim')
-        current_user = self.request.user
-        source_id = self.request.POST.get('product_id')
-        target_id = self.request.POST.get('suggestion_id')
-        recherche = self.request.POST.get('recherche')
-        next = self.request.POST.get('next', '/')
-        retour = f'{next}?recherche={recherche}'
-        if aim == 'add':
-            Substitution.save_bookmark(source_id, target_id, current_user.id)
-            return redirect(retour)
-        elif aim == 'delete':
-            bookmark_to_delete = Substitution.objects.get(source_product_id=source_id,
-                                                          target_product_id=target_id,
-                                                          user_id=current_user.id)
-            bookmark_to_delete.delete()
-            return redirect('bookmark:consult')
-        else:
-            return
+        current_user = self.request.POST.get('user_id')
+        replaced_id = self.request.POST.get('product_id')
+        replacing_id = self.request.POST.get('suggestion_id')
+        bookmark_to_delete = Substitution.objects.get(replaced_product_id=replaced_id,
+                                                      replacing_product_id=replacing_id,
+                                                      user_id=current_user)
+        bookmark_to_delete.delete()
+        return redirect('bookmark:consult')
+
+
+class AddBookmarkView(View):
+    """
+    View called when the user wishes to add a bookmark.
+    """
+    def post(self, *args):
+        current_user = self.request.POST.get('user_id')
+        replaced_id = self.request.POST.get('replaced_id')
+        replacing_id = self.request.POST.get('replacing_id')
+        Substitution.save_bookmark(replaced_id, replacing_id, current_user)
+        data = {
+            'status': True,
+        }
+        return JsonResponse(data)

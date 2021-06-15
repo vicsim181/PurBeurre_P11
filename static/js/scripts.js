@@ -62,22 +62,29 @@
 
 })(jQuery); // End of use strict
 
-// function treatInput(inputToTreat) {
-//     let specCar = ['{', '}', '<', '>', '&', '/']
-//     for (let cars = 0; cars < inputToTreat.length; cars++) {
-//         if (specCar.indexOf(inputToTreat[cars]) !== -1) {
-//             inputToTreat = inputToTreat.replace(inputToTreat[cars], '');
-//         };
-//     };
-//     return inputToTreat;
-// }
 
-
-// $('#button_2').on('click', ()=> {
-//   message = $('#request_form').val();
-//     if (message)  {
-//       console.log(message)
-//       $('#request_form').val("");
-//       return $.get(`http://127.0.0.1:8000/results/`);
-//     }
-// })
+// We set the AJAX function that will save a bookmark and update its status
+$('.save_button').click(function(event) {
+    let suggestionID = $(this).attr('id');
+    let url = $(this).attr('data-url');
+    let productID = $('.result').attr('id');
+    let userID = $('#user_id').val();
+    const csrftoken = $('[name=csrfmiddlewaretoken]').val();
+    $.ajax({
+      url: url,
+      type: 'POST',
+      headers: {"X-CSRFToken": csrftoken},
+      data: {
+        'replacing_id': suggestionID,
+        'replaced_id': productID,
+        'user_id': userID,
+      },
+      dataType: 'json',
+      cache: true,
+      success: function(data) {
+        if (data.status) {
+          $(`#suggestion_${suggestionID}`).load(` #suggestion_${suggestionID} > *`);
+        }
+      }
+    });
+});

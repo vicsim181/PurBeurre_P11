@@ -7,7 +7,7 @@ addons:
 
 branches:
   only:
-    - dev
+    - dev_branch
 
 before_script:
   - pip install -r requirements.txt

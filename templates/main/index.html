@@ -25,6 +25,8 @@
                         <input class="form-control" type="text" placeholder="Chercher un produit" name="recherche" required>
                         <br>
                         <button type="submit" class="btn btn-info">Rechercher</button>
+                        <ul id="results-list">
+                        </ul>
                     </form>
             {% else %}
                     <p class="text-white-75 font-weight-light mb-5">Connectez-vous pour pouvoir effectuer une recherche d'aliment.</p>
@@ -96,5 +98,4 @@
         </div>
     </div>
 </section>
-
 {% endblock %}

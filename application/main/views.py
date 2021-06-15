@@ -1,7 +1,9 @@
 import json
-from django.shortcuts import render
+from django.http.response import HttpResponse, JsonResponse
+from django.shortcuts import redirect, render
 from django.views.generic import TemplateView, DetailView
 from django.views.generic.edit import FormView
+from django.views.generic.base import View
 from django import forms
 from .models import Product
 from application.bookmark.models import Substitution
@@ -16,6 +18,21 @@ class HomeView(FormView):
     form_class = forms.Form
 
 
+# class ProductListView(View):
+#     """
+#     """
+#     def get(self, *args):
+#         user_input = self.request.GET.get('recherche')
+#         products = Product.retrieve_product_bis(user_input)
+#         data = {
+#             'products': {}
+#         }
+#         for product in products:
+#             result = Product.retrieve_prod_with_code(products[product])
+#             data['products'][product] = result.name
+#         return JsonResponse(data)
+
+
 class ResultsView(TemplateView):
     """
     View displaying the results of a user request.
@@ -26,7 +43,6 @@ class ResultsView(TemplateView):
         context = super(ResultsView, self).get_context_data(**kwargs)
         current_user = self.request.user
         user_input = self.request.GET.get('recherche')
-        print(user_input)
         product, category = Product.retrieve_product(user_input)
         if product:
             suggestions = Product.generate_suggestions(category, product)

@@ -6,6 +6,9 @@
 {% load static %}
 <link rel="stylesheet" href="{% static 'css/login.css' %}">
 <div class="page-section">
+    {% if user.is_authenticated %}
+    <h2 class="text-center">Vous êtes déjà connecté</h2>
+    {% else %}
     <h2 class="text-center">Connexion</h2>
     <div class="text-center mb-100">
         <form action="{% url 'authentication:login' %}" method="post">
@@ -16,6 +19,10 @@
         </form>
         <br>
         <a id="register" href="{% url 'authentication:register' %}">Pas encore de compte ? Inscrivez-vous ici.</a>
+        <br>
+        <br>
+        <a id="reset_password" href="{% url 'authentication:forgotten-password' %}">Mot de passe oublié.</a>
     </div>
+    {% endif %}
 </div>
 {% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/login.css' %}">
+<div class="page-section">
+    <div class="d-flex justify-content-center">
+        <h2>Validation d'inscription en cours</h2>
+    </div>
+    <div class="d-flex justify-content-center">
+        <p>Vérifiez vos courriels et cliquez sur le lien d'activation du compte</p>
+    </div>
+</div>
+{% endblock %}
