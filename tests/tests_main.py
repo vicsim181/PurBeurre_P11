@@ -86,7 +86,7 @@ class ProductModelTests(TestCase):
         print("\nTEST - Product --> def generate_suggestions()\n")
         prince_test = Product.objects.get(code='7622210450029') # We collect the product "Prince..." in the database
         prince_categories = prince_test.category.all() # We collect its categories
-        coca_test = Product.objects.get(code='5000112611762') # We collect the product "Coca..."
+        coca_test = Product.objects.get(code='5000112611762') # We collect the product "coca-cola zéro sucres"
         coca_categories = coca_test.category.all() # We collect its categories
         prince_suggestions = Product.generate_suggestions(prince_categories, prince_test)
         coca_suggestions = Product.generate_suggestions(coca_categories, coca_test)
