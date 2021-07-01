@@ -1,0 +1,5915 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2021-06-20T19:07:07.274Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "essai lol vsimon5092@gmail.com",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2021-06-20T19:09:59.112Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "3",
+    "object_repr": "essai lol vsimon5092@gmail.com",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2021-06-21T08:23:28.233Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "4",
+    "object_repr": "victor simon vsimon5092@gmail.com",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2021-06-21T12:29:35.192Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "5",
+    "object_repr": "victor simon vsimon5092@gmail.com",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 4,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 4,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 4,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 4,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 5,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 5,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 5,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 5,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add category",
+    "content_type": 6,
+    "codename": "add_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change category",
+    "content_type": 6,
+    "codename": "change_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete category",
+    "content_type": 6,
+    "codename": "delete_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view category",
+    "content_type": 6,
+    "codename": "view_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add history",
+    "content_type": 7,
+    "codename": "add_history"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change history",
+    "content_type": 7,
+    "codename": "change_history"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete history",
+    "content_type": 7,
+    "codename": "delete_history"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view history",
+    "content_type": 7,
+    "codename": "view_history"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add store",
+    "content_type": 8,
+    "codename": "add_store"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change store",
+    "content_type": 8,
+    "codename": "change_store"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete store",
+    "content_type": 8,
+    "codename": "delete_store"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view store",
+    "content_type": 8,
+    "codename": "view_store"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add product",
+    "content_type": 9,
+    "codename": "add_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change product",
+    "content_type": 9,
+    "codename": "change_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete product",
+    "content_type": 9,
+    "codename": "delete_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view product",
+    "content_type": 9,
+    "codename": "view_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add substitution",
+    "content_type": 10,
+    "codename": "add_substitution"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change substitution",
+    "content_type": 10,
+    "codename": "change_substitution"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete substitution",
+    "content_type": 10,
+    "codename": "delete_substitution"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view substitution",
+    "content_type": 10,
+    "codename": "view_substitution"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 11,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 11,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 11,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 11,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "main",
+    "model": "category"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "main",
+    "model": "history"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "main",
+    "model": "store"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "main",
+    "model": "product"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "bookmark",
+    "model": "substitution"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "authentication",
+    "model": "user"
+  }
+},
+{
+  "model": "main.store",
+  "pk": 1,
+  "fields": {
+    "name": "Lieu d'achat non précisé"
+  }
+},
+{
+  "model": "main.store",
+  "pk": 2,
+  "fields": {
+    "name": "Auchan"
+  }
+},
+{
+  "model": "main.store",
+  "pk": 3,
+  "fields": {
+    "name": "Carrefour"
+  }
+},
+{
+  "model": "main.store",
+  "pk": 5,
+  "fields": {
+    "name": "Magasins U"
+  }
+},
+{
+  "model": "main.store",
+  "pk": 11,
+  "fields": {
+    "name": "E-Leclerc"
+  }
+},
+{
+  "model": "main.store",
+  "pk": 12,
+  "fields": {
+    "name": "Lidl"
+  }
+},
+{
+  "model": "main.store",
+  "pk": 13,
+  "fields": {
+    "name": "Franprix"
+  }
+},
+{
+  "model": "main.store",
+  "pk": 23,
+  "fields": {
+    "name": "Intermarché"
+  }
+},
+{
+  "model": "main.store",
+  "pk": 27,
+  "fields": {
+    "name": "Cora"
+  }
+},
+{
+  "model": "main.store",
+  "pk": 39,
+  "fields": {
+    "name": "Casino"
+  }
+},
+{
+  "model": "main.store",
+  "pk": 43,
+  "fields": {
+    "name": "Aldi"
+  }
+},
+{
+  "model": "main.store",
+  "pk": 116,
+  "fields": {
+    "name": "Monoprix"
+  }
+},
+{
+  "model": "main.store",
+  "pk": 124,
+  "fields": {
+    "name": "Naturalia"
+  }
+},
+{
+  "model": "main.store",
+  "pk": 716,
+  "fields": {
+    "name": "Picard"
+  }
+},
+{
+  "model": "main.category",
+  "pk": 1,
+  "fields": {
+    "name": "soda"
+  }
+},
+{
+  "model": "main.category",
+  "pk": 2,
+  "fields": {
+    "name": "soda cola"
+  }
+},
+{
+  "model": "main.category",
+  "pk": 3,
+  "fields": {
+    "name": "limonade"
+  }
+},
+{
+  "model": "main.category",
+  "pk": 4,
+  "fields": {
+    "name": "soda fruits"
+  }
+},
+{
+  "model": "main.category",
+  "pk": 5,
+  "fields": {
+    "name": "jus de fruits"
+  }
+},
+{
+  "model": "main.category",
+  "pk": 6,
+  "fields": {
+    "name": "jus d'orange"
+  }
+},
+{
+  "model": "main.category",
+  "pk": 7,
+  "fields": {
+    "name": "jus de pomme"
+  }
+},
+{
+  "model": "main.category",
+  "pk": 8,
+  "fields": {
+    "name": "jus multifruits"
+  }
+},
+{
+  "model": "main.category",
+  "pk": 9,
+  "fields": {
+    "name": "jus de raisin"
+  }
+},
+{
+  "model": "main.category",
+  "pk": 10,
+  "fields": {
+    "name": "fromage"
+  }
+},
+{
+  "model": "main.category",
+  "pk": 11,
+  "fields": {
+    "name": "fromage de vache"
+  }
+},
+{
+  "model": "main.category",
+  "pk": 12,
+  "fields": {
+    "name": "fromage de chevre"
+  }
+},
+{
+  "model": "main.category",
+  "pk": 13,
+  "fields": {
+    "name": "fromage bleu"
+  }
+},
+{
+  "model": "main.category",
+  "pk": 14,
+  "fields": {
+    "name": "fromage tome"
+  }
+},
+{
+  "model": "main.category",
+  "pk": 15,
+  "fields": {
+    "name": "camembert"
+  }
+},
+{
+  "model": "main.category",
+  "pk": 16,
+  "fields": {
+    "name": "roquefort"
+  }
+},
+{
+  "model": "main.category",
+  "pk": 17,
+  "fields": {
+    "name": "livarot"
+  }
+},
+{
+  "model": "main.category",
+  "pk": 18,
+  "fields": {
+    "name": "pont l'eveque"
+  }
+},
+{
+  "model": "main.category",
+  "pk": 19,
+  "fields": {
+    "name": "yaourt"
+  }
+},
+{
+  "model": "main.category",
+  "pk": 20,
+  "fields": {
+    "name": "yaourt nature"
+  }
+},
+{
+  "model": "main.category",
+  "pk": 21,
+  "fields": {
+    "name": "yaourt aux fruits"
+  }
+},
+{
+  "model": "main.category",
+  "pk": 22,
+  "fields": {
+    "name": "yaourt vÃ©gÃ©tal"
+  }
+},
+{
+  "model": "main.category",
+  "pk": 23,
+  "fields": {
+    "name": "yaourt chocolat"
+  }
+},
+{
+  "model": "main.category",
+  "pk": 24,
+  "fields": {
+    "name": "glace"
+  }
+},
+{
+  "model": "main.category",
+  "pk": 25,
+  "fields": {
+    "name": "glace chocolat"
+  }
+},
+{
+  "model": "main.category",
+  "pk": 26,
+  "fields": {
+    "name": "glace vanille"
+  }
+},
+{
+  "model": "main.category",
+  "pk": 27,
+  "fields": {
+    "name": "glace sorbet fruit"
+  }
+},
+{
+  "model": "main.category",
+  "pk": 28,
+  "fields": {
+    "name": "biscuit"
+  }
+},
+{
+  "model": "main.category",
+  "pk": 29,
+  "fields": {
+    "name": "biscuit chocolat"
+  }
+},
+{
+  "model": "main.category",
+  "pk": 30,
+  "fields": {
+    "name": "biscuit beurre"
+  }
+},
+{
+  "model": "main.category",
+  "pk": 31,
+  "fields": {
+    "name": "biscuit fruits"
+  }
+},
+{
+  "model": "main.category",
+  "pk": 32,
+  "fields": {
+    "name": "charcuterie"
+  }
+},
+{
+  "model": "main.category",
+  "pk": 33,
+  "fields": {
+    "name": "jambon blanc"
+  }
+},
+{
+  "model": "main.category",
+  "pk": 34,
+  "fields": {
+    "name": "saucisson sec"
+  }
+},
+{
+  "model": "main.category",
+  "pk": 35,
+  "fields": {
+    "name": "chorizo"
+  }
+},
+{
+  "model": "main.category",
+  "pk": 36,
+  "fields": {
+    "name": "jambon serrano"
+  }
+},
+{
+  "model": "main.category",
+  "pk": 37,
+  "fields": {
+    "name": "jambon parme"
+  }
+},
+{
+  "model": "main.product",
+  "pk": 1,
+  "fields": {
+    "code": "5449000000996",
+    "name": "coca cola",
+    "nutriscore": "e",
+    "description": "water, sugar, carbon dioxide, dye e150d, acidifier e338, natural flavors including caffeine,",
+    "url": "https://fr.openfoodfacts.org/produit/5449000000996/coca-cola",
+    "popularity": 2802,
+    "salt": "0",
+    "sugars": "10.6",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/544/900/000/0996/front_fr.547.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/544/900/000/0996/front_fr.547.200.jpg",
+    "store": [
+      2,
+      3
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 2,
+  "fields": {
+    "code": "5449000054227",
+    "name": "coca cola",
+    "nutriscore": "e",
+    "description": "water, fructose - glucose syrup, carbon dioxide, colorant: e150d, acid: phosphoric acid, natural flavourings (including caffeine),",
+    "url": "https://fr.openfoodfacts.org/produit/5449000054227/coca-cola",
+    "popularity": 561,
+    "salt": "0",
+    "sugars": "10.6",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/544/900/005/4227/front_fr.138.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/544/900/005/4227/front_fr.138.200.jpg",
+    "store": [
+      3,
+      5
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 3,
+  "fields": {
+    "code": "5449000133328",
+    "name": "coca zéro",
+    "nutriscore": "b",
+    "description": "eau gazéifiée, colorant : E150d, acidifiants : acide phosphorique, citrate de sodium, édulcorants : aspartame, acésulfame-K, arômes naturels (extraits végétaux), dont caféine, Contient une source de phénylalamine,",
+    "url": "https://fr.openfoodfacts.org/produit/5449000133328/coca-zero-coca-cola",
+    "popularity": 538,
+    "salt": "0.02",
+    "sugars": "0",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/544/900/013/3328/front_fr.116.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/544/900/013/3328/front_fr.116.200.jpg",
+    "store": [
+      5
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 4,
+  "fields": {
+    "code": "3502110009357",
+    "name": "pepsi max 1,5 l",
+    "nutriscore": "b",
+    "description": "Eau gazéifiée,colorant (caramel E150d),édulcorants (aspartame***, acésulfame K),acidifiants (acide phosphorique, acide citrique),correcteur d'acidité (citrate de sodium),arômes (dont extraits végétaux et caféine),***Contient une source de phénylalanine.",
+    "url": "https://fr.openfoodfacts.org/produit/3502110009357/pepsi-max-1-5-l",
+    "popularity": 408,
+    "salt": "0.01",
+    "sugars": "0",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/350/211/000/9357/front_fr.68.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/350/211/000/9357/front_fr.68.200.jpg",
+    "store": [
+      3,
+      5
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 5,
+  "fields": {
+    "code": "5000112611762",
+    "name": "coca-cola zéro sucres",
+    "nutriscore": "b",
+    "description": "Eau gazéifiée, colorant (E150d), acidifiant (acide phosphorique, citrate de sodium), édulcorant (aspartame, acésulfame-K), arômes naturels dont caféine, e345 e567 e895 e456 e349",
+    "url": "https://fr.openfoodfacts.org/produit/5000112611762/coca-cola-zero-sucres-the-coca-cola-company",
+    "popularity": 389,
+    "salt": "0.02",
+    "sugars": "0",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/500/011/261/1762/front_fr.54.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/500/011/261/1762/front_fr.54.200.jpg",
+    "store": [
+      5
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 6,
+  "fields": {
+    "code": "5449000214911",
+    "name": "coca cola",
+    "nutriscore": "e",
+    "description": "carbonated water, sugar, coloring, e150d, acidifier, phosphoric acid, natural flavors (plant extracts, caffeine),",
+    "url": "https://fr.openfoodfacts.org/produit/5449000214911/coca-cola",
+    "popularity": 382,
+    "salt": "0",
+    "sugars": "10.6",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/544/900/021/4911/front_fr.87.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/544/900/021/4911/front_fr.87.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 7,
+  "fields": {
+    "code": "5449000214799",
+    "name": "coca cola zéro",
+    "nutriscore": "b",
+    "description": "Eau gazéifiée , colorant : E150d , acidifiant : acide phosphorique, citrate de sodium , édulcorants : aspartame, acésulfame-K , arômes naturels (extraits végétaux), dont caféine,",
+    "url": "https://fr.openfoodfacts.org/produit/5449000214799/coca-cola-zero",
+    "popularity": 345,
+    "salt": "0.02",
+    "sugars": "0",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/544/900/021/4799/front_fr.91.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/544/900/021/4799/front_fr.91.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 8,
+  "fields": {
+    "code": "5449000131836",
+    "name": "coca cola zero",
+    "nutriscore": "b",
+    "description": "carbonated water, dye: caramel (e150d), acidifiers: phosphoric acid and sodium citrate, sweeteners: aspartame and acesulfame-k, plant extracts, caffeine aroma",
+    "url": "https://fr.openfoodfacts.org/produit/5449000131836/coca-cola-zero",
+    "popularity": 283,
+    "salt": "0.02",
+    "sugars": "0",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/544/900/013/1836/front_fr.191.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/544/900/013/1836/front_fr.191.200.jpg",
+    "store": [
+      2,
+      11,
+      12
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 9,
+  "fields": {
+    "code": "5000112558272",
+    "name": "coca-cola",
+    "nutriscore": "e",
+    "description": "Eau gazéfiée, sucre, colorant, caramel (E150d), acidifiant (acide phosphorique), arômes naturels (extraits végétaux) dont caféine",
+    "url": "https://fr.openfoodfacts.org/produit/5000112558272/coca-cola",
+    "popularity": 225,
+    "salt": "0",
+    "sugars": "10.8",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/500/011/255/8272/front_fr.59.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/500/011/255/8272/front_fr.59.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 10,
+  "fields": {
+    "code": "54491014",
+    "name": "coke can 150ml",
+    "nutriscore": "e",
+    "description": "carbonated water, sugar, colour (caramel e150d), phosphoric acid, flavouring including caffeine",
+    "url": "https://fr.openfoodfacts.org/produit/54491014/coca-cola",
+    "popularity": 222,
+    "salt": "0",
+    "sugars": "10.6",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/54491014/front_fr.64.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/54491014/front_fr.64.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 11,
+  "fields": {
+    "code": "5000112609684",
+    "name": "coca-cola original taste",
+    "nutriscore": "e",
+    "description": "Eau gazéifiée, sucre, colorant : E150d, acidifiant : acide phosphorique, arômes naturels (extraits végétaux) dont caféine.",
+    "url": "https://fr.openfoodfacts.org/produit/5000112609684/coca-cola-original-taste",
+    "popularity": 207,
+    "salt": "0",
+    "sugars": "10.6",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/500/011/260/9684/front_fr.30.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/500/011/260/9684/front_fr.30.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 12,
+  "fields": {
+    "code": "5449000000286",
+    "name": "coca cola",
+    "nutriscore": "e",
+    "description": "water, sugar, carbonic acid, caramel colour (e150d), acidifier e338, natural flavors, contains caffeine,",
+    "url": "https://fr.openfoodfacts.org/produit/5449000000286/coca-cola-%D9%83%D9%88%D9%83%D8%A7%D9%83%D9%88%D9%84%D8%A7",
+    "popularity": 195,
+    "salt": "0",
+    "sugars": "11.2",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/544/900/000/0286/front_fr.4.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/544/900/000/0286/front_fr.4.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 13,
+  "fields": {
+    "code": "5449000133335",
+    "name": "coca cola zero",
+    "nutriscore": "b",
+    "description": "eau, acide carbonique, colorant: E150d, édulcorant: cyclamate de sodium (E952), acésulfame K, Aspartame,  correcteur d'acidité: (E338), citrates de sodium, Aromes naturels avec de la caféine,",
+    "url": "https://fr.openfoodfacts.org/produit/5449000133335/coca-cola-zero",
+    "popularity": 181,
+    "salt": "0.02",
+    "sugars": "0",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/544/900/013/3335/front_fr.25.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/544/900/013/3335/front_fr.25.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 14,
+  "fields": {
+    "code": "5449000131843",
+    "name": "coca-cola zero azúcar",
+    "nutriscore": "b",
+    "description": "Agua carbonatada, colorante (E-150d), edulcorantes (ciclamato sódico, acesulfamo K, aspartamo), acidulante (ácido fosfórico), aromas naturales (contiene cafeína), corrector de acidez (citrato sódico).",
+    "url": "https://fr.openfoodfacts.org/produit/5449000131843/coca-cola-zero",
+    "popularity": 173,
+    "salt": "0.02",
+    "sugars": "0",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/544/900/013/1843/front_fr.83.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/544/900/013/1843/front_fr.83.200.jpg",
+    "store": [
+      12,
+      13
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 15,
+  "fields": {
+    "code": "5449000009067",
+    "name": "coca-cola",
+    "nutriscore": "e",
+    "description": "Agua carbonatada, azúcar, colorante E-150d, acidulante (ácido fosfórico), aromas naturales (contiene cafeína),",
+    "url": "https://fr.openfoodfacts.org/produit/5449000009067/coca-cola",
+    "popularity": 168,
+    "salt": "0",
+    "sugars": "10.6",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/544/900/000/9067/front_fr.31.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/544/900/000/9067/front_fr.31.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 16,
+  "fields": {
+    "code": "90357473",
+    "name": "coca-cola zero",
+    "nutriscore": "b",
+    "description": "eau pétillante, colorant E150d, acidifiants E338-E331, édulcorants : aspartame, acésulfame K, extraits végétaux, caféine",
+    "url": "https://fr.openfoodfacts.org/produit/90357473/coca-cola-zero",
+    "popularity": 160,
+    "salt": "0.02",
+    "sugars": "0",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/90357473/front_fr.53.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/90357473/front_fr.53.200.jpg",
+    "store": [
+      3
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 17,
+  "fields": {
+    "code": "5449000169327",
+    "name": "coca cola zéro sans caféine",
+    "nutriscore": "b",
+    "description": "Eau gazéifiée ; colorant (caramel E150d) ; acidifiants : acide phosphorique et citrate de sodium ; édulcorants : aspartame, acésulfame-K ; extraits végétaux.",
+    "url": "https://fr.openfoodfacts.org/produit/5449000169327/coca-cola-zero-sans-cafeine",
+    "popularity": 159,
+    "salt": "0.02",
+    "sugars": "0",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/544/900/016/9327/front_fr.7.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/544/900/016/9327/front_fr.7.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 18,
+  "fields": {
+    "code": "5449000050205",
+    "name": "coca-cola light sans sucres",
+    "nutriscore": "b",
+    "description": "Eau gazéifiée ; colorant : E150d, acidifiants : acide phosphorique, acide citrique ; édulcorants : aspartame, acésulfame-K ; arômes naturels (extraits végétaux) dont caféine.",
+    "url": "https://fr.openfoodfacts.org/produit/5449000050205/coca-cola-light-sans-sucres",
+    "popularity": 151,
+    "salt": "0.02",
+    "sugars": "0",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/544/900/005/0205/front_fr.69.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/544/900/005/0205/front_fr.69.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 19,
+  "fields": {
+    "code": "42105220",
+    "name": "coca cola",
+    "nutriscore": "e",
+    "description": "Wasser, Zucker, Kohlensäure, E150d, E338, natürliche Aromen inklusive Koffein",
+    "url": "https://fr.openfoodfacts.org/produit/42105220/coca-cola",
+    "popularity": 134,
+    "salt": "0",
+    "sugars": "10.6",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/42105220/front_fr.35.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/42105220/front_fr.35.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 20,
+  "fields": {
+    "code": "5000112611748",
+    "name": "coca-cola",
+    "nutriscore": "e",
+    "description": "eau gazéifiée ; sucre ; colorant: E150d; acidifiant: acide phosphorique; arômes naturels, dont caféine",
+    "url": "https://fr.openfoodfacts.org/produit/5000112611748/coca-cola",
+    "popularity": 101,
+    "salt": "0",
+    "sugars": "10.6",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/500/011/261/1748/front_fr.81.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/500/011/261/1748/front_fr.81.200.jpg",
+    "store": [
+      2,
+      5
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 21,
+  "fields": {
+    "code": "5449000223555",
+    "name": "coca-cola zéro sans caféine",
+    "nutriscore": "b",
+    "description": "eau gazéifiée, colorant (E150d), acidifiants (acide phosphorique, citrate de sodium), édulcorants (aspartame, acésulfame-K), arômes naturels (extraits végétaux)",
+    "url": "https://fr.openfoodfacts.org/produit/5449000223555/coca-cola-zero-sans-cafeine",
+    "popularity": 96,
+    "salt": "0.01",
+    "sugars": "0",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/544/900/022/3555/front_fr.66.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/544/900/022/3555/front_fr.66.200.jpg",
+    "store": [
+      2,
+      5
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 22,
+  "fields": {
+    "code": "5000112611786",
+    "name": "coca-cola light taste",
+    "nutriscore": "b",
+    "description": "Eau gazéifiée ; colorant: E150d; acidifiants : acide phosphorique; acide citrique ; édulcorants: aspartam,. acésulfame-K; arômes naturels, dont caféine.",
+    "url": "https://fr.openfoodfacts.org/produit/5000112611786/coca-cola-light-taste",
+    "popularity": 95,
+    "salt": "0",
+    "sugars": "0",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/500/011/261/1786/front_fr.46.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/500/011/261/1786/front_fr.46.200.jpg",
+    "store": [
+      3,
+      5
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 23,
+  "fields": {
+    "code": "5449000177551",
+    "name": "coca-cola zero azúcar zero cafeína",
+    "nutriscore": "b",
+    "description": "Agua carbonatada, colorante (E150d), edulcorantes (ciclamato sódico, acesulfamo K, aspartamo), acidulante (ácido fosfórico), aromas, corrector de acidez (citrato sódico).",
+    "url": "https://fr.openfoodfacts.org/produit/5449000177551/coca-cola-zero-azucar-zero-cafeina",
+    "popularity": 94,
+    "salt": "0.02",
+    "sugars": "0",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/544/900/017/7551/front_es.63.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/544/900/017/7551/front_es.63.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 24,
+  "fields": {
+    "code": "5000112554359",
+    "name": "coca cola zéro",
+    "nutriscore": "b",
+    "description": "Eau gazéifiée, colorant : caramel (E150d), acidifiant (acide phosphorique, citrate de sodium), édulcorants (aspartame, acésulfame K), extraits végétaux, arôme, caféine.",
+    "url": "https://fr.openfoodfacts.org/produit/5000112554359/coca-cola-zero",
+    "popularity": 89,
+    "salt": "0.02",
+    "sugars": "0",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/500/011/255/4359/front_fr.9.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/500/011/255/4359/front_fr.9.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 25,
+  "fields": {
+    "code": "3484702000006",
+    "name": "cola",
+    "nutriscore": "e",
+    "description": "eau gazéifiée, sucre, colorant: caramel E150d, acidifiant : acide phosphorique, caféine, arôme naturel de cola avec autres arômes naturels",
+    "url": "https://fr.openfoodfacts.org/produit/3484702000006/cola-breizh-cola",
+    "popularity": 86,
+    "salt": "0",
+    "sugars": "9.3",
+    "saturated": "0.5",
+    "fat": "0.5",
+    "image_url": "https://static.openfoodfacts.org/images/products/348/470/200/0006/front_fr.91.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/348/470/200/0006/front_fr.91.200.jpg",
+    "store": [
+      3,
+      23
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 26,
+  "fields": {
+    "code": "5449000052926",
+    "name": "orange",
+    "nutriscore": "e",
+    "description": "water, sugar, concentrated orange juice (3%), carbonic acid, citric acid acid, citrus extract (1%), natural orange flavor with other natural flavors, antioxidant ascorbic acid, carotene dye, stabilizer flour of guar seeds,",
+    "url": "https://fr.openfoodfacts.org/produit/5449000052926/boisson-rafraichissante-avec-sucre-et-edulcorant-orange-fanta",
+    "popularity": 85,
+    "salt": "0",
+    "sugars": "9.2",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/544/900/005/2926/front_fr.73.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/544/900/005/2926/front_fr.73.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 27,
+  "fields": {
+    "code": "4060800100252",
+    "name": "pepsi",
+    "nutriscore": "e",
+    "description": "eau gazéifiée, sucre, colorant (caramel E150d), acidifiant (acide phosphorique), arômes (dont extraits végétaux et caféine), édulcorants (acésulfame K, sucralose).",
+    "url": "https://fr.openfoodfacts.org/produit/4060800100252/pepsi",
+    "popularity": 80,
+    "salt": "0.01",
+    "sugars": "7",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/406/080/010/0252/front_fr.71.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/406/080/010/0252/front_fr.71.200.jpg",
+    "store": [
+      3
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 28,
+  "fields": {
+    "code": "20229108",
+    "name": "cola zero",
+    "nutriscore": "c",
+    "description": "Eau gazéifiée, colorant (E150d), acidifiant (acide phosphorique), édulcorants (cyclamate de sodium, acésulfame K, aspartame), correcteur d'acidité (citrate de sodium), caféine, arôme naturel",
+    "url": "https://fr.openfoodfacts.org/produit/20229108/cola-zero-freeway",
+    "popularity": 74,
+    "salt": "0",
+    "sugars": "0.1",
+    "saturated": "0.1",
+    "fat": "0.1",
+    "image_url": "https://static.openfoodfacts.org/images/products/20229108/front_fr.30.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/20229108/front_fr.30.200.jpg",
+    "store": [
+      12
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 29,
+  "fields": {
+    "code": "5449000028921",
+    "name": "coca-cola",
+    "nutriscore": "e",
+    "description": "carbonated water, sugar, color (caramel e150d), phosphoric acid, natural flavourings including caffeine,",
+    "url": "https://fr.openfoodfacts.org/produit/5449000028921/coca-cola",
+    "popularity": 70,
+    "salt": "0.00508",
+    "sugars": "10.6",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/544/900/002/8921/front_fr.35.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/544/900/002/8921/front_fr.35.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 30,
+  "fields": {
+    "code": "54492387",
+    "name": "coca cola light",
+    "nutriscore": "b",
+    "description": "Eau pétillante, colorant E150d, acidifiants: E338, E330, édulcorant aspartame et acésulfame-K, extraits végétaux, arômes naturels dont caféine,",
+    "url": "https://fr.openfoodfacts.org/produit/54492387/coca-cola-light",
+    "popularity": 69,
+    "salt": "0.02",
+    "sugars": "0",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/54492387/front_fr.64.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/54492387/front_fr.64.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 31,
+  "fields": {
+    "code": "5449000008046",
+    "name": "coca cola",
+    "nutriscore": "e",
+    "description": "carbonated water, sugar, colorant e150d, acidifier : phosphoric acid, natural flavors (plant extracts), including caffeine,",
+    "url": "https://fr.openfoodfacts.org/produit/5449000008046/coca-cola",
+    "popularity": 65,
+    "salt": "0",
+    "sugars": "10.6",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/544/900/000/8046/front_fr.22.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/544/900/000/8046/front_fr.22.200.jpg",
+    "store": [
+      5,
+      27
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 32,
+  "fields": {
+    "code": "5449000009500",
+    "name": "coca-cola saveur cerise",
+    "nutriscore": "e",
+    "description": "Eau gazéifiée, sucre, colorant : caramel (E150d), acidifiant: acide phosphorique, extraits végétaux, arômes , arôme caféine",
+    "url": "https://fr.openfoodfacts.org/produit/5449000009500/coca-cola-saveur-cerise-the-coca-cola-company",
+    "popularity": 62,
+    "salt": "0",
+    "sugars": "10.7",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/544/900/000/9500/front_fr.69.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/544/900/000/9500/front_fr.69.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 33,
+  "fields": {
+    "code": "5449000214843",
+    "name": "coca-cola cherry",
+    "nutriscore": "e",
+    "description": "Eau gazéifiée, sucre, colorant : E150d, acidifiant ; E338, arômes naturels (dont extraits végétaux et caféine).",
+    "url": "https://fr.openfoodfacts.org/produit/5449000214843/coca-cola-cherry",
+    "popularity": 57,
+    "salt": "0",
+    "sugars": "10.7",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/544/900/021/4843/front_fr.47.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/544/900/021/4843/front_fr.47.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 34,
+  "fields": {
+    "code": "5449000220578",
+    "name": "light taste",
+    "nutriscore": "b",
+    "description": "Eau pétillante: colorant E150d; acidifiants: E338, E330; édulcorants: aspartame, acésulfame-K: arômes naturels (extraits végétaux), dont caféine.",
+    "url": "https://fr.openfoodfacts.org/produit/5449000220578/light-taste-coca-cola",
+    "popularity": 57,
+    "salt": "0",
+    "sugars": "0",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/544/900/022/0578/front_fr.4.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/544/900/022/0578/front_fr.4.200.jpg",
+    "store": [
+      5
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 35,
+  "fields": {
+    "code": "3377430003008",
+    "name": "selecto",
+    "nutriscore": "e",
+    "description": "Eau gazeuse, sucre, acidifiant: acide citrique, colorant: caramel, arômes, conservateur: sorbate de potassium",
+    "url": "https://fr.openfoodfacts.org/produit/3377430003008/selecto",
+    "popularity": 51,
+    "salt": "0",
+    "sugars": "10.2",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/337/743/000/3008/front_fr.37.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/337/743/000/3008/front_fr.37.200.jpg",
+    "store": [
+      5
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 36,
+  "fields": {
+    "code": "5449000080806",
+    "name": "coca cola zero",
+    "nutriscore": "b",
+    "description": "Eau gazéifiée, colorant : caramel (E150d), acidifiant (acide phosphorique, citrate de sodium), édulcorants (aspartame, acésulfame K), extraits végétaux, arôme, caféine,",
+    "url": "https://fr.openfoodfacts.org/produit/5449000080806/coca-cola-zero",
+    "popularity": 48,
+    "salt": "0",
+    "sugars": "0",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/544/900/008/0806/front_fr.10.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/544/900/008/0806/front_fr.10.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 37,
+  "fields": {
+    "code": "4056489005599",
+    "name": "freeway cola",
+    "nutriscore": "d",
+    "description": "Eau gazéifiée, sucre - colorant : caramel au sulfite d'ammonium, acidifiant : acide phosphorique, caféine, édulcorants:sucralose, acésulfame K, arome naturel, avec sucre et edulcorants",
+    "url": "https://fr.openfoodfacts.org/produit/4056489005599/freeway-cola",
+    "popularity": 47,
+    "salt": "0",
+    "sugars": "4.8",
+    "saturated": "0.1",
+    "fat": "0.1",
+    "image_url": "https://static.openfoodfacts.org/images/products/405/648/900/5599/front_fr.20.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/405/648/900/5599/front_fr.20.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 38,
+  "fields": {
+    "code": "3564700460887",
+    "name": "cola zéro",
+    "nutriscore": "b",
+    "description": "Eau gazéifiée ; colorant : E150d ; acidifiant : E338 ; édulcorants : aspartame, acésulfame-K ; arôme naturel ; caféine ; correcteur d'acidité : E331.\nContient une source de phénylalanine.",
+    "url": "https://fr.openfoodfacts.org/produit/3564700460887/cola-zero-jean-s",
+    "popularity": 45,
+    "salt": "0",
+    "sugars": "0",
+    "saturated": "0.1",
+    "fat": "0.5",
+    "image_url": "https://static.openfoodfacts.org/images/products/356/470/046/0887/front_fr.29.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/356/470/046/0887/front_fr.29.200.jpg",
+    "store": [
+      11
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 39,
+  "fields": {
+    "code": "5410188033663",
+    "name": "pepsi max",
+    "nutriscore": "b",
+    "description": "eau gazéifiée, colorant (caramel E150d), édulcorants (aspartame, acésulfame-K), acidifiants (acide phosphorique, acide citrique), arômes (dont extraits végétaux et caféine), correcteur d'acidité (citrate de sodium)",
+    "url": "https://fr.openfoodfacts.org/produit/5410188033663/pepsi-max",
+    "popularity": 45,
+    "salt": "0.015",
+    "sugars": "0",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/541/018/803/3663/front_fr.20.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/541/018/803/3663/front_fr.20.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 40,
+  "fields": {
+    "code": "5449000016560",
+    "name": "coca-cola light",
+    "nutriscore": "b",
+    "description": "Eau pétillante, colorant : E150d, acidifiants : E338-E330, édulcorants : aspartame et acésulfame-K, extraits végétaux, arôme caféine.",
+    "url": "https://fr.openfoodfacts.org/produit/5449000016560/coca-cola-light",
+    "popularity": 45,
+    "salt": "0",
+    "sugars": "0",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/544/900/001/6560/front_fr.15.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/544/900/001/6560/front_fr.15.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 41,
+  "fields": {
+    "code": "4060800102683",
+    "name": "pepsi",
+    "nutriscore": "e",
+    "description": "Eau gazéifiée, sucre, colorant (caramel E150d), acidifiant (acide phosphorique), arômes (dont extraits naturels de végétaux et caféine),",
+    "url": "https://fr.openfoodfacts.org/produit/4060800102683/pepsi",
+    "popularity": 44,
+    "salt": "0.01",
+    "sugars": "10.7",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/406/080/010/2683/front_fr.14.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/406/080/010/2683/front_fr.14.200.jpg",
+    "store": [
+      5
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 42,
+  "fields": {
+    "code": "3564700002681",
+    "name": "cola",
+    "nutriscore": "e",
+    "description": "Eau gazéifiée, sucre, colorant : caramel E150d, acidifiant : E338, arômes naturels, caféine.",
+    "url": "https://fr.openfoodfacts.org/produit/3564700002681/cola-jean-s",
+    "popularity": 43,
+    "salt": "0",
+    "sugars": "9.5",
+    "saturated": "0.1",
+    "fat": "0.1",
+    "image_url": "https://static.openfoodfacts.org/images/products/356/470/000/2681/front_fr.35.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/356/470/000/2681/front_fr.35.200.jpg",
+    "store": [
+      11
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 43,
+  "fields": {
+    "code": "5449000251176",
+    "name": "coca-cola saveur framboise zéro sucres",
+    "nutriscore": "b",
+    "description": "Eau gazéifiée, colorant E150d, acidifiants : acide phoshorique, citrate de sodium, arômes naturels dont caféine, édulcorants aspartame, acésulfame-K. Contient une source de phénylalanine.",
+    "url": "https://fr.openfoodfacts.org/produit/5449000251176/coca-cola-saveur-framboise-zero-sucres-the-coca-cola-company",
+    "popularity": 43,
+    "salt": "0.01",
+    "sugars": "0",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/544/900/025/1176/front_fr.4.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/544/900/025/1176/front_fr.4.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 44,
+  "fields": {
+    "code": "3168930159711",
+    "name": "pepsi",
+    "nutriscore": "d",
+    "description": "Eau gazéifiée, sucre, colorant (caramel E150d )\nacidifiant ( acide phosphorique)\narôme ( dont extraits végétaux et caféine)",
+    "url": "https://fr.openfoodfacts.org/produit/3168930159711/pepsi-perpsico",
+    "popularity": 43,
+    "salt": "0.01",
+    "sugars": "7",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/316/893/015/9711/front_fr.18.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/316/893/015/9711/front_fr.18.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 45,
+  "fields": {
+    "code": "3174780000431",
+    "name": "boisson rafraîchissante aux extraits végétaux",
+    "nutriscore": "e",
+    "description": "eau gazéifiée, sucre, colorant : caramel (E150d), acidifiant : acide phosphorique, arômes naturels (extraits végétaux), dont caféine.",
+    "url": "https://fr.openfoodfacts.org/produit/3174780000431/boisson-rafraichissante-aux-extraits-vegetaux-coca-cola",
+    "popularity": 42,
+    "salt": "0",
+    "sugars": "10.6",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/317/478/000/0431/front_fr.10.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/317/478/000/0431/front_fr.10.200.jpg",
+    "store": [
+      2,
+      3,
+      11,
+      27
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 46,
+  "fields": {
+    "code": "5449000227195",
+    "name": "coca-cola lemon sans sucres",
+    "nutriscore": "b",
+    "description": "Eau gazéifiée, colorant (E150d), acidifiants (acide phosphorique, citrate de sodium), édulcorants (aspartame, acésulfame-K), arômes naturels (caféine).",
+    "url": "https://fr.openfoodfacts.org/produit/5449000227195/coca-cola-lemon-sans-sucres",
+    "popularity": 41,
+    "salt": "0.012",
+    "sugars": "0",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/544/900/022/7195/front_fr.18.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/544/900/022/7195/front_fr.18.200.jpg",
+    "store": [
+      27
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 47,
+  "fields": {
+    "code": "5000112547726",
+    "name": "coca-cola",
+    "nutriscore": "e",
+    "description": "Wasser, Zucker, Kohlensäure, Farbstoff E150d, Säuerungsmittel Phosphorsäure, natürliches Aroma, Aroma Koffein.",
+    "url": "https://fr.openfoodfacts.org/produit/5000112547726/coca-cola",
+    "popularity": 38,
+    "salt": "0",
+    "sugars": "27",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/500/011/254/7726/front_fr.26.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/500/011/254/7726/front_fr.26.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 48,
+  "fields": {
+    "code": "5000112611885",
+    "name": "coca cola light",
+    "nutriscore": "b",
+    "description": "Eau gazéifiée ; colorant : E150d ; acidifiants : acide phosphorique, acide citrique ; édulcorants : aspartame, acésulfame-K ; arômes naturels (extraits végétaux), dont caféine.",
+    "url": "https://fr.openfoodfacts.org/produit/5000112611885/coca-cola-light",
+    "popularity": 35,
+    "salt": "0",
+    "sugars": "0",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/500/011/261/1885/front_fr.5.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/500/011/261/1885/front_fr.5.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 49,
+  "fields": {
+    "code": "5449000137609",
+    "name": "coca-cola zero",
+    "nutriscore": "b",
+    "description": "Eau gazéifiée, colorant : caramel E150d, acidifiants : acide phosphorique et citrate de sodium, édulcorants : aspartame et acésulfame-K, arôme caféine.",
+    "url": "https://fr.openfoodfacts.org/produit/5449000137609/coca-cola-zero",
+    "popularity": 35,
+    "salt": "0.02",
+    "sugars": "0",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/544/900/013/7609/front_fr.9.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/544/900/013/7609/front_fr.9.200.jpg",
+    "store": [
+      39
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 50,
+  "fields": {
+    "code": "5000112609547",
+    "name": "coca-cola zero",
+    "nutriscore": "b",
+    "description": "Eau gazéifiée, colorant : E150d, acidifiants : acide phosphorique, citrate de sodium, édulcorants : aspartame, acésulfame-K, arômes naturels : extraits végétaux, dont caféine.",
+    "url": "https://fr.openfoodfacts.org/produit/5000112609547/coca-cola-zero",
+    "popularity": 34,
+    "salt": "0.02",
+    "sugars": "0",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/500/011/260/9547/front_fr.26.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/500/011/260/9547/front_fr.26.200.jpg",
+    "store": [
+      5,
+      13
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 51,
+  "fields": {
+    "code": "5449000020987",
+    "name": "coca cola zero",
+    "nutriscore": "b",
+    "description": "Eau gazéifiée, colorant : caramel (E150d), acidifiant (acide phosphorique, citrate de sodium), édulcorants (aspartame, acésulfame K), extraits végétaux, arôme, caféine,",
+    "url": "https://fr.openfoodfacts.org/produit/5449000020987/coca-cola-zero",
+    "popularity": 34,
+    "salt": "0",
+    "sugars": "0",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/544/900/002/0987/front_fr.40.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/544/900/002/0987/front_fr.40.200.jpg",
+    "store": [
+      2
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 52,
+  "fields": {
+    "code": "5449000133724",
+    "name": "coca-cola zero",
+    "nutriscore": "b",
+    "description": "agua carbonatada, colorante (E150d), edulcorantes (E952, E950, E951), acidulante (E338), aromas naturales (incluyendo cafeína), corrector de acidez (E331), Contiene una fuente de _fenilalanina_,",
+    "url": "https://fr.openfoodfacts.org/produit/5449000133724/coca-cola-zero",
+    "popularity": 32,
+    "salt": "0.02",
+    "sugars": "0",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/544/900/013/3724/front_fr.11.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/544/900/013/3724/front_fr.11.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 53,
+  "fields": {
+    "code": "5449000017895",
+    "name": "coca-cola light",
+    "nutriscore": "b",
+    "description": "Wasser, Kohlensäure, Farbstoff E 150d, Sauerungsmitel D 10%) Phosphorsäure und Citronensäure, Süßungsmittel (Natriumcyclamat Og (0%) Acesulfam K, Aspartam), Aroma, Aroma Koffein. Enthält eine Dg (0%) Phenylalaninquelle. Light - ohne Zucker. Og (0%) g 10%) Mit Genehmigung von THE COCA-COLA COMPANY 0.05g (1%) schnittichen MEHRVWEGFLASCHE PFAND ZURÜCK Flasche nur für Getränke verwenden. Coca-Cola European Partners DE, Postfach 67 01 56, 10207 Berlin www.coke.de Mindestens halthar bis Ende: 7895 09/18 LKW80750136 ee 60109553",
+    "url": "https://fr.openfoodfacts.org/produit/5449000017895/coca-cola-light",
+    "popularity": 31,
+    "salt": "0",
+    "sugars": "0",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/544/900/001/7895/front_de.33.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/544/900/001/7895/front_de.33.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 54,
+  "fields": {
+    "code": "5449000267443",
+    "name": "coca-cola vanille",
+    "nutriscore": "e",
+    "description": "eau gazéifiée : sucre: colorant: E150d: acidifiant: E338 aromes naturels dont caféine, arômes vanille.",
+    "url": "https://fr.openfoodfacts.org/produit/5449000267443/coca-cola-vanille",
+    "popularity": 31,
+    "salt": "0",
+    "sugars": "10.6",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/544/900/026/7443/front_fr.16.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/544/900/026/7443/front_fr.16.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 55,
+  "fields": {
+    "code": "26003191",
+    "name": "cola zero",
+    "nutriscore": "c",
+    "description": "Eau gazéifiée, colorant : (caramel au sulfite d'ammonium), acidifiant : acide phosphorique, correcteur d'acidité : citrates de sodium, arômes, stabilisant (gomme arabique), arôme : caféine, édulcorants : sucralose, acésulfame-K, cyclamates.",
+    "url": "https://fr.openfoodfacts.org/produit/26003191/cola-zero-river",
+    "popularity": 28,
+    "salt": "0.03",
+    "sugars": "0.1",
+    "saturated": "0.01",
+    "fat": "0.01",
+    "image_url": "https://static.openfoodfacts.org/images/products/26003191/front_fr.23.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/26003191/front_fr.23.200.jpg",
+    "store": [
+      43
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 56,
+  "fields": {
+    "code": "3502110010049",
+    "name": "pepsi max 1 l",
+    "nutriscore": "b",
+    "description": "Eau gazéifiée,colorant (caramel E150d),édulcorants (aspartame***, acésulfame K),acidifiants (acide phosphorique, acide citrique),correcteur d'acidité (citrate de sodium),arômes (dont extraits végétaux et caféine),***Contient une source de phénylalanine.",
+    "url": "https://fr.openfoodfacts.org/produit/3502110010049/pepsi-max-1-l",
+    "popularity": 28,
+    "salt": "0.01",
+    "sugars": "0",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/350/211/001/0049/front_fr.17.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/350/211/001/0049/front_fr.17.200.jpg",
+    "store": [
+      5
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 57,
+  "fields": {
+    "code": "3484700007939",
+    "name": "breizh cola",
+    "nutriscore": "e",
+    "description": "eau gazéifiée, sucre, colorant (caramel E150d), acidifiant (E338), arôme naturel de cola, caféine",
+    "url": "https://fr.openfoodfacts.org/produit/3484700007939/breizh-cola",
+    "popularity": 27,
+    "salt": "0",
+    "sugars": "9.3",
+    "saturated": "0.01",
+    "fat": "0.01",
+    "image_url": "https://static.openfoodfacts.org/images/products/348/470/000/7939/front_fr.7.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/348/470/000/7939/front_fr.7.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 58,
+  "fields": {
+    "code": "5449000050212",
+    "name": "coca-cola light",
+    "nutriscore": "b",
+    "description": "Eau, acide carbonique, colorant : E150d, édulcorants cyclamate, acésulfame-K et aspartame, acidifiants E338 et acide citrique, arômes naturels incl. caféine.",
+    "url": "https://fr.openfoodfacts.org/produit/5449000050212/coca-cola-light-coca-cola-zero",
+    "popularity": 26,
+    "salt": "0.02",
+    "sugars": "0",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/544/900/005/0212/front_fr.4.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/544/900/005/0212/front_fr.4.200.jpg",
+    "store": [
+      3
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 59,
+  "fields": {
+    "code": "40907000",
+    "name": "coca cola",
+    "nutriscore": "e",
+    "description": "Acqua, anidride carbonica, zucchero, colorante caramello (E 150D), aromi naturali, caffeina e acido fosforico (E 338).",
+    "url": "https://fr.openfoodfacts.org/produit/40907000/coca-cola",
+    "popularity": 25,
+    "salt": "0",
+    "sugars": "10.6",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/40907000/front_it.12.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/40907000/front_it.12.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 60,
+  "fields": {
+    "code": "5000112556247",
+    "name": "coca cola zero",
+    "nutriscore": "b",
+    "description": "Eau gazéifiée ; colorant : E150d ; acidifiant : acide phosphorique, citrate de sodium ; édulcorants : aspartame, acésulfame-K ; arômes naturels (extraits végétaux), dont caféine.",
+    "url": "https://fr.openfoodfacts.org/produit/5000112556247/coca-cola-zero",
+    "popularity": 25,
+    "salt": "0.02",
+    "sugars": "0",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/500/011/255/6247/front_fr.10.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/500/011/255/6247/front_fr.10.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 61,
+  "fields": {
+    "code": "5410221166600",
+    "name": "dr pepper",
+    "nutriscore": "d",
+    "description": "Eau gazéifiée, sucre, colorant : caramel (E150d), acidifiant (E338), conservateur (E202), arôme : caféine.",
+    "url": "https://fr.openfoodfacts.org/produit/5410221166600/dr-pepper",
+    "popularity": 25,
+    "salt": "0",
+    "sugars": "6.8",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/541/022/116/6600/front_fr.23.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/541/022/116/6600/front_fr.23.200.jpg",
+    "store": [
+      5
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 62,
+  "fields": {
+    "code": "90357725",
+    "name": "coca-cola zéro",
+    "nutriscore": "b",
+    "description": "Eau gazéifiée , colorant : E150d , acidifiants : acide phosphorique, citrate de sodium , édulcorants : aspartame, acésulfame-K , arômes naturels (extraits végétaux), dont caféine, Contient une source de phénylalanine,",
+    "url": "https://fr.openfoodfacts.org/produit/90357725/coca-cola-zero",
+    "popularity": 25,
+    "salt": "0",
+    "sugars": "0",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/90357725/front_fr.8.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/90357725/front_fr.8.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 63,
+  "fields": {
+    "code": "4056489010104",
+    "name": "cola - boisson gazeuse rafraîchissante à la caféine avec sucres et édulcorants",
+    "nutriscore": "d",
+    "description": "eau, sucre acide carbonique, colorant: caramel au sulfite d'ammonium; acidifiant: acide phosphorique: arôme de caféine, édulcorants : sucralose, acésulfame K; arôme naturel. *30% de sucres en moins par rapport à l'ancienne recette du Cola Freeway",
+    "url": "https://fr.openfoodfacts.org/produit/4056489010104/cola-boisson-gazeuse-rafraichissante-a-la-cafeine-avec-sucres-et-edulcorants-freeway",
+    "popularity": 25,
+    "salt": "0.01",
+    "sugars": "4.8",
+    "saturated": "0.1",
+    "fat": "0.1",
+    "image_url": "https://static.openfoodfacts.org/images/products/405/648/901/0104/front_fr.4.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/405/648/901/0104/front_fr.4.200.jpg",
+    "store": [
+      12
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 64,
+  "fields": {
+    "code": "3564706592018",
+    "name": "clear cola pet",
+    "nutriscore": "e",
+    "description": "Eau gazéifiée, sucre, arômes naturels, acidifiant : E338, caféine.",
+    "url": "https://fr.openfoodfacts.org/produit/3564706592018/clear-cola-pet-marque-repere",
+    "popularity": 25,
+    "salt": "0",
+    "sugars": "9.4",
+    "saturated": "0.1",
+    "fat": "0.5",
+    "image_url": "https://static.openfoodfacts.org/images/products/356/470/659/2018/front_fr.14.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/356/470/659/2018/front_fr.14.200.jpg",
+    "store": [
+      11
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 65,
+  "fields": {
+    "code": "5000112558289",
+    "name": "coca-cola light",
+    "nutriscore": "b",
+    "description": "Eau gazéifiée ; colorant : E150d ; acidifiants : acide phosphorique ; acide citrique ; édulcorants : aspartame, acésulfame-K ; arôme naturels dont caféine.",
+    "url": "https://fr.openfoodfacts.org/produit/5000112558289/coca-cola-light",
+    "popularity": 24,
+    "salt": "0",
+    "sugars": "0",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/500/011/255/8289/front_fr.15.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/500/011/255/8289/front_fr.15.200.jpg",
+    "store": [
+      13
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 66,
+  "fields": {
+    "code": "5000112609592",
+    "name": "coca cola",
+    "nutriscore": "e",
+    "description": "eau gazéifiée ; sucre ; colorant : E150d ; acidifiant : acide phosphorique ; arômes naturels dont caféine.",
+    "url": "https://fr.openfoodfacts.org/produit/5000112609592/coca-cola",
+    "popularity": 24,
+    "salt": "0",
+    "sugars": "10.6",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/500/011/260/9592/front_fr.31.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/500/011/260/9592/front_fr.31.200.jpg",
+    "store": [
+      5
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 67,
+  "fields": {
+    "code": "8888002076009",
+    "name": "coke",
+    "nutriscore": "e",
+    "description": "carbonated water, high fructose corn syrup, sucrose, caramel colour, phosphoric acid, flavourings, caffeine",
+    "url": "https://fr.openfoodfacts.org/produit/8888002076009/coke-coca-cola",
+    "popularity": 24,
+    "salt": "0.005",
+    "sugars": "10.6",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/888/800/207/6009/front_en.9.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/888/800/207/6009/front_en.9.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 68,
+  "fields": {
+    "code": "3250391888023",
+    "name": "look cola zéro",
+    "nutriscore": "c",
+    "description": "Eau gazéifiée, colorant: caramel (E150d), acidifiant: E338, edulcorants: acésulfame de potassium et sucralose, correcteur d'acidité: citrate de sodium, arôme naturel (extraits végétaux), arôme: caféine",
+    "url": "https://fr.openfoodfacts.org/produit/3250391888023/look-cola-zero-marque-repere",
+    "popularity": 23,
+    "salt": "0.03",
+    "sugars": "0.5",
+    "saturated": "0.1",
+    "fat": "0.5",
+    "image_url": "https://static.openfoodfacts.org/images/products/325/039/188/8023/front_fr.14.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/325/039/188/8023/front_fr.14.200.jpg",
+    "store": [
+      11
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 69,
+  "fields": {
+    "code": "5740700988349",
+    "name": "original taste coca-cola",
+    "nutriscore": "e",
+    "description": "Vand, sukker, kuldioxoid, farvestof (karamel E150d), surhedsregulerende middel (E338), naturlige aromaer (inkl, koffein)",
+    "url": "https://fr.openfoodfacts.org/produit/5740700988349/original-taste-coca-cola",
+    "popularity": 23,
+    "salt": "0",
+    "sugars": "10.6",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/574/070/098/8349/front_da.22.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/574/070/098/8349/front_da.22.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 70,
+  "fields": {
+    "code": "3484700000817",
+    "name": "cola zéro",
+    "nutriscore": "b",
+    "description": "Eau gazéifiée, colorant : caramel E150d, acidifiants : acide phosphorique, acide citrique, citrate de sodium, édulcorants : aspartame, acésulfame K, caféine, arôme naturel de cola avec autres arômes naturels. Contient une source de phénylalanine",
+    "url": "https://fr.openfoodfacts.org/produit/3484700000817/cola-zero-breizh-cola",
+    "popularity": 22,
+    "salt": "0.04",
+    "sugars": "0",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/348/470/000/0817/front_fr.31.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/348/470/000/0817/front_fr.31.200.jpg",
+    "store": [
+      3,
+      5
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 71,
+  "fields": {
+    "code": "4060800105295",
+    "name": "pepsi max 2litros",
+    "nutriscore": "b",
+    "description": "Agua carbonatada, colorante (E150d), correctores de acidez (E338, E331, E330), edulcorantes (E951, E950), aromas (cafeina, extractos y aromas naturales). Contiene una fuente de fenilalanina.",
+    "url": "https://fr.openfoodfacts.org/produit/4060800105295/pepsi-max",
+    "popularity": 22,
+    "salt": "0.01",
+    "sugars": "0",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/406/080/010/5295/front_fr.7.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/406/080/010/5295/front_fr.7.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 72,
+  "fields": {
+    "code": "3250391457656",
+    "name": "cola zero",
+    "nutriscore": "b",
+    "description": "Eau de source St Benoit gazéifiée (99 %), colorant : E150d, acidifiant E338, arôme naturel, édulcorants : aspartame et acésulfame de potassium, correcteur d'acidité : (citrate de sodium, caféine. Contient une source de phénylalanine.",
+    "url": "https://fr.openfoodfacts.org/produit/3250391457656/cola-zero-look",
+    "popularity": 21,
+    "salt": "0.01",
+    "sugars": "0.5",
+    "saturated": "0.1",
+    "fat": "0.5",
+    "image_url": "https://static.openfoodfacts.org/images/products/325/039/145/7656/front_fr.17.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/325/039/145/7656/front_fr.17.200.jpg",
+    "store": [
+      23
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 73,
+  "fields": {
+    "code": "5449000053879",
+    "name": "diet coke",
+    "nutriscore": "b",
+    "description": "carbonated water, colour (caramel e150d), sweeteners (aspartame, acesulfame k), natural flavourings (including caffeine), acids (phosphoric acid, citric acid),",
+    "url": "https://fr.openfoodfacts.org/produit/5449000053879/diet-coke-made-in-gb-coca-cola",
+    "popularity": 21,
+    "salt": "0",
+    "sugars": "0",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/544/900/005/3879/front_en.35.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/544/900/005/3879/front_en.35.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 74,
+  "fields": {
+    "code": "3256220659062",
+    "name": "cola zéro ",
+    "nutriscore": "b",
+    "description": "Eau gazéifiée, colorant : E150d, arôme naturel, acidifiants : acide orthophosphorique et citrate de sodium, édulcorants : sucralose et acésulfame-k, caféine.",
+    "url": "https://fr.openfoodfacts.org/produit/3256220659062/cola-zero-u",
+    "popularity": 20,
+    "salt": "0",
+    "sugars": "0",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/325/622/065/9062/front_fr.40.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/325/622/065/9062/front_fr.40.200.jpg",
+    "store": [
+      5
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 75,
+  "fields": {
+    "code": "5000112523065",
+    "name": "coca-cola 1,5 l",
+    "nutriscore": "e",
+    "description": "Eau gazéifiée, sucre, colorant : E150d, acidifiant, acide phosphorique, arômes naturels (extraits végétaux) dont caféine.",
+    "url": "https://fr.openfoodfacts.org/produit/5000112523065/coca-cola-1-5-l",
+    "popularity": 20,
+    "salt": "0",
+    "sugars": "10.6",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/500/011/252/3065/front_fr.10.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/500/011/252/3065/front_fr.10.200.jpg",
+    "store": [
+      11
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 76,
+  "fields": {
+    "code": "3560070345724",
+    "name": "cola",
+    "nutriscore": "b",
+    "description": "Eau gazéifiée, colorant: caramel au sulfite d'ammonium, acidifiants: acide orthophosphorique et citrates de sodium, édulcorants: acésulfame-K et sucralose, arômes naturels (dont extraits végétaux), caféine.",
+    "url": "https://fr.openfoodfacts.org/produit/3560070345724/cola-carrefour",
+    "popularity": 19,
+    "salt": "0.02",
+    "sugars": "0",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/356/007/034/5724/front_fr.34.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/356/007/034/5724/front_fr.34.200.jpg",
+    "store": [
+      3
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 77,
+  "fields": {
+    "code": "5449000000774",
+    "name": "coca-cola sans caféine",
+    "nutriscore": "e",
+    "description": "Eau gazéifiée ; sucre ; colorant E150d; acidifiant : acide phosphorique; extraits végétaux.",
+    "url": "https://fr.openfoodfacts.org/produit/5449000000774/coca-cola-sans-cafeine",
+    "popularity": 19,
+    "salt": "0",
+    "sugars": "11.1",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/544/900/000/0774/front_fr.5.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/544/900/000/0774/front_fr.5.200.jpg",
+    "store": [
+      11
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 78,
+  "fields": {
+    "code": "5449000239761",
+    "name": "mini coca",
+    "nutriscore": "e",
+    "description": "ORIGINAL TASTE mini ORIGINAL TASTE ca-Co 130n 31M 130D A consommer Oml ergie Matieres Acides gras Sucres OKJ grasses satures kcal 0g Og 169 Og 18 0% 1: 180KJ/",
+    "url": "https://fr.openfoodfacts.org/produit/5449000239761/mini-coca-coca-cola",
+    "popularity": 19,
+    "salt": "0",
+    "sugars": "10.6",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/544/900/023/9761/front_fr.8.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/544/900/023/9761/front_fr.8.200.jpg",
+    "store": [
+      5
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 79,
+  "fields": {
+    "code": "20023010",
+    "name": "cola",
+    "nutriscore": "e",
+    "description": "Eau gazéifiée, sucre, colorant : caramel au sulfite d'ammonium; acidifiant: acide phosphorique; caféine, arômes naturels.",
+    "url": "https://fr.openfoodfacts.org/produit/20023010/cola-freeway",
+    "popularity": 18,
+    "salt": "0",
+    "sugars": "10.9",
+    "saturated": "0.1",
+    "fat": "0.1",
+    "image_url": "https://static.openfoodfacts.org/images/products/20023010/front_fr.21.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/20023010/front_fr.21.200.jpg",
+    "store": [
+      12
+    ],
+    "category": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 80,
+  "fields": {
+    "code": "3551720003941",
+    "name": "limonade",
+    "nutriscore": "e",
+    "description": "eau gazéifiée, sucre, acidifiant : acide citrique, arôme naturel de citron.",
+    "url": "https://fr.openfoodfacts.org/produit/3551720003941/limonade-lorina",
+    "popularity": 135,
+    "salt": "0",
+    "sugars": "9",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/355/172/000/3941/front_fr.59.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/355/172/000/3941/front_fr.59.200.jpg",
+    "store": [
+      2,
+      3,
+      5,
+      13
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 81,
+  "fields": {
+    "code": "3551720012622",
+    "name": "limonade",
+    "nutriscore": "e",
+    "description": "Eau gazéifiée, sucre, acidifiant : acide citrique, arômes naturels de citron-citron vert et agrumes,",
+    "url": "https://fr.openfoodfacts.org/produit/3551720012622/limonade-lorina",
+    "popularity": 126,
+    "salt": "0.01",
+    "sugars": "7.4",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/355/172/001/2622/front_fr.33.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/355/172/001/2622/front_fr.33.200.jpg",
+    "store": [
+      3,
+      5
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 82,
+  "fields": {
+    "code": "3502110006271",
+    "name": "7up saveur mojito",
+    "nutriscore": "e",
+    "description": "Eau gazéifiée,sucre,acidifiants (acides citrique, acide malique),arômes, correcteur d'acidité (citrate de sodium),conservateurs (sorbate de potassium,benzoate de sodium), édulcorant (glycosides de steviol),\nstabilisant (gomme arabique, esters glycériques de résine de bois)",
+    "url": "https://fr.openfoodfacts.org/produit/3502110006271/7up-saveur-mojito-pepsico",
+    "popularity": 98,
+    "salt": "0.05",
+    "sugars": "7",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/350/211/000/6271/front_fr.58.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/350/211/000/6271/front_fr.58.200.jpg",
+    "store": [
+      2,
+      5
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 83,
+  "fields": {
+    "code": "3551720022935",
+    "name": "limonade zero",
+    "nutriscore": "b",
+    "description": "Eau gazéifiée, jus concentré de citron (1,5%), arôme naturel de citron et agrumes, acidifiant : acide citrique, conservateur : benzoate de sodium, édulcorant : sucralose, antioxydant : disulfite de potassium.",
+    "url": "https://fr.openfoodfacts.org/produit/3551720022935/limonade-zero-lorina",
+    "popularity": 70,
+    "salt": "0",
+    "sugars": "0",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/355/172/002/2935/front_fr.20.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/355/172/002/2935/front_fr.20.200.jpg",
+    "store": [
+      3,
+      5
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 84,
+  "fields": {
+    "code": "3551720022683",
+    "name": "limonade artisanale",
+    "nutriscore": "e",
+    "description": "eau gazéifiée, sucre, acidifiant : acide citrique, arôme naturel de citron.",
+    "url": "https://fr.openfoodfacts.org/produit/3551720022683/limonade-artisanale-lorina",
+    "popularity": 59,
+    "salt": "0.01",
+    "sugars": "9",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/355/172/002/2683/front_fr.30.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/355/172/002/2683/front_fr.30.200.jpg",
+    "store": [
+      5,
+      11
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 85,
+  "fields": {
+    "code": "3564700813751",
+    "name": "limonade",
+    "nutriscore": "e",
+    "description": "Eau gazéifiée, sucre, acidifiant : acide citrique, arôme naturel de citron et citron vert.",
+    "url": "https://fr.openfoodfacts.org/produit/3564700813751/limonade-sprink-s",
+    "popularity": 51,
+    "salt": "0",
+    "sugars": "7.3",
+    "saturated": "0.1",
+    "fat": "0.5",
+    "image_url": "https://static.openfoodfacts.org/images/products/356/470/081/3751/front_fr.35.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/356/470/081/3751/front_fr.35.200.jpg",
+    "store": [
+      11
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 86,
+  "fields": {
+    "code": "3564709000114",
+    "name": "limonade rieme",
+    "nutriscore": "e",
+    "description": "Eau gazéifiée, sucre, acidifiant : acide citrique, arôme naturel de citron-citron vert.",
+    "url": "https://fr.openfoodfacts.org/produit/3564709000114/limonade-rieme-nos-regions-ont-du-talent",
+    "popularity": 46,
+    "salt": "0.02",
+    "sugars": "8",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/356/470/900/0114/front_fr.24.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/356/470/900/0114/front_fr.24.200.jpg",
+    "store": [
+      11
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 87,
+  "fields": {
+    "code": "3551720023604",
+    "name": "limonade bio lorina",
+    "nutriscore": "e",
+    "description": "eau gazéifiée, sucre de canne*, acidifiant : acide citrique, arômes naturels de citron et de limette.",
+    "url": "https://fr.openfoodfacts.org/produit/3551720023604/limonade-bio-lorina",
+    "popularity": 43,
+    "salt": "0.01",
+    "sugars": "7.6",
+    "saturated": "0.1",
+    "fat": "0.5",
+    "image_url": "https://static.openfoodfacts.org/images/products/355/172/002/3604/front_fr.26.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/355/172/002/3604/front_fr.26.200.jpg",
+    "store": [
+      3,
+      5
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 88,
+  "fields": {
+    "code": "3564707087346",
+    "name": "limonade bio",
+    "nutriscore": "e",
+    "description": "Eau gazéifiée, sirop de sucre de canne* 8,1 %, acidifiant : acide citrique, arôme naturel de citron. \n* Ingrédient issu de l'agriculture biologique.",
+    "url": "https://fr.openfoodfacts.org/produit/3564707087346/limonade-bio-bio-village",
+    "popularity": 42,
+    "salt": "0",
+    "sugars": "8.4",
+    "saturated": "0.1",
+    "fat": "0.5",
+    "image_url": "https://static.openfoodfacts.org/images/products/356/470/708/7346/front_fr.24.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/356/470/708/7346/front_fr.24.200.jpg",
+    "store": [
+      11
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 89,
+  "fields": {
+    "code": "3245411441920",
+    "name": "limonade",
+    "nutriscore": "b",
+    "description": "Eau gazéifiée, arôme naturel de citron, acidifiant : acide citrique, édulcorants : acésulfame-K et sucralose.",
+    "url": "https://fr.openfoodfacts.org/produit/3245411441920/limonade-carrefour",
+    "popularity": 39,
+    "salt": "0.01",
+    "sugars": "0",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/324/541/144/1920/front_fr.47.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/324/541/144/1920/front_fr.47.200.jpg",
+    "store": [
+      3
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 90,
+  "fields": {
+    "code": "3560070559084",
+    "name": "limonade",
+    "nutriscore": "e",
+    "description": "Eau gazéifiée, sucre, acidifiant : acide citrique, arôme naturel de citron-citron vert, arôme naturel de citron.",
+    "url": "https://fr.openfoodfacts.org/produit/3560070559084/limonade-carrefour",
+    "popularity": 39,
+    "salt": "0",
+    "sugars": "7.4",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/356/007/055/9084/front_fr.70.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/356/007/055/9084/front_fr.70.200.jpg",
+    "store": [
+      3
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 91,
+  "fields": {
+    "code": "3760122965607",
+    "name": "citronnade aux 2 citrons bio",
+    "nutriscore": "d",
+    "description": "eau, du jus de citron jaune pressé avec sa pulpe (10%), une pointe de sucre biologique, une larme d'arôme naturel de menthe",
+    "url": "https://fr.openfoodfacts.org/produit/3760122965607/citronnade-aux-2-citrons-bio-michel-et-augustin",
+    "popularity": 39,
+    "salt": "0.1",
+    "sugars": "4.2",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/376/012/296/5607/front_fr.75.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/376/012/296/5607/front_fr.75.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 92,
+  "fields": {
+    "code": "3580283530021",
+    "name": "limonade goût citron bio à l'eau de source",
+    "nutriscore": "e",
+    "description": "Eau de source gazéifiée, sucre, acidifiant : acide citrique, arôme naturel citron avec d'autres arômes naturels.",
+    "url": "https://fr.openfoodfacts.org/produit/3580283530021/limonade-gout-citron-bio-a-l-eau-de-source-agidra",
+    "popularity": 38,
+    "salt": "0.01",
+    "sugars": "8.4",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/358/028/353/0021/front_fr.38.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/358/028/353/0021/front_fr.38.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 93,
+  "fields": {
+    "code": "3124480185884",
+    "name": "pulco citronnade",
+    "nutriscore": "d",
+    "description": "eau de source 80%, jus de citron à base de concentré 12%, sucre, pulpe de citron 0,7%, arôme naturel de menthe, antioxydant: acide ascorbique, arôme naturel de citron.",
+    "url": "https://fr.openfoodfacts.org/produit/3124480185884/pulco-citronnade",
+    "popularity": 38,
+    "salt": "0",
+    "sugars": "4.8",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/312/448/018/5884/front_fr.4.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/312/448/018/5884/front_fr.4.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 94,
+  "fields": {
+    "code": "4260107220015",
+    "name": "fritz-kola",
+    "nutriscore": "e",
+    "description": "Natürliches Mineralwasser, Zucker, Kohlensäure, Farbstoff Ammonsulfit-Zuckerkulör, Säuerungsmittel Phosphorsäure, Koffein, natürliches Aroma.",
+    "url": "https://fr.openfoodfacts.org/produit/4260107220015/fritz-kola",
+    "popularity": 37,
+    "salt": "0.01",
+    "sugars": "11",
+    "saturated": "0.01",
+    "fat": "0.01",
+    "image_url": "https://static.openfoodfacts.org/images/products/426/010/722/0015/front_de.37.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/426/010/722/0015/front_de.37.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 95,
+  "fields": {
+    "code": "4056489009917",
+    "name": "freeway limonade",
+    "nutriscore": "e",
+    "description": "eau gazéifiée, sucre, acidifiants: acide citrique, citrate de sodium; arôme naturel de Citron-citron vert. Servir très frais. In do Glu don Fibr Boisso naturel de ch",
+    "url": "https://fr.openfoodfacts.org/produit/4056489009917/freeway-limonade",
+    "popularity": 34,
+    "salt": "0",
+    "sugars": "7.4",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/405/648/900/9917/front_fr.4.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/405/648/900/9917/front_fr.4.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 96,
+  "fields": {
+    "code": "7290006780751",
+    "name": "concentré saveur limonade zéro",
+    "nutriscore": "b",
+    "description": "eau, acidifiant (acide citrique), correcteur d'acidité (citrate trisodique), édulcorants (acésulfame-K, sucralose), arome, conservateur (benzoate de sodium)",
+    "url": "https://fr.openfoodfacts.org/produit/7290006780751/concentre-saveur-limonade-zero-sodastream",
+    "popularity": 33,
+    "salt": "0.63",
+    "sugars": "0",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/729/000/678/0751/front_fr.3.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/729/000/678/0751/front_fr.3.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 97,
+  "fields": {
+    "code": "3250390514008",
+    "name": "limonade artisanale itinéraire des saveurs",
+    "nutriscore": "e",
+    "description": "Eau de source Lisbeth (92.4%) gazéifiée, sucre, acidifiant : acide citrique, arômes naturels de citron-citron vert et d'autres agrumes.",
+    "url": "https://fr.openfoodfacts.org/produit/3250390514008/limonade-artisanale-itineraire-des-saveurs",
+    "popularity": 32,
+    "salt": "0.01",
+    "sugars": "7.4",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/325/039/051/4008/front_fr.16.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/325/039/051/4008/front_fr.16.200.jpg",
+    "store": [
+      23
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 98,
+  "fields": {
+    "code": "3564700716519",
+    "name": "limonade zéro",
+    "nutriscore": "b",
+    "description": "Eau gazéifiée, acidifiant : acide citrique, arôme naturel, édulcorants : acésulfame-K, sucralose.",
+    "url": "https://fr.openfoodfacts.org/produit/3564700716519/limonade-zero-sprink-s",
+    "popularity": 30,
+    "salt": "0",
+    "sugars": "0",
+    "saturated": "0.1",
+    "fat": "0.5",
+    "image_url": "https://static.openfoodfacts.org/images/products/356/470/071/6519/front_fr.12.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/356/470/071/6519/front_fr.12.200.jpg",
+    "store": [
+      11
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 99,
+  "fields": {
+    "code": "3564709022437",
+    "name": "limonade",
+    "nutriscore": "e",
+    "description": "Eau, minérale naturelle gazéifiée 92%, sucre, acidifiant : acide citrique, arômes naturels de citron avec autres arômes naturels, arôme naturel d'orange.",
+    "url": "https://fr.openfoodfacts.org/produit/3564709022437/limonade-nos-region-ont-du-talent",
+    "popularity": 30,
+    "salt": "0",
+    "sugars": "7.8",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/356/470/902/2437/front_fr.22.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/356/470/902/2437/front_fr.22.200.jpg",
+    "store": [
+      11
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 100,
+  "fields": {
+    "code": "20298555",
+    "name": "limonade bio au sucre de canne",
+    "nutriscore": "e",
+    "description": "Eau gazéifiée, 7,2% sirop de sucre de canne*, acidifiant: acide citrique; arôme naturel de citron-citron vert. *Issu de l'agriculture biologique.",
+    "url": "https://fr.openfoodfacts.org/produit/20298555/limonade-bio-au-sucre-de-canne-freeway",
+    "popularity": 28,
+    "salt": "0.01",
+    "sugars": "7.4",
+    "saturated": "0.5",
+    "fat": "0.5",
+    "image_url": "https://static.openfoodfacts.org/images/products/20298555/front_fr.3.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/20298555/front_fr.3.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 101,
+  "fields": {
+    "code": "3256223010532",
+    "name": "limonde zéro sans sucre",
+    "nutriscore": "b",
+    "description": "Eau gazéifiée, acidifiant : acide citrique, extrait de citron et de citron vert, édulcorant : sucralosa",
+    "url": "https://fr.openfoodfacts.org/produit/3256223010532/limonde-zero-sans-sucre-u",
+    "popularity": 27,
+    "salt": "0.01",
+    "sugars": "0.5",
+    "saturated": "0.1",
+    "fat": "0.5",
+    "image_url": "https://static.openfoodfacts.org/images/products/325/622/301/0532/front_fr.61.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/325/622/301/0532/front_fr.61.200.jpg",
+    "store": [
+      5
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 102,
+  "fields": {
+    "code": "3368952621207",
+    "name": "limonade à l'ancienne saveurs",
+    "nutriscore": "e",
+    "description": "Eau de source gazéifiée, sucre, acidifiant : acide citrique, arômes naturels de citron-citron vert et d'autres agrumes.",
+    "url": "https://fr.openfoodfacts.org/produit/3368952621207/limonade-a-l-ancienne-saveurs-u-saveurs",
+    "popularity": 27,
+    "salt": "0.02",
+    "sugars": "8.4",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/336/895/262/1207/front_fr.46.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/336/895/262/1207/front_fr.46.200.jpg",
+    "store": [
+      5
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 103,
+  "fields": {
+    "code": "5060108450348",
+    "name": "premium ginger beer",
+    "nutriscore": "e",
+    "description": "Eau de source gazéifiée, sucre de canne, gingembre, arômes naturels: acide tartrique, antioxydant: acide ascorbique.",
+    "url": "https://fr.openfoodfacts.org/produit/5060108450348/premium-ginger-beer-fever-tree",
+    "popularity": 26,
+    "salt": "0",
+    "sugars": "9",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/506/010/845/0348/front_fr.39.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/506/010/845/0348/front_fr.39.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 104,
+  "fields": {
+    "code": "3256223010211",
+    "name": "limonade",
+    "nutriscore": "d",
+    "description": "Eau gazéifiée, sucre, acidifiant : acide citrique, arôme naturel, édulcorant : glucosides de stéviol",
+    "url": "https://fr.openfoodfacts.org/produit/3256223010211/limonade-u",
+    "popularity": 25,
+    "salt": "0.01",
+    "sugars": "6",
+    "saturated": "0.1",
+    "fat": "0.5",
+    "image_url": "https://static.openfoodfacts.org/images/products/325/622/301/0211/front_fr.32.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/325/622/301/0211/front_fr.32.200.jpg",
+    "store": [
+      5
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 105,
+  "fields": {
+    "code": "3560070791118",
+    "name": "carrefour bio limonade",
+    "nutriscore": "e",
+    "description": "Eau gazéifiée, sirop de sucre de canne bio (eau, sucre de canne bio 8,1%), acidifiant : acide citrique, arôme naturel de citron bio.",
+    "url": "https://fr.openfoodfacts.org/produit/3560070791118/carrefour-bio-limonade",
+    "popularity": 25,
+    "salt": "0.01",
+    "sugars": "8.4",
+    "saturated": "0",
+    "fat": "0.5",
+    "image_url": "https://static.openfoodfacts.org/images/products/356/007/079/1118/front_fr.43.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/356/007/079/1118/front_fr.43.200.jpg",
+    "store": [
+      3
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 106,
+  "fields": {
+    "code": "3250390006312",
+    "name": "look limonade à l'eau de source",
+    "nutriscore": "d",
+    "description": "Eau de source gazéifiée 91%, sirop de glucose-fructose, sucre, acidifiant : acide citrique, arôme naturel de citron avec d'autres arômes naturels",
+    "url": "https://fr.openfoodfacts.org/produit/3250390006312/look-limonade-a-l-eau-de-source-intermarche",
+    "popularity": 23,
+    "salt": "0.1",
+    "sugars": "6.4",
+    "saturated": "0.1",
+    "fat": "0.5",
+    "image_url": "https://static.openfoodfacts.org/images/products/325/039/000/6312/front_fr.6.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/325/039/000/6312/front_fr.6.200.jpg",
+    "store": [
+      23
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 107,
+  "fields": {
+    "code": "3551720042186",
+    "name": "limonade bio",
+    "nutriscore": "d",
+    "description": "eau gazéifiée, sucre de canne, acidifiant: acide citrique, arôme naturel, arôme naturel de citron-citron vert. Ingrédient issu de l'agriculture biologique",
+    "url": "https://fr.openfoodfacts.org/produit/3551720042186/limonade-bio-lorina",
+    "popularity": 23,
+    "salt": "0",
+    "sugars": "5",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/355/172/004/2186/front_fr.78.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/355/172/004/2186/front_fr.78.200.jpg",
+    "store": [
+      3
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 108,
+  "fields": {
+    "code": "3450970004657",
+    "name": "limonade",
+    "nutriscore": "c",
+    "description": "Eau gazéifiée, acidifiant E330, arôme naturel de citron, édulcorants: E952, E951, E950, E954.",
+    "url": "https://fr.openfoodfacts.org/produit/3450970004657/limonade-eco",
+    "popularity": 22,
+    "salt": "0.01",
+    "sugars": "0.1",
+    "saturated": "0.5",
+    "fat": "0.5",
+    "image_url": "https://static.openfoodfacts.org/images/products/345/097/000/4657/front_fr.8.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/345/097/000/4657/front_fr.8.200.jpg",
+    "store": [
+      11
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 109,
+  "fields": {
+    "code": "3256221134742",
+    "name": "limonade",
+    "nutriscore": "e",
+    "description": "Eau gazéifiée, sirop de sucre de canne* ( 8,2%), acidifiant : acide citrique, extrait de citron. *ingrédient issu de l'agriculture biologique.",
+    "url": "https://fr.openfoodfacts.org/produit/3256221134742/limonade-u-bio",
+    "popularity": 21,
+    "salt": "0.01",
+    "sugars": "8.4",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/325/622/113/4742/front_fr.62.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/325/622/113/4742/front_fr.62.200.jpg",
+    "store": [
+      5
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 110,
+  "fields": {
+    "code": "3289196810069",
+    "name": "limonade bio d'antan",
+    "nutriscore": "e",
+    "description": "Eau gazéifiée, sucre de canne (8.65%), jus de citron concentré (1.27%,), extrait de citron (citron issu de l'agriculture biologique).",
+    "url": "https://fr.openfoodfacts.org/produit/3289196810069/limonade-bio-d-antan-vitamont",
+    "popularity": 20,
+    "salt": "0",
+    "sugars": "9.4",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/328/919/681/0069/front_fr.32.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/328/919/681/0069/front_fr.32.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 111,
+  "fields": {
+    "code": "3222471052747",
+    "name": "limonade - arôme naturel de citron",
+    "nutriscore": "e",
+    "description": "Eau gazéifiée - sucre - acidifiant : acide citrique - arôme naturel de citron-citron vert - arôme naturel de citron.",
+    "url": "https://fr.openfoodfacts.org/produit/3222471052747/limonade-arome-naturel-de-citron-casino",
+    "popularity": 19,
+    "salt": "0",
+    "sugars": "9",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/322/247/105/2747/front_fr.11.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/322/247/105/2747/front_fr.11.200.jpg",
+    "store": [
+      39
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 112,
+  "fields": {
+    "code": "3289196810014",
+    "name": "limonade d'antan",
+    "nutriscore": "e",
+    "description": "Eau gazéifiée, sucre de canne* (9%), jus de citron* concentré (1,5%), extrait* de citron (citron issu de l'agriculture bio).\n*ingrédients issus de l'agriculture bio",
+    "url": "https://fr.openfoodfacts.org/produit/3289196810014/limonade-d-antan-vitamont",
+    "popularity": 17,
+    "salt": "0.01",
+    "sugars": "9.4",
+    "saturated": "10",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/328/919/681/0014/front_fr.9.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/328/919/681/0014/front_fr.9.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 113,
+  "fields": {
+    "code": "3564700813713",
+    "name": "limonade light",
+    "nutriscore": "b",
+    "description": "Eau gazéifiée ; acidifiant : acide citrique ; arôme naturel ; édulcorants : aspartame, acésulfame-K.\nContient une source de phénylalanine.",
+    "url": "https://fr.openfoodfacts.org/produit/3564700813713/limonade-light-marque-repere",
+    "popularity": 17,
+    "salt": "0",
+    "sugars": "0",
+    "saturated": "0.5",
+    "fat": "0.5",
+    "image_url": "https://static.openfoodfacts.org/images/products/356/470/081/3713/front_fr.14.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/356/470/081/3713/front_fr.14.200.jpg",
+    "store": [
+      11
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 114,
+  "fields": {
+    "code": "3292481210031",
+    "name": "limonade la mortuacienne",
+    "nutriscore": "e",
+    "description": "eau gazéifiée, sucre, acidifiant: acide citrique, arôme naturel de citron-citron vert",
+    "url": "https://fr.openfoodfacts.org/produit/3292481210031/limonade-la-mortuacienne-rieme-boissons",
+    "popularity": 16,
+    "salt": "0",
+    "sugars": "7.2",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/329/248/121/0031/front_fr.13.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/329/248/121/0031/front_fr.13.200.jpg",
+    "store": [
+      5
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 115,
+  "fields": {
+    "code": "3250391214921",
+    "name": "look limonade zero",
+    "nutriscore": "c",
+    "description": "Eau de source gazéifiée (99,7 %), acidifiant : acide citrique, arôme naturel de citron avec d'autres arômes naturels, édulcorants : aspartame - acésulfame de potassium",
+    "url": "https://fr.openfoodfacts.org/produit/3250391214921/look-limonade-zero",
+    "popularity": 15,
+    "salt": "0.1",
+    "sugars": "0.5",
+    "saturated": "0.1",
+    "fat": "0.5",
+    "image_url": "https://static.openfoodfacts.org/images/products/325/039/121/4921/front_fr.24.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/325/039/121/4921/front_fr.24.200.jpg",
+    "store": [
+      23
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 116,
+  "fields": {
+    "code": "3249290012264",
+    "name": "limonade",
+    "nutriscore": "b",
+    "description": "carbonated water, acidifier : citric acid, natural s flavour, sweetners : aspartam, sodium cyclamate, acesulfam-k, sodium saccharinate. Contains a source of pheny/a/anin,",
+    "url": "https://fr.openfoodfacts.org/produit/3249290012264/limonade-puma",
+    "popularity": 13,
+    "salt": "0",
+    "sugars": "0.07",
+    "saturated": "0.01",
+    "fat": "0.01",
+    "image_url": "https://static.openfoodfacts.org/images/products/324/929/001/2264/front_fr.3.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/324/929/001/2264/front_fr.3.200.jpg",
+    "store": [
+      5
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 117,
+  "fields": {
+    "code": "3551720033665",
+    "name": "lorina mojito",
+    "nutriscore": "d",
+    "description": "eau gazéifiée, sucre, arôme naturel de menthe et de citron vert avec d'autres arômes naturels, acidifiant: acide citrique, édulcorant : glycosides de steviol (extrait de feuille de stevia)",
+    "url": "https://fr.openfoodfacts.org/produit/3551720033665/lorina-mojito",
+    "popularity": 13,
+    "salt": "0.01",
+    "sugars": "6.6",
+    "saturated": "0",
+    "fat": "0.5",
+    "image_url": "https://static.openfoodfacts.org/images/products/355/172/003/3665/front_fr.18.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/355/172/003/3665/front_fr.18.200.jpg",
+    "store": [
+      5
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 118,
+  "fields": {
+    "code": "3551720037335",
+    "name": "limonade citron bio",
+    "nutriscore": "e",
+    "description": "Eau gazéifiée, sucre de canne*, jus de citron concentré (1,6 %), acidifiant: acide citrique, jus d'orange concentré (0,4%)*, antioxydant : acide ascorbique, extrait d'orange, stabilisant: gomme de caroube, arôme naturel. *Ingrédients issus de l'agriculture biologique.",
+    "url": "https://fr.openfoodfacts.org/produit/3551720037335/limonade-citron-bio-lorina",
+    "popularity": 13,
+    "salt": "0.01",
+    "sugars": "9.2",
+    "saturated": "0",
+    "fat": "0.5",
+    "image_url": "https://static.openfoodfacts.org/images/products/355/172/003/7335/front_fr.22.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/355/172/003/7335/front_fr.22.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 119,
+  "fields": {
+    "code": "3560070824656",
+    "name": "limonade",
+    "nutriscore": "e",
+    "description": "Eau gazéifiée, sucre, acidifiant : acide citrique, arôme naturel de citron",
+    "url": "https://fr.openfoodfacts.org/produit/3560070824656/limonade-carrefour",
+    "popularity": 13,
+    "salt": "0",
+    "sugars": "7.4",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/356/007/082/4656/front_fr.107.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/356/007/082/4656/front_fr.107.200.jpg",
+    "store": [
+      3
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 120,
+  "fields": {
+    "code": "3551720201354",
+    "name": "citron de sicile",
+    "nutriscore": "e",
+    "description": "eau gazéifiée, sucre, arôme naturel de citron et d'agrumes, jus de  citron de Sicile à base de concentré 6%,  acidifiant acide citrique, édulcorant: glycosides de stéviol (extrait de feuille de stevia).  Les ingrédients d'origine naturelle peuvent  provoquer un léger dépôt et une évolution de couleur sans incidence sur la qualité du  produit.",
+    "url": "https://fr.openfoodfacts.org/produit/3551720201354/citron-de-sicile-lorina",
+    "popularity": 13,
+    "salt": "0.01",
+    "sugars": "7.9",
+    "saturated": "0",
+    "fat": "0.5",
+    "image_url": "https://static.openfoodfacts.org/images/products/355/172/020/1354/front_fr.7.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/355/172/020/1354/front_fr.7.200.jpg",
+    "store": [
+      3
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 121,
+  "fields": {
+    "code": "3068320105444",
+    "name": "badoit citron vert",
+    "nutriscore": "b",
+    "description": "Eau minérale naturelle gazéifiée Badoit (99,9%), arôme naturel de citron - citron vert.",
+    "url": "https://fr.openfoodfacts.org/produit/3068320105444/badoit-citron-vert",
+    "popularity": 12,
+    "salt": "0.05",
+    "sugars": "0",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/306/832/010/5444/front_fr.8.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/306/832/010/5444/front_fr.8.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 122,
+  "fields": {
+    "code": "3250391638987",
+    "name": "limonade",
+    "nutriscore": "e",
+    "description": "Eau gazéifiée, sirop de sucre de canne issu de l'agriculture biologique (7,2%), acidifiant : acide citrique, arôme naturel de citron, arôme naturel.",
+    "url": "https://fr.openfoodfacts.org/produit/3250391638987/limonade-look",
+    "popularity": 12,
+    "salt": "0.01",
+    "sugars": "7.4",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/325/039/163/8987/front_fr.15.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/325/039/163/8987/front_fr.15.200.jpg",
+    "store": [
+      23
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 123,
+  "fields": {
+    "code": "5400141101713",
+    "name": "orange zero",
+    "nutriscore": "c",
+    "description": "Eau gazéifiée, 8% jus d'orange à base de concentré, 1,7% pulpe, acidifiant (E330), conservateur (E202), arôme naturel d'orange, édulcorants (sucralose, acésulfame-K), antioxydant (E300), colorant (E161b)",
+    "url": "https://fr.openfoodfacts.org/produit/5400141101713/orange-zero-everyday",
+    "popularity": 12,
+    "salt": "0.02",
+    "sugars": "0.8",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/540/014/110/1713/front_fr.7.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/540/014/110/1713/front_fr.7.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 124,
+  "fields": {
+    "code": "3179750055237",
+    "name": "limonade plancoet, bouteille de 1,5 litre",
+    "nutriscore": "e",
+    "description": "Eau minérale naturelle de Plancoët (92%), sucre (7,8%), CO2, acidifiant: acide citrique, arômes naturels",
+    "url": "https://fr.openfoodfacts.org/produit/3179750055237/limonade-plancoet-bouteille-de-1-5-litre",
+    "popularity": 10,
+    "salt": "0",
+    "sugars": "7.8",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/317/975/005/5237/front_fr.3.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/317/975/005/5237/front_fr.3.200.jpg",
+    "store": [
+      5
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 125,
+  "fields": {
+    "code": "3222473937882",
+    "name": "limonade traditionnelle - arôme naturel de citron- citron vert",
+    "nutriscore": "e",
+    "description": "Eau de source gazéifiée - sucre 8% - acidifiant : acide citrique - arôme naturel de citron - citron vert",
+    "url": "https://fr.openfoodfacts.org/produit/3222473937882/limonade-traditionnelle-arome-naturel-de-citron-citron-vert-casino-delices",
+    "popularity": 10,
+    "salt": "0.01",
+    "sugars": "8",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/322/247/393/7882/front_fr.17.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/322/247/393/7882/front_fr.17.200.jpg",
+    "store": [
+      39
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 126,
+  "fields": {
+    "code": "3256223022375",
+    "name": "limonade u",
+    "nutriscore": "d",
+    "description": "Eau gazéifiée, sucre, acidifiant: acide citrique extrait de citron et de citron vert, arôme naturel. Certains ingrédients de ce produit ne proviennent pas de France.",
+    "url": "https://fr.openfoodfacts.org/produit/3256223022375/limonade-u",
+    "popularity": 10,
+    "salt": "0.01",
+    "sugars": "6",
+    "saturated": "0.1",
+    "fat": "0.5",
+    "image_url": "https://static.openfoodfacts.org/images/products/325/622/302/2375/front_fr.28.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/325/622/302/2375/front_fr.28.200.jpg",
+    "store": [
+      5
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 127,
+  "fields": {
+    "code": "3564700829660",
+    "name": "soda tonic zéro",
+    "nutriscore": "b",
+    "description": "Eau gazéifiée ; acidifiant : acide citrique ; arôme naturel ; arôme : quinine ; édulcorants : acésulfame-K, sucralose.",
+    "url": "https://fr.openfoodfacts.org/produit/3564700829660/soda-tonic-zero-sprink-s",
+    "popularity": 10,
+    "salt": "0",
+    "sugars": "0",
+    "saturated": "0.1",
+    "fat": "0.5",
+    "image_url": "https://static.openfoodfacts.org/images/products/356/470/082/9660/front_fr.16.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/356/470/082/9660/front_fr.16.200.jpg",
+    "store": [
+      11
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 128,
+  "fields": {
+    "code": "5400164115049",
+    "name": "lemonade",
+    "nutriscore": "e",
+    "description": "Eau Pétillante, sucre de canne, Jus concentré de citron (7,1%), Jus concentré d'oranges (4%), Arômes naturel.",
+    "url": "https://fr.openfoodfacts.org/produit/5400164115049/lemonade-oxfam",
+    "popularity": 10,
+    "salt": "0",
+    "sugars": "10.9",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/540/016/411/5049/front_fr.14.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/540/016/411/5049/front_fr.14.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 129,
+  "fields": {
+    "code": "5410013184706",
+    "name": "fruit grenadine",
+    "nutriscore": "d",
+    "description": "Eau minérale naturelle gazéifiée 93,9% (source: Barisart), sucre, jus de fruits 1,7% (citron, fraise 0,1%, framboise 0,1%, cassis 0,09%), concentrés (carotte, carthame), arômes naturels, édulcorant (glycosides de stéviol).",
+    "url": "https://fr.openfoodfacts.org/produit/5410013184706/fruit-grenadine-spa",
+    "popularity": 10,
+    "salt": "0",
+    "sugars": "4.6",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/541/001/318/4706/front_fr.32.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/541/001/318/4706/front_fr.32.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 130,
+  "fields": {
+    "code": "3410280022666",
+    "name": "limonade",
+    "nutriscore": "c",
+    "description": "Eau gazéifiée, acide citrique, aspartame, acésulfame de potassium, arôme naturel de citron, autres arômes naturels.",
+    "url": "https://fr.openfoodfacts.org/produit/3410280022666/limonade-top-budget",
+    "popularity": 9,
+    "salt": "0.01",
+    "sugars": "0.5",
+    "saturated": "0.1",
+    "fat": "0.5",
+    "image_url": "https://static.openfoodfacts.org/images/products/341/028/002/2666/front_fr.3.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/341/028/002/2666/front_fr.3.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 131,
+  "fields": {
+    "code": "3564700813706",
+    "name": "sprink's limonade",
+    "nutriscore": "e",
+    "description": "Eau gazéifiée, sucre, acidifiant : acide citrique, arôme naturel de citron et citron vert.",
+    "url": "https://fr.openfoodfacts.org/produit/3564700813706/sprink-s-limonade",
+    "popularity": 9,
+    "salt": "0.01",
+    "sugars": "7",
+    "saturated": "0.5",
+    "fat": "0.5",
+    "image_url": "https://static.openfoodfacts.org/images/products/356/470/081/3706/front_fr.12.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/356/470/081/3706/front_fr.12.200.jpg",
+    "store": [
+      11
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 132,
+  "fields": {
+    "code": "3596710340590",
+    "name": "bio - limonade au sucre de canne",
+    "nutriscore": "e",
+    "description": "Eau gazéifiée, sirop de sucre de canne biologique (8,2 %), acidifiant : acide citrique, arôme naturel de citron.",
+    "url": "https://fr.openfoodfacts.org/produit/3596710340590/bio-limonade-au-sucre-de-canne-auchan-bio",
+    "popularity": 9,
+    "salt": "0.01",
+    "sugars": "8.4",
+    "saturated": "0.1",
+    "fat": "0.5",
+    "image_url": "https://static.openfoodfacts.org/images/products/359/671/034/0590/front_fr.24.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/359/671/034/0590/front_fr.24.200.jpg",
+    "store": [
+      2
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 133,
+  "fields": {
+    "code": "3551720042650",
+    "name": "limonade de lorraine",
+    "nutriscore": "b",
+    "description": "Eau SUcre, acidifiant: acide citrique, aromé naturel de citron gazéifiée,",
+    "url": "https://fr.openfoodfacts.org/produit/3551720042650/limonade-de-lorraine-geyer-freres",
+    "popularity": 9,
+    "salt": "0.01",
+    "sugars": "7.4",
+    "saturated": "0.1",
+    "fat": "0.5",
+    "image_url": "https://static.openfoodfacts.org/images/products/355/172/004/2650/front_fr.15.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/355/172/004/2650/front_fr.15.200.jpg",
+    "store": [
+      12
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 134,
+  "fields": {
+    "code": "3119070055104",
+    "name": "ogeu limonade zero",
+    "nutriscore": "b",
+    "description": "BOISSON GAZEUSE AROMATISÉE AVEC EDULCORANT IHGRÉDIEHTS : eau minérale, C02, acidifiant : acide citrique, naturels, : sucralose.",
+    "url": "https://fr.openfoodfacts.org/produit/3119070055104/ogeu-limonade-zero",
+    "popularity": 8,
+    "salt": "0",
+    "sugars": "0",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/311/907/005/5104/front_fr.8.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/311/907/005/5104/front_fr.8.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 135,
+  "fields": {
+    "code": "3484705000027",
+    "name": "limonade",
+    "nutriscore": "e",
+    "description": ".çeizb&la la véritable limonade de citron-citron vert, conservateur : benzoate de Valeurs éngétises moyennes pour • Œgrcser0gbt : ; &quot;ides : 8,5g &quot;i}zres: g,} ; protéines : Og ; sel : Os.",
+    "url": "https://fr.openfoodfacts.org/produit/3484705000027/limonade-breizh-cola",
+    "popularity": 8,
+    "salt": "0",
+    "sugars": "8.5",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/348/470/500/0027/front_fr.4.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/348/470/500/0027/front_fr.4.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 136,
+  "fields": {
+    "code": "3551720026209",
+    "name": "lorina limonade artisanale nature",
+    "nutriscore": "e",
+    "description": "Eau gazéifiée, sucre, acidifiant: acide citrique, arome naturel de citron",
+    "url": "https://fr.openfoodfacts.org/produit/3551720026209/lorina-limonade-artisanale-nature",
+    "popularity": 8,
+    "salt": "0",
+    "sugars": "9",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/355/172/002/6209/front_fr.6.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/355/172/002/6209/front_fr.6.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 137,
+  "fields": {
+    "code": "20023034",
+    "name": "freeway lemon",
+    "nutriscore": "e",
+    "description": "Eau gazéifiée, sucre, acidifiant : acide citrique, arôme naturel de citron-citron vert avec autres arômes naturels, correcteur d'acidité : citrate de sodium, antioxydant : acide ascorbique.",
+    "url": "https://fr.openfoodfacts.org/produit/20023034/freeway-lemon",
+    "popularity": 7,
+    "salt": "0",
+    "sugars": "10.3",
+    "saturated": "0.1",
+    "fat": "0.1",
+    "image_url": "https://static.openfoodfacts.org/images/products/20023034/front_fr.21.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/20023034/front_fr.21.200.jpg",
+    "store": [
+      12
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 138,
+  "fields": {
+    "code": "27002766",
+    "name": "limonade agrumes",
+    "nutriscore": "e",
+    "description": "Eau, sucre, acide carbonique, jus d'agrumes (2%) à base de jus concentré (orange, citron, pamplemousse), acidifiant : acide citrique, arôme naturel d'agrumes avec autres arômes naturels, antioxydant : E300, stabilisant : E445, colorant : E142,",
+    "url": "https://fr.openfoodfacts.org/produit/27002766/limonade-agrumes-river",
+    "popularity": 7,
+    "salt": "0",
+    "sugars": "11.8",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/27002766/front_fr.14.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/27002766/front_fr.14.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 139,
+  "fields": {
+    "code": "3256223010563",
+    "name": "tonic aux arômes naturels",
+    "nutriscore": "d",
+    "description": "Eau gazéifiée, sucre, acidifiant : acide citrique, arôme naturel, édulcorant : glycoside de stéviol (édulcorant d'origine naturelle extrait des feuilles de stévia).",
+    "url": "https://fr.openfoodfacts.org/produit/3256223010563/tonic-aux-aromes-naturels-u",
+    "popularity": 7,
+    "salt": "0",
+    "sugars": "5.9",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/325/622/301/0563/front_fr.15.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/325/622/301/0563/front_fr.15.200.jpg",
+    "store": [
+      5
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 140,
+  "fields": {
+    "code": "3274080018133",
+    "name": "limonade steff",
+    "nutriscore": "c",
+    "description": "Eau gazéifiée, acidifiant : acide citrique, arôme naturel de citron-citron vert, arôme naturel de citron,  édulcorants : cyclamate de sodium, aspartame, acésulfame-k, saccharinate de sodium.",
+    "url": "https://fr.openfoodfacts.org/produit/3274080018133/limonade-steff",
+    "popularity": 7,
+    "salt": "0",
+    "sugars": "0.3",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/327/408/001/8133/front_fr.12.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/327/408/001/8133/front_fr.12.200.jpg",
+    "store": [
+      3
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 141,
+  "fields": {
+    "code": "3350031660634",
+    "name": "limonade",
+    "nutriscore": "e",
+    "description": "Eau gazéifiée, sucre, acidifiant : acide citrique, extraits naturels de citron et de limette, arôme naturel",
+    "url": "https://fr.openfoodfacts.org/produit/3350031660634/limonade-monoprix",
+    "popularity": 7,
+    "salt": "0",
+    "sugars": "7.6",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/335/003/166/0634/front_fr.7.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/335/003/166/0634/front_fr.7.200.jpg",
+    "store": [
+      116
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 142,
+  "fields": {
+    "code": "3551720041080",
+    "name": "agrume de corse aromatisee",
+    "nutriscore": "e",
+    "description": "Eau gazéifiée, sucre, arôme naturel, acidifiant : acide citrique, extrait d'orange 0,6%, jus concentré de clémentines de Corse 1%, jus concentré de mandarine 0,3%, jus concentré d'orange 0,2%, jus concentré de citron 0,1%, conservateur : benzoate de sodium, colorant : complexes cuivriques de chlorophylles et de chlorophyllines.",
+    "url": "https://fr.openfoodfacts.org/produit/3551720041080/agrume-de-corse-aromatisee-geyer-freres",
+    "popularity": 7,
+    "salt": "0.01",
+    "sugars": "8.7",
+    "saturated": "0.1",
+    "fat": "0.5",
+    "image_url": "https://static.openfoodfacts.org/images/products/355/172/004/1080/front_fr.32.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/355/172/004/1080/front_fr.32.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 143,
+  "fields": {
+    "code": "3560070692453",
+    "name": "limonade zestée",
+    "nutriscore": "d",
+    "description": "Eau gazéifiée, sucre, acidifiant : acide citrique, arôme naturel de citron de Sicile, arôme naturel.",
+    "url": "https://fr.openfoodfacts.org/produit/3560070692453/limonade-zestee-carrefour",
+    "popularity": 7,
+    "salt": "0.01",
+    "sugars": "7",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/356/007/069/2453/front_fr.51.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/356/007/069/2453/front_fr.51.200.jpg",
+    "store": [
+      3
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 144,
+  "fields": {
+    "code": "4972842330026",
+    "name": "limonade ramune",
+    "nutriscore": "e",
+    "description": "Eau, sirop de glucose-fructose, acidifiants : E330 et E331, arôme, exhausteur de goût : E327.",
+    "url": "https://fr.openfoodfacts.org/produit/4972842330026/limonade-ramune-kimura",
+    "popularity": 7,
+    "salt": "0",
+    "sugars": "9",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/497/284/233/0026/front_fr.6.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/497/284/233/0026/front_fr.6.200.jpg",
+    "store": [
+      3
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 145,
+  "fields": {
+    "code": "3119070059003",
+    "name": "limonade des neiges",
+    "nutriscore": "e",
+    "description": "eau minérale (92%), sucre (7,8%), C02, acidifiant : acide citrique, arômes naturels.",
+    "url": "https://fr.openfoodfacts.org/produit/3119070059003/limonade-des-neiges-ogeu",
+    "popularity": 6,
+    "salt": "0.1",
+    "sugars": "7.8",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/311/907/005/9003/front_fr.13.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/311/907/005/9003/front_fr.13.200.jpg",
+    "store": [
+      5
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 146,
+  "fields": {
+    "code": "3119070059041",
+    "name": "limonade zéro",
+    "nutriscore": "b",
+    "description": "Eau minérale, CO2, acidifiant : acide citrique, arômes naturels, édulcorant : sucralose.",
+    "url": "https://fr.openfoodfacts.org/produit/3119070059041/limonade-zero-ogeu",
+    "popularity": 6,
+    "salt": "0.008",
+    "sugars": "0",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/311/907/005/9041/front_fr.7.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/311/907/005/9041/front_fr.7.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 147,
+  "fields": {
+    "code": "3222472708230",
+    "name": "limonade light - arôme naturel de citron",
+    "nutriscore": "c",
+    "description": "Eau gazéifiée - acidifiant : acide citrique - arôme naturel de citron-citron vert - arôme naturel de citron - édulcorants : acésulfame-K, sucralose.",
+    "url": "https://fr.openfoodfacts.org/produit/3222472708230/limonade-light-arome-naturel-de-citron-casino",
+    "popularity": 6,
+    "salt": "0.03",
+    "sugars": "0.2",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/322/247/270/8230/front_fr.6.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/322/247/270/8230/front_fr.6.200.jpg",
+    "store": [
+      39
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 148,
+  "fields": {
+    "code": "3222475626319",
+    "name": "limonade au sucre de canne",
+    "nutriscore": "e",
+    "description": "Eau gazéifiée - sirop de sucre de canne* 11% - acidifiant: acide citrique - arôme naturel de citron et citron vert * ingrédient issu de l'agriculture biologique",
+    "url": "https://fr.openfoodfacts.org/produit/3222475626319/limonade-au-sucre-de-canne-casino-bio",
+    "popularity": 6,
+    "salt": "0",
+    "sugars": "8.3",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/322/247/562/6319/front_fr.4.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/322/247/562/6319/front_fr.4.200.jpg",
+    "store": [
+      39
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 149,
+  "fields": {
+    "code": "3257981997974",
+    "name": "limonade au sucre de canne",
+    "nutriscore": "e",
+    "description": "Eau gazéifiée, sirop de sucre de canne : 9,2%, acidifiant : acide citrique, arôme naturel de citron.",
+    "url": "https://fr.openfoodfacts.org/produit/3257981997974/limonade-au-sucre-de-canne-nature-bio",
+    "popularity": 6,
+    "salt": "0.01",
+    "sugars": "9.5",
+    "saturated": "0",
+    "fat": "0.5",
+    "image_url": "https://static.openfoodfacts.org/images/products/325/798/199/7974/front_fr.7.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/325/798/199/7974/front_fr.7.200.jpg",
+    "store": [
+      27
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 150,
+  "fields": {
+    "code": "3263857160113",
+    "name": "limonade",
+    "nutriscore": "c",
+    "description": "Eau gazéifiée - acidifiant:  acide citrique -  arôme naturel de citron-citron vert -  arôme naturel de citron -  édulcorants : acésulfame K, sucralose.",
+    "url": "https://fr.openfoodfacts.org/produit/3263857160113/limonade-leader-price",
+    "popularity": 6,
+    "salt": "0.03",
+    "sugars": "0.2",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/326/385/716/0113/front_fr.6.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/326/385/716/0113/front_fr.6.200.jpg",
+    "store": [
+      13
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 151,
+  "fields": {
+    "code": "3289196820013",
+    "name": "limonade bio d'antan",
+    "nutriscore": "e",
+    "description": "Eau gazéifiée, sucre de canne (9%), jus de citron concentré (1,5%), extrait de citron (citron issu de l'agriculture biologique)",
+    "url": "https://fr.openfoodfacts.org/produit/3289196820013/limonade-bio-d-antan-vitamont",
+    "popularity": 6,
+    "salt": "0",
+    "sugars": "9.4",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/328/919/682/0013/front_fr.14.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/328/919/682/0013/front_fr.14.200.jpg",
+    "store": [
+      124
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 152,
+  "fields": {
+    "code": "3484705000034",
+    "name": "breizh lim'",
+    "nutriscore": "e",
+    "description": "Eau gazéifiée, sucre, acidifiant : acide citrique ; arômes naturels d'agrumes (arôme naturel de citron-citron vert, arôme naturel d'orange), conservateur benzoate de sodium.",
+    "url": "https://fr.openfoodfacts.org/produit/3484705000034/breizh-lim-breizh-cola",
+    "popularity": 6,
+    "salt": "0.01",
+    "sugars": "8.6",
+    "saturated": "0.5",
+    "fat": "0.5",
+    "image_url": "https://static.openfoodfacts.org/images/products/348/470/500/0034/front_fr.17.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/348/470/500/0034/front_fr.17.200.jpg",
+    "store": [
+      5
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 153,
+  "fields": {
+    "code": "3551720036598",
+    "name": "limonade artisanale",
+    "nutriscore": "e",
+    "description": "Ingrédients : Eau gazéifiée, sucre, acidifiant: acide citrique, arôme naturel de citron.",
+    "url": "https://fr.openfoodfacts.org/produit/3551720036598/limonade-artisanale-geyer-freres",
+    "popularity": 6,
+    "salt": "0",
+    "sugars": "8",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/355/172/003/6598/front_fr.24.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/355/172/003/6598/front_fr.24.200.jpg",
+    "store": [
+      12
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 154,
+  "fields": {
+    "code": "3700311800975",
+    "name": "limonade",
+    "nutriscore": "c",
+    "description": "Eau gazéifiée - acidifiant : acide citrique - arôme naturel de citron et citron vert - arôme naturel de citron - édulcorants : cyclamate de sodium, aspartame, saccharinate de sodium, acésulfame-k. Contient une source de phénylalanine",
+    "url": "https://fr.openfoodfacts.org/produit/3700311800975/limonade-tous-les-jours",
+    "popularity": 6,
+    "salt": "0",
+    "sugars": "0.3",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/370/031/180/0975/front_fr.17.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/370/031/180/0975/front_fr.17.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 155,
+  "fields": {
+    "code": "3760121211637",
+    "name": "limonade",
+    "nutriscore": "e",
+    "description": "Eau osmosée gazéifiée, sucre de canne roux* 8,2%, jus simple de citron* 3,2%, arômes naturels* 0.2% (citron & citron vert) \n*biologique. \nsouligné: équitable",
+    "url": "https://fr.openfoodfacts.org/produit/3760121211637/limonade-biocoop",
+    "popularity": 6,
+    "salt": "0",
+    "sugars": "8.1",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/376/012/121/1637/front_fr.3.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/376/012/121/1637/front_fr.3.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 156,
+  "fields": {
+    "code": "42282143",
+    "name": "limonade bio fruit de la passion",
+    "nutriscore": "d",
+    "description": "eau gazéifiée, jus de fruits de la passion biologique, jus de citron vert biologique, jus de mangue biologique",
+    "url": "https://fr.openfoodfacts.org/produit/42282143/limonade-bio-fruit-de-la-passion-lemonaid-beverages-gmbh",
+    "popularity": 6,
+    "salt": "0",
+    "sugars": "5.5",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/42282143/front_fr.7.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/42282143/front_fr.7.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 157,
+  "fields": {
+    "code": "42282198",
+    "name": "thé noir maté pétillant",
+    "nutriscore": "d",
+    "description": "Eau gazéifiée, maté et thé noir biologique (88 %), jus d'agave biologique, jus d'orange biologique (3 %), jus de citron biologique (3 %),",
+    "url": "https://fr.openfoodfacts.org/produit/42282198/the-noir-mate-petillant-lemonaid-beverages",
+    "popularity": 6,
+    "salt": "0",
+    "sugars": "4",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/42282198/front_fr.19.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/42282198/front_fr.19.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 158,
+  "fields": {
+    "code": "3249760000654",
+    "name": "orangina",
+    "nutriscore": "e",
+    "description": "Eau gazéifiée, jus d'orange et autres agrumes à base de conentrés 12% (orange 10%, citron, mandarine, pamplemousse), sucre, pulpe 2% (orange, mandarine), extrait de zeste d'orange, conservateurs : benzoate de sodium , sorbate de potassium, arômes naturels d'orange.",
+    "url": "https://fr.openfoodfacts.org/produit/3249760000654/orangina",
+    "popularity": 384,
+    "salt": "0.02",
+    "sugars": "9.6",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/324/976/000/0654/front_fr.85.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/324/976/000/0654/front_fr.85.200.jpg",
+    "store": [
+      2,
+      5,
+      11,
+      13
+    ],
+    "category": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 159,
+  "fields": {
+    "code": "3124480184344",
+    "name": "orangina édition limitée complètement secouée",
+    "nutriscore": "e",
+    "description": "Eau gazéifiée, jus d'orange et autres agrumes à base de concentrés 12% (orange 10%, citron, mandarine, pamplemousse), sucre, pulpe 2% (orange, mandarine), extrait de zeste d'orange, arômes naturels d'orange,",
+    "url": "https://fr.openfoodfacts.org/produit/3124480184344/orangina-edition-limitee-completement-secouee",
+    "popularity": 241,
+    "salt": "0.02",
+    "sugars": "9.6",
+    "saturated": "0",
+    "fat": "0.1",
+    "image_url": "https://static.openfoodfacts.org/images/products/312/448/018/4344/front_fr.74.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/312/448/018/4344/front_fr.74.200.jpg",
+    "store": [
+      2,
+      11
+    ],
+    "category": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 160,
+  "fields": {
+    "code": "5449000052179",
+    "name": "boisson rafraîchissante au jus d'orange avec sucre et édulcorants",
+    "nutriscore": "d",
+    "description": "Eau gazéifiée ; jus d'orange à base de concentré 10%; sucre ; jus de citron à base de concentré 2%; conservateur : sorbate de potassium ; arômes naturels d'orange avec autres arômes naturels ; édulcorants : acésulfame-K, sucralose ; stabilisant : gomme de guar ; colorant : caroténoïdes.",
+    "url": "https://fr.openfoodfacts.org/produit/5449000052179/boisson-rafraichissante-au-jus-d-orange-avec-sucre-et-edulcorants-fanta",
+    "popularity": 232,
+    "salt": "0",
+    "sugars": "6.5",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/544/900/005/2179/front_fr.75.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/544/900/005/2179/front_fr.75.200.jpg",
+    "store": [
+      5,
+      23
+    ],
+    "category": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 161,
+  "fields": {
+    "code": "5410221305108",
+    "name": "schweppes agrumes zero",
+    "nutriscore": "c",
+    "description": "eau gazéifiée, extraits naturels d'orange, acidifiant: acide citrique, édulcorant: acésulfame K et sucralose, conservateur: sorbate de potassium, amidon modifié, antioxydant: acide ascorbique, arômes naturels d'agrumes avec autres arômes naturels, stabilisant E445, colorant E142",
+    "url": "https://fr.openfoodfacts.org/produit/5410221305108/schweppes-agrumes-zero",
+    "popularity": 173,
+    "salt": "0",
+    "sugars": "0.3",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/541/022/130/5108/front_fr.58.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/541/022/130/5108/front_fr.58.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 163,
+  "fields": {
+    "code": "3124480185020",
+    "name": "orangina light",
+    "nutriscore": "c",
+    "description": "eau gazéifiée , jus d'orange et autres agrumes à base de concentrés 12% (orange 10%, citron, mandarine, pamplemousse), pulpe 2% (orange, mandarine), arôme naturel d'orange avec autre arôme naturel , conservateur : sorbate de potassium , édulcorants : acésulfame K et sucralose , extrait de zeste d'orange",
+    "url": "https://fr.openfoodfacts.org/produit/3124480185020/orangina-light",
+    "popularity": 136,
+    "salt": "0.01",
+    "sugars": "1.2",
+    "saturated": "0",
+    "fat": "0.1",
+    "image_url": "https://static.openfoodfacts.org/images/products/312/448/018/5020/front_fr.92.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/312/448/018/5020/front_fr.92.200.jpg",
+    "store": [
+      5
+    ],
+    "category": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 164,
+  "fields": {
+    "code": "3124480184320",
+    "name": "orangina et sa pulpe",
+    "nutriscore": "e",
+    "description": "Eau gazéifiée, jus d'orange et autres agrumes à base de concentrés 12% (orange 10%, citron, mandarine, pamplemousse), sucre, pulpe 2% (orange, mandarine), extrait de zeste d'orange, arômes naturels d'orange,",
+    "url": "https://fr.openfoodfacts.org/produit/3124480184320/orangina-et-sa-pulpe",
+    "popularity": 132,
+    "salt": "0.02",
+    "sugars": "9.6",
+    "saturated": "0",
+    "fat": "0.1",
+    "image_url": "https://static.openfoodfacts.org/images/products/312/448/018/4320/front_fr.128.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/312/448/018/4320/front_fr.128.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 165,
+  "fields": {
+    "code": "3124480002129",
+    "name": "schweppes zero lemon",
+    "nutriscore": "b",
+    "description": "eau gazéifiée, extraits naturels de citron, acidifiant : acide citrique, arôme naturels de citron avec autres arômes naturels, édulcorants : acésulfame K et sucralose, conservateur : E202, amidon modifié, stabilisants (E445,E444)",
+    "url": "https://fr.openfoodfacts.org/produit/3124480002129/schweppes-zero-lemon",
+    "popularity": 110,
+    "salt": "0",
+    "sugars": "0",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/312/448/000/2129/front_fr.14.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/312/448/000/2129/front_fr.14.200.jpg",
+    "store": [
+      5,
+      11,
+      23
+    ],
+    "category": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 166,
+  "fields": {
+    "code": "8002270316531",
+    "name": "aranciata rossa",
+    "nutriscore": "e",
+    "description": "Eau, jus d'orange à base de concentré (17 %), sucre, jus d'orange sanguine à base de concentré (3 %), dioxyde de carbone, arôme naturel d'orange avec autres arômes naturels, colorants : E163, extrait de paprika, acidifiant : acide citrique.",
+    "url": "https://fr.openfoodfacts.org/produit/8002270316531/aranciata-rossa-sanpellegrino",
+    "popularity": 109,
+    "salt": "0",
+    "sugars": "8.8",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/800/227/031/6531/front_fr.44.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/800/227/031/6531/front_fr.44.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 167,
+  "fields": {
+    "code": "40822938",
+    "name": "fanta orange",
+    "nutriscore": "e",
+    "description": "Eau gazéifiée ; jus d'orange à base de concentré (10%) ; sucre ; jus de citron à base de concentré (2%) ; conservateur : sorbate de potassium ; arômes naturels d'orange avec autres arômes naturels ; édulcorants : acésulfame-K, sucralose ; stabilisant : gomme de guar ; colorant : caroténoïdes.",
+    "url": "https://fr.openfoodfacts.org/produit/40822938/fanta-orange",
+    "popularity": 107,
+    "salt": "0",
+    "sugars": "12.2",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/40822938/front_fr.18.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/40822938/front_fr.18.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 168,
+  "fields": {
+    "code": "3124480183927",
+    "name": "lemon aux saveurs de 4 citrons",
+    "nutriscore": "d",
+    "description": "Eau gazéifiée, sucre, extraits naturels de citron, acidifiant : acide citrique, arômes naturels de citron avec autres arômes naturels, conservateur :  sorbate de potassium, édulcorants : acésulfame K, sucralose, amidon modifié, stabilisants (E445, E444).",
+    "url": "https://fr.openfoodfacts.org/produit/3124480183927/lemon-aux-saveurs-de-4-citrons-schweppes",
+    "popularity": 94,
+    "salt": "0.01",
+    "sugars": "5.6",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/312/448/018/3927/front_fr.36.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/312/448/018/3927/front_fr.36.200.jpg",
+    "store": [
+      5
+    ],
+    "category": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 170,
+  "fields": {
+    "code": "8002270686566",
+    "name": "limone e menta",
+    "nutriscore": "e",
+    "description": "Eau, jus de fruits à base de concentré (12% jus de citron, 4% jus de pomme), sucre, dioxide de carbone, extrait de menthe, arôme naturel.",
+    "url": "https://fr.openfoodfacts.org/produit/8002270686566/limone-e-menta-sanpellegrino",
+    "popularity": 80,
+    "salt": "0",
+    "sugars": "8.3",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/800/227/068/6566/front_fr.44.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/800/227/068/6566/front_fr.44.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 171,
+  "fields": {
+    "code": "3249760011063",
+    "name": "orangina",
+    "nutriscore": "e",
+    "description": "Eau gazéifiée, jus d'orange et autres agrumes à base de concentrés 12 % (orange 10 %, citron, mandarine, pamplemousse), sucre, pulpe 2 % (orange, mandarine), extrait de zeste d'orange, arômes naturels d'orange, benzoate de sodium, sorbate de potassium",
+    "url": "https://fr.openfoodfacts.org/produit/3249760011063/orangina",
+    "popularity": 78,
+    "salt": "0.02",
+    "sugars": "9.6",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/324/976/001/1063/front_fr.9.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/324/976/001/1063/front_fr.9.200.jpg",
+    "store": [
+      5
+    ],
+    "category": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 172,
+  "fields": {
+    "code": "3124480167026",
+    "name": "orangina",
+    "nutriscore": "e",
+    "description": "Eau gazéifiée, jus d'orange et autres agrumes à base de concentrés 12% (orange 10 % , citron, mandarine, pamplemousse), sucre, pulpe 2% (orange, mandarine), extrait de zeste d'orange, conservateurs benzoate de sodium et sorbate de potassium, arômes naturels d'orange",
+    "url": "https://fr.openfoodfacts.org/produit/3124480167026/orangina",
+    "popularity": 76,
+    "salt": "0",
+    "sugars": "9.6",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/312/448/016/7026/front_fr.69.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/312/448/016/7026/front_fr.69.200.jpg",
+    "store": [
+      5,
+      11
+    ],
+    "category": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 173,
+  "fields": {
+    "code": "3124480185105",
+    "name": "orangina zero",
+    "nutriscore": "c",
+    "description": "eau gazéifiée, jus d'orange et autres agrumes à base de concentrés 12% (orange 10%, citron, mandarine, pamplemousse), pulpe 2% (orange, mandarine), arome naturel d'orange avec autre arome naturel, conservateur : sorbate de potassium, édulcorants : acésulfame K et sucralose, extrait de zeste d'orange.",
+    "url": "https://fr.openfoodfacts.org/produit/3124480185105/orangina-zero",
+    "popularity": 71,
+    "salt": "0.01",
+    "sugars": "1.2",
+    "saturated": "0",
+    "fat": "0.1",
+    "image_url": "https://static.openfoodfacts.org/images/products/312/448/018/5105/front_fr.6.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/312/448/018/5105/front_fr.6.200.jpg",
+    "store": [
+      13
+    ],
+    "category": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 174,
+  "fields": {
+    "code": "5017818800116",
+    "name": "dr pepper",
+    "nutriscore": "d",
+    "description": "Eau gazéifiée, sucre, colorant : caramel (E150d), acidifiant : acide phosphorique, arômes, conservateur : sorbate de potassium, arôme : caféine, édulcorants : acésulfame K et sucralose.",
+    "url": "https://fr.openfoodfacts.org/produit/5017818800116/dr-pepper",
+    "popularity": 64,
+    "salt": "0.02",
+    "sugars": "6.9",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/501/781/880/0116/front_fr.58.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/501/781/880/0116/front_fr.58.200.jpg",
+    "store": [
+      3,
+      23
+    ],
+    "category": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 175,
+  "fields": {
+    "code": "5449000205520",
+    "name": "sprite lata",
+    "nutriscore": "c",
+    "description": "Eau gazéifiée ; sucre ; acidifiants : acide citrique, citrate de sodium ; édulcorants : acesulfame-K, aspartame, néohespéridine DC ; arômes naturels de citron-citron vert.",
+    "url": "https://fr.openfoodfacts.org/produit/5449000205520/sprite-lata-coca-cola",
+    "popularity": 62,
+    "salt": "0",
+    "sugars": "2",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/544/900/020/5520/front_fr.30.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/544/900/020/5520/front_fr.30.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 176,
+  "fields": {
+    "code": "5410221305160",
+    "name": "lemon",
+    "nutriscore": "d",
+    "description": "Eau gazéifiée, sucre; extraits de citron acidifiant :. acide citrique, arômes naturels de citron avec autres arômes naturels, conservateur 202, édulcorants : \r\n K et sucralose, amidon modifié, stabilisants (E445, E444).",
+    "url": "https://fr.openfoodfacts.org/produit/5410221305160/lemon-schweppes",
+    "popularity": 61,
+    "salt": "0.01",
+    "sugars": "5.6",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/541/022/130/5160/front_fr.48.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/541/022/130/5160/front_fr.48.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 177,
+  "fields": {
+    "code": "3249760011148",
+    "name": "orangina et sa pulpe.",
+    "nutriscore": "e",
+    "description": "eau gazéifiée, jus d'orange et autres agrumes à base de concentrés 12 % (orange 10 %, citron, mandarine, pamplemousse), sucre, pulpe 2% (orange, mandarine), extrait de zeste d'orange, conservateurs: benzoate de sodium et sorbate de potassium, arômes naturels d'orange.",
+    "url": "https://fr.openfoodfacts.org/produit/3249760011148/orangina-et-sa-pulpe",
+    "popularity": 60,
+    "salt": "0.02",
+    "sugars": "9.6",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/324/976/001/1148/front_fr.64.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/324/976/001/1148/front_fr.64.200.jpg",
+    "store": [
+      13,
+      23
+    ],
+    "category": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 178,
+  "fields": {
+    "code": "3124480183217",
+    "name": "agrum' aux saveurs de 4 agrumes",
+    "nutriscore": "d",
+    "description": "eau gazéifiée, sucre, extraits d'orange, acidifiant : acide citrique, conservateur : sorbate de potassium, arômes naturels d'agrumes avec autres arômes naturels, édulcorants : acésulfame K et sucralose, amidon modifié,  antioxydant : acide ascorbique, stabilisant E445.",
+    "url": "https://fr.openfoodfacts.org/produit/3124480183217/agrum-aux-saveurs-de-4-agrumes-schweppes",
+    "popularity": 59,
+    "salt": "0",
+    "sugars": "6.6",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/312/448/018/3217/front_fr.14.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/312/448/018/3217/front_fr.14.200.jpg",
+    "store": [
+      3,
+      5
+    ],
+    "category": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 179,
+  "fields": {
+    "code": "3249760702015",
+    "name": "orangina",
+    "nutriscore": "e",
+    "description": "Boisson gazeuse rafraîchissante aux fruits. Ingrédients eau gazéifiée, jus d'orange et autres agrumes à base de concentrés 12%: (orange 10%| citron, mandarine, pamplemousse), sucre, pulpe 2% (orange, mandarine) extrait de zeste d'orange, arômes naturels d'orange.",
+    "url": "https://fr.openfoodfacts.org/produit/3249760702015/orangina",
+    "popularity": 55,
+    "salt": "0.01",
+    "sugars": "9.8",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/324/976/070/2015/front_fr.23.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/324/976/070/2015/front_fr.23.200.jpg",
+    "store": [
+      3,
+      5
+    ],
+    "category": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 180,
+  "fields": {
+    "code": "5449000006271",
+    "name": "fanta orange",
+    "nutriscore": "e",
+    "description": "Eau pétillante ; sucre ; jus d'orange à base de concentré (6%) ; acidifiants ; acide citrique, citrate de sodium ; conservateur : sorbate de potassium ; arômes naturels d'orange avec autres arômes naturels ; antioxydant : acide ascorbique ; concentré de carottes ; stabilisant : gomme de guar.",
+    "url": "https://fr.openfoodfacts.org/produit/5449000006271/fanta-orange",
+    "popularity": 55,
+    "salt": "0",
+    "sugars": "11.7",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/544/900/000/6271/front_fr.20.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/544/900/000/6271/front_fr.20.200.jpg",
+    "store": [
+      3,
+      5
+    ],
+    "category": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 181,
+  "fields": {
+    "code": "5449000138026",
+    "name": "fanta zéro orange",
+    "nutriscore": "c",
+    "description": "eau gazéifiée; jus d'orange à base de concentré (10%); jus de citron à base de concentré (2%); édulcorants : aspartame, acésulfame-K; conservateur : sorbate de potassium; arômes naturels d'orange avec autres arômes naturels; stabilisant : gomme de guar; extraits de miel; colorant : caroténoïdes.\r\nContient une source de phénylalaine.",
+    "url": "https://fr.openfoodfacts.org/produit/5449000138026/fanta-zero-orange",
+    "popularity": 52,
+    "salt": "0",
+    "sugars": "1.1",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/544/900/013/8026/front_fr.12.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/544/900/013/8026/front_fr.12.200.jpg",
+    "store": [
+      5
+    ],
+    "category": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 182,
+  "fields": {
+    "code": "7613036844710",
+    "name": "perrier & juice aux jus de citron & goyave",
+    "nutriscore": "d",
+    "description": "eau minérale naturelle gazeuse PERRIER 79%, fus de fuits à base de concentré 16,2% (pomme 8,8%, citron 6,4%, goyave 1%), sucre, arôme naturel, concentré de carotte.",
+    "url": "https://fr.openfoodfacts.org/produit/7613036844710/perrier-juice-aux-jus-de-citron-goyave",
+    "popularity": 51,
+    "salt": "0",
+    "sugars": "3.7",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/761/303/684/4710/front_fr.4.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/761/303/684/4710/front_fr.4.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 183,
+  "fields": {
+    "code": "3502110008978",
+    "name": "7up aux extraits de citron & citron vert 33 cl",
+    "nutriscore": "e",
+    "description": "Eau gazéifiée,sucre,acidifiants (acide citrique, acide malique),arômes naturels (dont extraits de citron et de citron vert),correcteur d'acidité (citrate de sodium),édulcorant (glycosides de stéviol)",
+    "url": "https://fr.openfoodfacts.org/produit/3502110008978/7up-aux-extraits-de-citron-citron-vert-33-cl",
+    "popularity": 48,
+    "salt": "0.03",
+    "sugars": "7",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/350/211/000/8978/front_fr.54.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/350/211/000/8978/front_fr.54.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 184,
+  "fields": {
+    "code": "3124480183538",
+    "name": "boisson gazeuse rafraîchissante aux fruits",
+    "nutriscore": "e",
+    "description": "Eau gazéifiée, jus d'orange et autres agrumes à base de concentrés 12% (orange 10%, citron, mandarine, pamplemousse), sucre, pulpe d'orange 2%, extrait de zeste d'orange, conservateurs : benzoate de sodium et sorbate de potassium, arômes naturels d'orange.",
+    "url": "https://fr.openfoodfacts.org/produit/3124480183538/boisson-gazeuse-rafraichissante-aux-fruits-orangina",
+    "popularity": 47,
+    "salt": "0.01",
+    "sugars": "9.8",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/312/448/018/3538/front_fr.14.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/312/448/018/3538/front_fr.14.200.jpg",
+    "store": [
+      5
+    ],
+    "category": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 185,
+  "fields": {
+    "code": "3249760017096",
+    "name": "orangina rouge",
+    "nutriscore": "e",
+    "description": "Eau gazéifiée, jus d'orange sanguine et autres agrumes à base de concentrés 12% (orange sanguine 6%, orange, citron, pamplemousse, mandarine), sucre, pulpes d'orange et de pamplemousse 2%, arômes, conservateur : sorbate de potassium, colorant : carmins, acide carminique.",
+    "url": "https://fr.openfoodfacts.org/produit/3249760017096/orangina-rouge",
+    "popularity": 46,
+    "salt": "0",
+    "sugars": "9.9",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/324/976/001/7096/front_fr.8.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/324/976/001/7096/front_fr.8.200.jpg",
+    "store": [
+      5,
+      13
+    ],
+    "category": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 186,
+  "fields": {
+    "code": "3124480188700",
+    "name": "pulco citron et citron vert",
+    "nutriscore": "d",
+    "description": "Eau de source gazéifiée, jus de fruits à base de concentrés 9% (citron 7%, citron vert 2%), sucre, pulpe de citron 0,7%, antioxydant : acide ascorbique, arômes naturels de citron et de citron vert",
+    "url": "https://fr.openfoodfacts.org/produit/3124480188700/pulco-citron-et-citron-vert",
+    "popularity": 44,
+    "salt": "0",
+    "sugars": "4.2",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/312/448/018/8700/front_fr.70.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/312/448/018/8700/front_fr.70.200.jpg",
+    "store": [
+      11
+    ],
+    "category": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 187,
+  "fields": {
+    "code": "3124480162779",
+    "name": "orangina",
+    "nutriscore": "e",
+    "description": "eau gazéifiée, jus d'orange et autres agrumes à base de concentrés 12% (orange 10%, citron, mandarine, pamplemousse), sucre, pulpe 2% (orange, mandarine), extrait de zeste d'orange, arômes naturels d'orange",
+    "url": "https://fr.openfoodfacts.org/produit/3124480162779/orangina",
+    "popularity": 43,
+    "salt": "0.01",
+    "sugars": "9.8",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/312/448/016/2779/front_fr.32.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/312/448/016/2779/front_fr.32.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 188,
+  "fields": {
+    "code": "8002270346507",
+    "name": "boisson aromatisée pétillant orange",
+    "nutriscore": "e",
+    "description": "eau, jus d'orange (20%) à base de concentré, sucre, gaz carbonique, extrait d'orange, acidifiant : acide citrique, arôme naturel d'orange, stabilisant : pectine.",
+    "url": "https://fr.openfoodfacts.org/produit/8002270346507/boisson-aromatisee-petillant-orange-sanpellegrino",
+    "popularity": 42,
+    "salt": "0",
+    "sugars": "7.8",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/800/227/034/6507/front_fr.7.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/800/227/034/6507/front_fr.7.200.jpg",
+    "store": [
+      3
+    ],
+    "category": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 189,
+  "fields": {
+    "code": "8002270396588",
+    "name": "ficodindia e arancia",
+    "nutriscore": "e",
+    "description": "Eau, jus de fruits à base de jus concentré (10% de jus d'orange, 6% de jus de figue de barbarie), sucre, dioxyde de carbone, arômes naturels, acidifiant : acide citrique, colorants : anthocyanes.",
+    "url": "https://fr.openfoodfacts.org/produit/8002270396588/ficodindia-e-arancia-san-pellegrino",
+    "popularity": 42,
+    "salt": "0",
+    "sugars": "8.3",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/800/227/039/6588/front_fr.8.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/800/227/039/6588/front_fr.8.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 190,
+  "fields": {
+    "code": "20437572",
+    "name": "agrumes zéro",
+    "nutriscore": "c",
+    "description": "Eau gazéifiée, concentré de jus d'orange, de pamplemousse et de citron, acide citrique, arôme naturel d'agrumes avec autres arômes naturels, acésulfame K, cyclamate de sodium, saccharinate de sodium, sorbate de potassium, extrait d'orange, gomme arabique, esters glycériques de résine de bois, farine de graines de caroube, acide ascorbique, colorant vert S.",
+    "url": "https://fr.openfoodfacts.org/produit/20437572/agrumes-zero-freeway",
+    "popularity": 41,
+    "salt": "0",
+    "sugars": "0.2",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/20437572/front_fr.26.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/20437572/front_fr.26.200.jpg",
+    "store": [
+      12
+    ],
+    "category": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 192,
+  "fields": {
+    "code": "3124480159106",
+    "name": "orangina et sa pulpe",
+    "nutriscore": "e",
+    "description": "Eau gazéifiée, jus d'orange et autres agrumes à base de concentré 12% (orange 10%, citron, pamplemousse), sucre, pulpe 2% (orange, mandarine), extrait de zeste d'orange, arômes naturels d'orange",
+    "url": "https://fr.openfoodfacts.org/produit/3124480159106/orangina-et-sa-pulpe",
+    "popularity": 38,
+    "salt": "0.01",
+    "sugars": "9.8",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/312/448/015/9106/front_fr.6.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/312/448/015/9106/front_fr.6.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 193,
+  "fields": {
+    "code": "3225355490819",
+    "name": "pulco à diluer",
+    "nutriscore": "e",
+    "description": "Jus de pamplemousse rose à base de concentré (équivalent à 96% de lus reconstitué), sucre pulpe de citron 4%, acidifiant: acide citrique, arôme naturel de pamplemousse avec autres arômes naturels",
+    "url": "https://fr.openfoodfacts.org/produit/3225355490819/pulco-a-diluer",
+    "popularity": 38,
+    "salt": "0",
+    "sugars": "5.1",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/322/535/549/0819/front_fr.64.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/322/535/549/0819/front_fr.64.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 194,
+  "fields": {
+    "code": "5449000214829",
+    "name": "fanta citron frappé",
+    "nutriscore": "d",
+    "description": "Eau gazéifiée ; sucre ; jus de citron à base de concentré 5% ; antioxydant : acide ascorbique ; acidifiants : acide citrique, citrate de sodium ; conservateur : sorbate de potassium ; stabilisants : gomme arabique ; esters glycériques de résine de bois ; édulcorant : glycosides de stéviol ; arômes naturels de citron avec autres arômes naturels ; colorant : caroténoïdes",
+    "url": "https://fr.openfoodfacts.org/produit/5449000214829/fanta-citron-frappe",
+    "popularity": 38,
+    "salt": "0",
+    "sugars": "6.3",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/544/900/021/4829/front_fr.28.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/544/900/021/4829/front_fr.28.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 195,
+  "fields": {
+    "code": "3124480002594",
+    "name": "schweppes agrum'",
+    "nutriscore": "d",
+    "description": "eau gazéifiée, sucre, extraits naturels d'orange, acidifiant : acide citrique, conservateur E202, édulcorants (E951, E950), amidon modifié, antioxydant : acide ascorbique, stabilisant E445, arômes naturels d'agrumes avec autres arômes naturels, colorant E142.",
+    "url": "https://fr.openfoodfacts.org/produit/3124480002594/schweppes-agrum-scweppes",
+    "popularity": 37,
+    "salt": "0",
+    "sugars": "5.7",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/312/448/000/2594/front_fr.28.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/312/448/000/2594/front_fr.28.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 196,
+  "fields": {
+    "code": "3124480164155",
+    "name": "swcheppes agrum'",
+    "nutriscore": "d",
+    "description": "eau gazéifiée, sucre, extraits naturels d'orange, acidifiant : acide citrique, conservateur : sorbate de potassium, édulcorants : acésulfame k et sucralose, amidon modifié, antioxydant : acide ascorbique, arômes naturels d'agrumes avec autres arômes naturels, stabilisant e445, colorant e142.",
+    "url": "https://fr.openfoodfacts.org/produit/3124480164155/swcheppes-agrum-schweppes",
+    "popularity": 37,
+    "salt": "0",
+    "sugars": "5.7",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/312/448/016/4155/front_fr.38.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/312/448/016/4155/front_fr.38.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 197,
+  "fields": {
+    "code": "26003207",
+    "name": "orange à la pulpe",
+    "nutriscore": "e",
+    "description": "Eau gazéifiée; jus d'orange (12%) et pulpe (2%) à base de concentrés; sucre; arôme naturel d'orange, arôme naturel; acidifiant : acide citrique (E330); conservateur: benzoate de sodium (E211); antioxydant: acide ascorbique (E300); colorant: lutéine (E161b).",
+    "url": "https://fr.openfoodfacts.org/produit/26003207/orange-a-la-pulpe-river",
+    "popularity": 26,
+    "salt": "0",
+    "sugars": "8.4",
+    "saturated": "0.5",
+    "fat": "0.5",
+    "image_url": "https://static.openfoodfacts.org/images/products/26003207/front_fr.40.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/26003207/front_fr.40.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 198,
+  "fields": {
+    "code": "5449000205568",
+    "name": "sprite",
+    "nutriscore": "c",
+    "description": "Agua carbonatada, azúcar, correctores de acidez (ácido cítrico, citrato sódico), edulcorantes (acesulfamo K, aspartamo, neohesperidina DC), aroma natural de limón, aroma natural de lima.",
+    "url": "https://fr.openfoodfacts.org/produit/5449000205568/sprite-coca-cola",
+    "popularity": 26,
+    "salt": "0",
+    "sugars": "2",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/544/900/020/5568/front_fr.17.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/544/900/020/5568/front_fr.17.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 199,
+  "fields": {
+    "code": "7610057001078",
+    "name": "jus de pomme",
+    "nutriscore": "c",
+    "description": "Jus de pomme Suisse (min.90 %) et jus de poire suisse (max 10 %) à base de concentré, acide carbonique. Pasteurisé.",
+    "url": "https://fr.openfoodfacts.org/produit/7610057001078/jus-de-pomme-ramseier",
+    "popularity": 26,
+    "salt": "0",
+    "sugars": "11.3",
+    "saturated": "0",
+    "fat": "0.5",
+    "image_url": "https://static.openfoodfacts.org/images/products/761/005/700/1078/front_fr.42.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/761/005/700/1078/front_fr.42.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 200,
+  "fields": {
+    "code": "5449000245199",
+    "name": "fanta saveur mangue et fruit du dragon",
+    "nutriscore": "d",
+    "description": "Eau gazéifiée ; sucre ; jus de fruits à base de concentré (orange 2,7%, mangue 0,1%, citron 0,1%) ; acidifiants : acide citrique, acide malique ; purée de fruit du dragon 0,1% ; arômes naturels ; colorants : caroténoïdes ; antioxydant : acide ascorbique ; conservateur : sorbate de potassium ; édulcorant : glycosides de steviol ; stabilisant : gomme guar.",
+    "url": "https://fr.openfoodfacts.org/produit/5449000245199/fanta-saveur-mangue-et-fruit-du-dragon",
+    "popularity": 25,
+    "salt": "0",
+    "sugars": "6.1",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/544/900/024/5199/front_fr.4.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/544/900/024/5199/front_fr.4.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 201,
+  "fields": {
+    "code": "3124480182630",
+    "name": "agrum' aux saveurs de 4 agrumes",
+    "nutriscore": "d",
+    "description": "Eau gazéifiée, sucre, extraits naturels d'orange, acidifiant : acide citrique, conservateur E202, édulcorants : acésulfame K et sucralose, amidon modifié, antioxydant : acide ascorbique, arômes naturels d'agrumes avec autres arômes naturels, stabilisant E445, colorant E142.",
+    "url": "https://fr.openfoodfacts.org/produit/3124480182630/agrum-aux-saveurs-de-4-agrumes-schweppes",
+    "popularity": 22,
+    "salt": "0",
+    "sugars": "6.6",
+    "saturated": "0",
+    "fat": "0",
+    "image_url": "https://static.openfoodfacts.org/images/products/312/448/018/2630/front_fr.9.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/312/448/018/2630/front_fr.9.200.jpg",
+    "store": [
+      1
+    ],
+    "category": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 202,
+  "fields": {
+    "code": "3560070577491",
+    "name": "saveur agrum'",
+    "nutriscore": "c",
+    "description": "Eau gazéifiée, jus d'agrumes à base de concentrés 0.7% (orange, citron, pamplemousse), acidifiant : acide citrique, arôme naturel d'agrumes et autres arômes naturels, arôme naturel de pamplemousse rose, édulcorants: acésulfame-K et sucralose, antioxydant : acide ascorbique, stabilisant : esters glycériques de résine de bois, colorant : vert S.",
+    "url": "https://fr.openfoodfacts.org/produit/3560070577491/saveur-agrum-carrefour",
+    "popularity": 21,
+    "salt": "0.03",
+    "sugars": "0.5",
+    "saturated": "0.01",
+    "fat": "0.01",
+    "image_url": "https://static.openfoodfacts.org/images/products/356/007/057/7491/front_fr.28.400.jpg",
+    "small_image_url": "https://static.openfoodfacts.org/images/products/356/007/057/7491/front_fr.28.200.jpg",
+    "store": [
+      3
+    ],
+    "category": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "main.product",
+  "pk": 203,
+  "fields": {
+    "code": "5449000036964",
+    "name": "poms",
+    "nutriscore": "e",
+    "description": 
